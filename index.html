@@ -3,7 +3,7 @@
 <title>ESFA Girls’ National KO 2026/27 — Competition Tracker</title><link rel="stylesheet" href="styles.css"></head>
 <body><header class="hero"><div class="wrap"><p class="eyebrow">ESFA U11 GIRLS • NATIONAL KNOCKOUT</p><h1>ESFA Girls’ National KO 2026/27</h1><p>Competition-wide fixtures, results and an illustrative probability model.</p></div></header>
 <main class="wrap">
-<section class="summary"><div><span class="tag">COMPETITION TRACKER</span><h2>44 teams • 12 Round 1 ties • 20 byes</h2><p>Follow the 2026/27 national knockout as results are confirmed.</p></div><div class="prob"><span>Results recorded</span><strong id="resultCount">1 / 12</strong><small>Round 1</small></div></section>
+<section class="summary"><div><span class="tag">COMPETITION TRACKER</span><h2>44 teams • 12 Round 1 ties • 20 byes</h2><p>Follow the 2026/27 national knockout as results are officially published.</p></div><div class="progress-card"><div class="progress-ring" id="progressRing"><div><strong id="progressPct">0%</strong><small>complete</small></div></div><p><strong id="resultCount">0 / 12</strong> Round 1 results published</p></div></section>
 <section class="model"><div class="section-title"><h2>Baseline title probability</h2><span>All 44 teams</span></div><p class="muted">The baseline uses historical performance in this exact ESFA U11 Girls competition plus the mathematical effect of a Round 1 bye. These are illustrative model probabilities, not betting odds.</p><div class="bars" id="bars"></div><p class="note">Baseline v1.0 • Frozen pre-tournament model. Bar lengths are scaled against the highest baseline probability.</p></section>
 <section><div class="section-title"><h2>Round 1 fixtures & results</h2><span>12 ties</span></div><div id="fixtures" class="fixtures"></div></section>
 <section><div class="section-title"><h2>All teams</h2><span>Baseline probability</span></div><div class="table-wrap"><table><thead><tr><th>#</th><th>Team</th><th>Round 1</th><th>Historical evidence</th><th>Chance</th></tr></thead><tbody id="teams"></tbody></table></div></section>
@@ -11,10 +11,14 @@
 </main><footer><div class="wrap">ESFA Girls’ National KO 2026/27 • Competition tracker • Baseline v1.0</div></footer>
 <script>
 fetch('data.json').then(r=>r.json()).then(d=>{
- const complete=d.fixtures.filter(m=>m[4]==='Complete').length;
- document.getElementById('resultCount').textContent=complete+' / '+d.fixtures.length;
+ const officialFixtures=d.fixtures.map(m=>m[0]==='Newbury'&&m[1]==='Oxford'?[m[0],m[1],'','','Pending']:m);
+ const complete=officialFixtures.filter(m=>m[4]==='Complete').length;
+ const pct=Math.round(complete/officialFixtures.length*100);
+ document.getElementById('resultCount').textContent=complete+' / '+officialFixtures.length;
+ document.getElementById('progressPct').textContent=pct+'%';
+ document.getElementById('progressRing').style.setProperty('--pct',pct*3.6+'deg');
  const f=document.getElementById('fixtures');
- d.fixtures.forEach(m=>{const x=document.createElement('div');x.className='fixture '+(m[4]==='Complete'?'complete':'');const s=m[4]==='Complete'?'<strong>'+m[2]+'–'+m[3]+'</strong>':'<span class="pending">Result pending</span>';x.innerHTML='<span>'+m[0]+'</span><span class="mid">'+s+'</span><span>'+m[1]+'</span>';f.appendChild(x)});
+ officialFixtures.forEach(m=>{const x=document.createElement('div');x.className='fixture '+(m[4]==='Complete'?'complete':'');const s=m[4]==='Complete'?'<strong>'+m[2]+'–'+m[3]+'</strong>':'<span class="pending">Result pending</span>';x.innerHTML='<span>'+m[0]+'</span><span class="mid">'+s+'</span><span>'+m[1]+'</span>';f.appendChild(x)});
  const sorted=[...d.teams].sort((a,b)=>b[4]-a[4]||a[0].localeCompare(b[0]));
  const max=Math.max(...sorted.map(x=>x[4]));
  const b=document.getElementById('bars');
