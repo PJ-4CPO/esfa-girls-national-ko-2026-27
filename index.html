@@ -4,7 +4,12 @@
 <body><header class="hero"><div class="wrap"><p class="eyebrow">ESFA U11 GIRLS • NATIONAL KNOCKOUT</p><h1>ESFA Girls’ National KO 2026/27</h1><p>Competition-wide fixtures, results and an illustrative probability model.</p></div></header>
 <main class="wrap">
 <section class="journey"><div class="journey-head"><span>TOURNAMENT JOURNEY</span><small>Road to the national title</small></div><div class="stages"><div class="stage active"><strong>44</strong><span>Draw</span></div><i></i><div class="stage"><strong>32</strong><span>R2</span></div><i></i><div class="stage"><strong>16</strong><span>R3</span></div><i></i><div class="stage"><strong>8</strong><span>QF</span></div><i></i><div class="stage"><strong>4</strong><span>SF</span></div><i></i><div class="stage"><strong>2</strong><span>Final</span></div><i></i><div class="stage trophy"><strong>★</strong><span>Champion</span></div></div></section>
-<section class="summary"><div><span class="tag">COMPETITION TRACKER</span><h2>44 teams • 12 Round 1 ties • 20 byes</h2><p>Follow the 2026/27 national knockout as results are officially published.</p></div><div class="progress-card"><div class="progress-ring" id="progressRing"><div><strong id="progressPct">0%</strong><small>complete</small></div></div><p><strong id="resultCount">0 / 12</strong> Round 1 results published</p></div></section>
+<section class="stat-strip" aria-label="Competition overview">
+<div class="stat"><strong>44</strong><span>Teams</span></div>
+<div class="stat"><strong>12</strong><span>Round 1 ties</span></div>
+<div class="stat"><strong>20</strong><span>Byes</span></div>
+<div class="stat"><strong>2026/27</strong><span>Season</span></div>
+</section>
 <section class="model"><div class="section-title"><h2>Baseline title probability</h2><span>All 44 teams</span></div><p class="muted">The baseline uses historical performance in this exact ESFA U11 Girls competition plus the mathematical effect of a Round 1 bye. These are illustrative model probabilities, not betting odds.</p><div class="bars" id="bars"></div><p class="note">Baseline v1.0 • Frozen pre-tournament model. Bar lengths are scaled against the highest baseline probability.</p></section>
 <section><div class="section-title"><h2>Round 1 fixtures & results</h2><span>12 ties</span></div><div id="fixtures" class="fixtures"></div></section>
 <section><div class="section-title"><h2>All teams</h2><span>Baseline probability</span></div><div class="table-wrap"><table><thead><tr><th>#</th><th>Team</th><th>Round 1</th><th>Historical evidence</th><th>Chance</th></tr></thead><tbody id="teams"></tbody></table></div></section>
@@ -13,11 +18,6 @@
 <script>
 fetch('data.json').then(r=>r.json()).then(d=>{
  const officialFixtures=d.fixtures.map(m=>m[0]==='Newbury'&&m[1]==='Oxford'?[m[0],m[1],'','','Pending']:m);
- const complete=officialFixtures.filter(m=>m[4]==='Complete').length;
- const pct=Math.round(complete/officialFixtures.length*100);
- document.getElementById('resultCount').textContent=complete+' / '+officialFixtures.length;
- document.getElementById('progressPct').textContent=pct+'%';
- document.getElementById('progressRing').style.setProperty('--pct',pct*3.6+'deg');
  const f=document.getElementById('fixtures');
  officialFixtures.forEach(m=>{const x=document.createElement('div');x.className='fixture '+(m[4]==='Complete'?'complete':'');const s=m[4]==='Complete'?'<strong class="score">'+m[2]+'–'+m[3]+'</strong><small>FINAL</small>':'<strong class="vs">VS</strong><small>RESULT PENDING</small>';x.innerHTML='<span class="team home">'+m[0]+'</span><span class="mid">'+s+'</span><span class="team away">'+m[1]+'</span>';f.appendChild(x)});
  const sorted=[...d.teams].sort((a,b)=>b[4]-a[4]||a[0].localeCompare(b[0]));
