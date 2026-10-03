@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ESFA Girls’ National KO 2026/27 — Newbury Tracker</title><link rel="stylesheet" href="styles.css"></head>
+<body><header class="hero"><div class="wrap"><p class="eyebrow">NEWBURY DISTRICT GIRLS U11</p><h1>ESFA Girls’ National KO 2026/27</h1><p>Fixtures, results and an illustrative probability model.</p></div></header>
+<main class="wrap">
+<section class="result"><div><span class="tag">ROUND 1 • RESULT</span><h2>Newbury 4–3 Oxford</h2><p>Newbury came back from <strong>3–1 down at half-time</strong> to win 4–3.</p></div><div class="prob"><span>Pre-tournament</span><strong>1.41%</strong><small>Baseline v1.0</small></div></section>
+<section class="model"><h2>Baseline model</h2><p class="muted">The baseline uses historical performance in this exact ESFA U11 Girls competition plus the mathematical effect of a Round 1 bye. These are illustrative model probabilities, not betting odds.</p><div class="bars" id="bars"></div><p class="note">Baseline v1.0 • Newbury: 1.41% • Working v1.1 after the 4–3 Oxford result: 2.82%</p></section>
+<section><div class="section-title"><h2>Round 1 fixtures</h2><span>12 ties • 20 byes</span></div><div id="fixtures" class="fixtures"></div></section>
+<section><div class="section-title"><h2>Baseline title probability</h2><span>44 teams</span></div><div class="table-wrap"><table><thead><tr><th>#</th><th>Team</th><th>R1</th><th>Historical evidence</th><th>Chance</th></tr></thead><tbody id="teams"></tbody></table></div></section>
+<section class="sources"><h2>Sources & model note</h2><p>Draw: Gloucester Primary Schools FA. Historical honours: English Schools’ FA and preserved competition reporting. No league form, academy reputation or other cups are used in the baseline historical rating.</p><p><strong>Important:</strong> probabilities are an illustrative analytical model, not betting odds.</p></section>
+</main><footer><div class="wrap">Baseline v1.0 • 2026/27 competition tracker</div></footer>
+<script>
+fetch('data.json').then(r=>r.json()).then(d=>{
+ const f=document.getElementById('fixtures');
+ d.fixtures.forEach(m=>{const x=document.createElement('div');x.className='fixture'+(m[0]==='Newbury'?' newbury':'');const s=m[4]==='Complete'?'<strong>'+m[2]+'–'+m[3]+'</strong>':'<span class="pending">Result pending</span>';x.innerHTML='<span>'+m[0]+'</span><span class="mid">'+s+'</span><span>'+m[1]+'</span>';f.appendChild(x)});
+ const t=document.getElementById('teams');
+ [...d.teams].sort((a,b)=>b[4]-a[4]||a[0].localeCompare(b[0])).forEach((x,i)=>{const tr=document.createElement('tr');if(x[0]==='Newbury')tr.className='highlight';tr.innerHTML='<td>'+(i+1)+'</td><td><strong>'+x[0]+'</strong></td><td>'+(x[1]==='Bye'?'Bye':x[1])+'</td><td>'+x[3]+'</td><td>'+x[4].toFixed(2)+'%</td>';t.appendChild(tr)});
+ const b=document.getElementById('bars');[['Liverpool',4.23],['West Kent',4.79],['Brighton',5.36],['Chelmsford',2.11],['Leeds',2.11],['Newbury',1.41]].forEach(x=>{const r=document.createElement('div');r.className='bar';r.innerHTML='<span>'+x[0]+'</span><span class="track"><span class="fill" style="width:'+Math.min(x[1]/5.5*100,100)+'%"></span></span><strong>'+x[1].toFixed(2)+'%</strong>';b.appendChild(r)});
+});
+</script></body></html>
