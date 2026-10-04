@@ -115,12 +115,85 @@
             "away": "Afan Nedd",
             "status": "pending"
           }
+        ],
+        "byes": [
+          "Havering",
+          "Swale",
+          "Maidstone",
+          "Stockport",
+          "Merton",
+          "Barnsley",
+          "Hull",
+          "York",
+          "Bolton",
+          "Warrington",
+          "Medway",
+          "Brighton",
+          "Barnet",
+          "Rotherham",
+          "Gainsborough",
+          "Newcastle",
+          "South London",
+          "West Kent",
+          "Sunderland",
+          "Sutton"
         ]
       },
       "model": {
-        "simulation_status": "ready"
+        "baseline_status": "frozen",
+        "current_form_status": "active",
+        "simulation_status": "ready",
+        "historical_formula": "H=sum(recency*achievement); R=1+0.35H",
+        "historical_strength": {
+          "Havering": 1,
+          "Swale": 1,
+          "Maidstone": 1,
+          "Stockport": 1,
+          "Merton": 1,
+          "Barnsley": 1.0144375,
+          "Hull": 1,
+          "York": 1,
+          "Bolton": 1,
+          "Warrington": 1,
+          "Medway": 1,
+          "Brighton": 1.22225,
+          "Barnet": 1,
+          "Rotherham": 1,
+          "Gainsborough": 1.0144375,
+          "Newcastle": 1,
+          "South London": 1,
+          "West Kent": 1.224,
+          "Sunderland": 1,
+          "Sutton": 1,
+          "Swansea": 1,
+          "North Shropshire": 1,
+          "Lewisham": 1,
+          "Bexley": 1,
+          "Wirral": 1,
+          "Sefton": 1.0875,
+          "SE Sussex": 1,
+          "Chelmsford": 1.1019375,
+          "Newbury": 1,
+          "Oxford": 1,
+          "Stafford": 1,
+          "Wolverhampton": 1,
+          "Halton": 1,
+          "Liverpool": 1.81725,
+          "Rossendale": 1,
+          "Hyndburn & Ribble": 1,
+          "Leeds": 1.112,
+          "Selby": 1,
+          "Dover & Deal": 1,
+          "Canterbury": 1,
+          "Rugby": 1,
+          "South Birmingham": 1,
+          "West Cornwall": 1,
+          "Afan Nedd": 1
+        }
       },
       "data_status": {
+        "publication": "eligible",
+        "verification": "verified",
         "model": "ready"
       },
       "sources": {
@@ -128,16 +201,43 @@
           {
             "publisher": "Gloucestershire Primary Schools' FA (GPSFA)",
             "url": "https://www.gpsfa.com/cups/regional-competitons/",
-            "role": "Official 2026/27 National KO draw and Round 1 field"
+            "role": "Official 2026/27 National KO draw and Round 1 field",
+            "authority": "primary_public"
           }
         ],
         "authoritative_documents": [
           {
             "title": "Newbury_District_Fixtures_2627_ColourCoded.xlsx",
-            "role": "Participation, dates and fixture-document reconciliation"
+            "role": "Participation, dates and fixture-document reconciliation",
+            "type": "authoritative_derived_fixture_workbook",
+            "drive_file_id": "1QbajMIfC6ehFGHIpqn1xA8i5QQn97hdk",
+            "authority": "supporting"
           }
-        ]
-      }
+        ],
+        "source_status": "reconciled"
+      },
+      "structure": {
+        "entrants": 44,
+        "round1_ties": 12,
+        "round1_byes": 20,
+        "journey": [
+          44,
+          32,
+          16,
+          8,
+          4,
+          2,
+          1
+        ],
+        "post_round1_draw": "random_draw_model_assumption_pending_official_verification"
+      },
+      "provenance_notes": [
+        {
+          "subject": "Post-Round-1 draw mechanism",
+          "note": "GPSFA publishes empty numbered later-round slots but does not establish from the reconciled evidence whether pairings are fixed or redrawn.",
+          "resolution": "Retain random-draw modelling assumption as explicitly unverified; do not present it as an official rule."
+        }
+      ]
     },
     {
       "id": "southern-counties-girls-league",
@@ -160,7 +260,9 @@
           "w": 1,
           "d": 1,
           "l": 0,
-          "pts": 5
+          "pts": 5,
+          "gf": 6,
+          "ga": 3
         },
         {
           "team": "St Albans",
@@ -168,7 +270,9 @@
           "w": 1,
           "d": 1,
           "l": 0,
-          "pts": 5
+          "pts": 5,
+          "gf": 6,
+          "ga": 5
         },
         {
           "team": "Newbury",
@@ -176,7 +280,9 @@
           "w": 1,
           "d": 0,
           "l": 1,
-          "pts": 4
+          "pts": 4,
+          "gf": 7,
+          "ga": 4
         },
         {
           "team": "Dacorum",
@@ -184,7 +290,9 @@
           "w": 1,
           "d": 0,
           "l": 0,
-          "pts": 3
+          "pts": 3,
+          "gf": 3,
+          "ga": 1
         },
         {
           "team": "Gloucester",
@@ -192,7 +300,9 @@
           "w": 0,
           "d": 0,
           "l": 2,
-          "pts": 2
+          "pts": 2,
+          "gf": 4,
+          "ga": 7
         },
         {
           "team": "Wycombe",
@@ -200,7 +310,9 @@
           "w": 0,
           "d": 0,
           "l": 1,
-          "pts": 1
+          "pts": 1,
+          "gf": 0,
+          "ga": 6
         },
         {
           "team": "Woking",
@@ -208,11 +320,33 @@
           "w": 0,
           "d": 0,
           "l": 0,
-          "pts": 0
+          "pts": 0,
+          "gf": 0,
+          "ga": 0
         }
       ],
       "model": {
+        "baseline_status": "frozen",
+        "current_form_status": "active",
         "simulation_status": "ready",
+        "baseline_strength": {
+          "Woking": 1.66,
+          "Newbury": 1.64,
+          "St Albans": 1.2,
+          "Gloucester": 1.13,
+          "Dacorum": 1,
+          "Reigate & Banstead": 1,
+          "Wycombe": 1
+        },
+        "current_strength": {
+          "Woking": 1.66,
+          "Newbury": 1.5777,
+          "St Albans": 1.307,
+          "Reigate & Banstead": 1.1946,
+          "Dacorum": 1.1469,
+          "Wycombe": 0.8726,
+          "Gloucester": 0.8712
+        },
         "current_title_probability_pct": {
           "Woking": 25.77,
           "St Albans": 19.44,
@@ -221,9 +355,16 @@
           "Dacorum": 15.73,
           "Wycombe": 2.52,
           "Gloucester": 0.96
+        },
+        "probability_precision": "rounded_2dp",
+        "probability_display": {
+          "unit": "percent",
+          "decimal_places": 2
         }
       },
       "data_status": {
+        "publication": "eligible",
+        "verification": "verified_with_documented_gaps",
         "model": "ready"
       },
       "sources": {
@@ -231,16 +372,74 @@
           {
             "publisher": "Gloucestershire Primary Schools' FA (GPSFA)",
             "url": "https://www.gpsfa.com/cups/berkshire-league/",
-            "role": "Official Southern Counties Girls' League page"
+            "role": "Official Southern Counties Girls' League page",
+            "authority": "primary_public"
           }
         ],
         "authoritative_documents": [
           {
             "title": "Newbury_District_Fixtures_2627_ColourCoded.xlsx",
-            "role": "Participation and fixture reconciliation"
+            "role": "Participation and fixture reconciliation",
+            "type": "authoritative_derived_fixture_workbook",
+            "drive_file_id": "1QbajMIfC6ehFGHIpqn1xA8i5QQn97hdk",
+            "authority": "supporting"
           }
-        ]
-      }
+        ],
+        "source_status": "reconciled"
+      },
+      "structure": {
+        "format": "double_round_robin",
+        "teams": 7,
+        "matches_per_team": 12,
+        "total_matches": 42,
+        "played": 5,
+        "remaining": 37,
+        "points": {
+          "win": 3,
+          "draw": 2,
+          "loss": 1
+        },
+        "championship_tiebreak": "unverified"
+      },
+      "results": [
+        {
+          "home": "Dacorum",
+          "away": "Gloucester",
+          "home_score": 3,
+          "away_score": 1
+        },
+        {
+          "home": "Gloucester",
+          "away": "St Albans",
+          "home_score": 3,
+          "away_score": 4
+        },
+        {
+          "home": "Newbury",
+          "away": "Wycombe",
+          "home_score": 6,
+          "away_score": 0
+        },
+        {
+          "home": "Reigate & Banstead",
+          "away": "Newbury",
+          "home_score": 4,
+          "away_score": 1
+        },
+        {
+          "home": "St Albans",
+          "away": "Reigate & Banstead",
+          "home_score": 2,
+          "away_score": 2
+        }
+      ],
+      "provenance_notes": [
+        {
+          "subject": "2026/27 participant/result state",
+          "note": "The crawlable GPSFA page snapshot is stale (six teams and zero results). A newer official user-supplied GPSFA snapshot is the authority for the seven-team field and current results.",
+          "resolution": "Do not downgrade newer verified state from stale crawl."
+        }
+      ]
     },
     {
       "id": "southern-counties-girls-cup",
@@ -264,19 +463,28 @@
         "fixtures": [
           {
             "home": "Newbury",
-            "away": "Oxford"
+            "away": "Oxford",
+            "date": "2026-11-21",
+            "status": "scheduled"
           },
           {
             "home": "East Cornwall",
-            "away": "Gloucester"
+            "away": "Gloucester",
+            "date": "2026-11-21",
+            "status": "scheduled"
           },
           {
             "home": "St Albans",
-            "away": "Merton"
+            "away": "Merton",
+            "date": "2026-11-21",
+            "status": "scheduled"
           }
         ]
       },
       "model": {
+        "baseline_status": "frozen",
+        "baseline_strength_basis": "neutral_all_entrants_insufficient_systematic_history",
+        "current_form_status": "active",
         "simulation_status": "ready",
         "current_title_probability_pct": {
           "Reigate & Banstead": 14.63,
@@ -290,9 +498,16 @@
           "Oxford": 6.6,
           "Merton": 5.78,
           "Gloucester": 3.98
+        },
+        "probability_precision": "rounded_2dp",
+        "probability_display": {
+          "unit": "percent",
+          "decimal_places": 2
         }
       },
       "data_status": {
+        "publication": "eligible",
+        "verification": "verified",
         "model": "ready"
       },
       "sources": {
@@ -300,16 +515,55 @@
           {
             "publisher": "Gloucestershire Primary Schools' FA (GPSFA)",
             "url": "https://www.gpsfa.com/southern-counties-cup/",
-            "role": "Official 2026/27 Girls' Southern Counties Cup draw"
+            "role": "Official 2026/27 Girls' Southern Counties Cup draw",
+            "authority": "primary_public"
           }
         ],
         "authoritative_documents": [
           {
             "title": "Newbury_District_Fixtures_2627_ColourCoded.xlsx",
-            "role": "Participation and date reconciliation"
+            "role": "Participation and date reconciliation",
+            "type": "authoritative_derived_fixture_workbook",
+            "drive_file_id": "1QbajMIfC6ehFGHIpqn1xA8i5QQn97hdk",
+            "authority": "supporting"
           }
+        ],
+        "source_status": "reconciled"
+      },
+      "structure": {
+        "entrants": 11,
+        "round1_ties": 3,
+        "quarterfinal_byes": 5,
+        "semifinal_final_date": "2027-05-15",
+        "semifinal_final_venue": "Oxford City FC"
+      },
+      "quarterfinals": [
+        [
+          "Winner St Albans/Merton",
+          "Reigate & Banstead"
+        ],
+        [
+          "Sutton",
+          "Woking"
+        ],
+        [
+          "Winner Newbury/Oxford",
+          "Winner East Cornwall/Gloucester"
+        ],
+        [
+          "Wycombe",
+          "Hackney"
         ]
-      }
+      ],
+      "provenance_notes": [
+        {
+          "subject": "Newbury v Oxford, Round 1",
+          "published_value": "Newbury v Oxford",
+          "authority_used": "GPSFA official Girls' Southern Counties Cup draw",
+          "conflict": "A stale derived workbook subtable records Newbury v Gloucester; another workbook view and GPSFA record Newbury v Oxford.",
+          "resolution": "Publish Newbury v Oxford."
+        }
+      ]
     },
     {
       "id": "southern-counties-league-cup-girls",
@@ -327,10 +581,24 @@
         "Woking"
       ],
       "model": {
+        "baseline_status": "frozen",
+        "baseline_strength": {
+          "Woking": 1.255,
+          "Hackney": 1,
+          "Merton": 1,
+          "Newbury": 1,
+          "Oxford": 1,
+          "Reigate & Banstead": 1,
+          "St Albans": 1,
+          "Sutton": 1
+        },
+        "current_form_status": "active",
         "simulation_status": "withheld",
         "blocker": "Tournament Two qualification/allocation rule unverified"
       },
       "data_status": {
+        "publication": "eligible",
+        "verification": "verified_with_documented_gaps",
         "model": "withheld"
       },
       "sources": {
@@ -338,16 +606,44 @@
           {
             "publisher": "Gloucestershire Primary Schools' FA (GPSFA)",
             "url": "https://www.gpsfa.com/southern-counties-league-cup/",
-            "role": "Official Tournament One field and Tournament Two tiers"
+            "role": "Official Tournament One field and Tournament Two tiers",
+            "authority": "primary_public"
           }
         ],
         "authoritative_documents": [
           {
             "title": "Newbury_District_Fixtures_2627_ColourCoded.xlsx",
-            "role": "Participation and date reconciliation"
+            "role": "Participation and date reconciliation",
+            "type": "authoritative_derived_fixture_workbook",
+            "drive_file_id": "1QbajMIfC6ehFGHIpqn1xA8i5QQn97hdk",
+            "authority": "supporting"
           }
-        ]
-      }
+        ],
+        "source_status": "reconciled"
+      },
+      "structure": {
+        "tournament_one": {
+          "date": "2026-10-17",
+          "venue": "Woking",
+          "teams": 8
+        },
+        "tournament_two": {
+          "date": "2027-04-24",
+          "tiers": [
+            "Champions Trophy",
+            "Intermediate Competition",
+            "Plate Trophy"
+          ],
+          "allocation_rule": "unverified"
+        }
+      },
+      "provenance_notes": [
+        {
+          "subject": "Tournament Two allocation",
+          "note": "GPSFA confirms Champions Trophy, Intermediate Competition and Plate Trophy, but the qualification/allocation formula is not published in the reconciled source.",
+          "resolution": "Keep overall championship simulation withheld."
+        }
+      ]
     },
     {
       "id": "southern-counties-girls-trophy",
@@ -363,10 +659,22 @@
         "Woking"
       ],
       "model": {
+        "baseline_status": "neutral",
+        "baseline_strength": {
+          "Dacorum": 1,
+          "Gloucester": 1,
+          "Newbury": 1,
+          "Reigate & Banstead": 1,
+          "St Albans": 1,
+          "Woking": 1
+        },
+        "current_form_status": "active",
         "simulation_status": "withheld",
         "blocker": "Competition mechanics insufficiently verified"
       },
       "data_status": {
+        "publication": "eligible",
+        "verification": "verified_with_documented_gaps",
         "model": "withheld"
       },
       "sources": {
@@ -374,16 +682,60 @@
           {
             "publisher": "Gloucestershire Primary Schools' FA (GPSFA)",
             "url": "https://www.gpsfa.com/cups/berkshire-league/",
-            "role": "Official SC Girls' Trophy standings section"
+            "role": "Official SC Girls' Trophy standings section",
+            "authority": "primary_public"
           }
         ],
         "authoritative_documents": [
           {
             "title": "Newbury_District_Fixtures_2627_ColourCoded.xlsx",
-            "role": "Participation, date and venue reconciliation"
+            "role": "Participation, date and venue reconciliation",
+            "type": "authoritative_derived_fixture_workbook",
+            "drive_file_id": "1QbajMIfC6ehFGHIpqn1xA8i5QQn97hdk",
+            "authority": "supporting"
           }
-        ]
-      }
+        ],
+        "source_status": "reconciled"
+      },
+      "structure": {
+        "date": "2027-05-08",
+        "venue": "Oxford City FC",
+        "standings_table_confirmed": true,
+        "match_format": "unverified",
+        "scoring_system": "unverified",
+        "winner_mechanism": "unverified",
+        "tiebreak": "unverified"
+      },
+      "provenance_notes": [
+        {
+          "subject": "Competition mechanics",
+          "note": "GPSFA confirms the SC Girls' Trophy standings section; the authoritative fixture workbook confirms 8 May 2027 and Oxford City FC. Detailed match/scoring/winner/tie-break mechanics remain unverified.",
+          "resolution": "Keep title simulation withheld."
+        }
+      ]
     }
-  ]
+  ],
+  "last_updated": "2026-10-04",
+  "site": {
+    "name": "Girls District Football",
+    "subtitle": "2026/27 Competition Tracker"
+  },
+  "methodology": {
+    "model_version": "2.0",
+    "draw_prior": 0.24,
+    "home_advantage": 0,
+    "simulation_runs": 100000,
+    "fixed_seed": 20261004,
+    "current_form_transfer": 0.25,
+    "note": "Baseline models are competition-specific. Current form uses verified equivalent 2026/27 girls representative competitive results."
+  },
+  "held_competitions": [
+    {
+      "id": "southern-counties-7aside-girls",
+      "name": "Southern Counties 7-a-side Cup — Girls",
+      "public_eligible": false,
+      "reason": "Insufficient usable public GPSFA girls-specific competition data."
+    }
+  ],
+  "provenance_status": "reconciled_with_documented_gaps"
 }
