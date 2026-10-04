@@ -1,0 +1,389 @@
+{
+  "schema_version": "1.2.0",
+  "season": "2026/27",
+  "competitions": [
+    {
+      "id": "national-ko",
+      "name": "ESFA U11 Girls Inter-Association / National KO",
+      "public_eligible": true,
+      "type": "knockout",
+      "participants": [
+        "Havering",
+        "Swale",
+        "Maidstone",
+        "Stockport",
+        "Merton",
+        "Barnsley",
+        "Hull",
+        "York",
+        "Bolton",
+        "Warrington",
+        "Medway",
+        "Brighton",
+        "Barnet",
+        "Rotherham",
+        "Gainsborough",
+        "Newcastle",
+        "South London",
+        "West Kent",
+        "Sunderland",
+        "Sutton",
+        "Swansea",
+        "North Shropshire",
+        "Lewisham",
+        "Bexley",
+        "Wirral",
+        "Sefton",
+        "SE Sussex",
+        "Chelmsford",
+        "Newbury",
+        "Oxford",
+        "Stafford",
+        "Wolverhampton",
+        "Halton",
+        "Liverpool",
+        "Rossendale",
+        "Hyndburn & Ribble",
+        "Leeds",
+        "Selby",
+        "Dover & Deal",
+        "Canterbury",
+        "Rugby",
+        "South Birmingham",
+        "West Cornwall",
+        "Afan Nedd"
+      ],
+      "round1": {
+        "fixtures": [
+          {
+            "home": "Swansea",
+            "away": "North Shropshire",
+            "status": "pending"
+          },
+          {
+            "home": "Lewisham",
+            "away": "Bexley",
+            "status": "pending"
+          },
+          {
+            "home": "Wirral",
+            "away": "Sefton",
+            "status": "pending"
+          },
+          {
+            "home": "SE Sussex",
+            "away": "Chelmsford",
+            "status": "pending"
+          },
+          {
+            "home": "Newbury",
+            "away": "Oxford",
+            "status": "pending"
+          },
+          {
+            "home": "Stafford",
+            "away": "Wolverhampton",
+            "status": "pending"
+          },
+          {
+            "home": "Halton",
+            "away": "Liverpool",
+            "status": "pending"
+          },
+          {
+            "home": "Rossendale",
+            "away": "Hyndburn & Ribble",
+            "status": "pending"
+          },
+          {
+            "home": "Leeds",
+            "away": "Selby",
+            "status": "pending"
+          },
+          {
+            "home": "Dover & Deal",
+            "away": "Canterbury",
+            "status": "pending"
+          },
+          {
+            "home": "Rugby",
+            "away": "South Birmingham",
+            "status": "pending"
+          },
+          {
+            "home": "West Cornwall",
+            "away": "Afan Nedd",
+            "status": "pending"
+          }
+        ]
+      },
+      "model": {
+        "simulation_status": "ready"
+      },
+      "data_status": {
+        "model": "ready"
+      },
+      "sources": {
+        "official_public": [
+          {
+            "publisher": "Gloucestershire Primary Schools' FA (GPSFA)",
+            "url": "https://www.gpsfa.com/cups/regional-competitons/",
+            "role": "Official 2026/27 National KO draw and Round 1 field"
+          }
+        ],
+        "authoritative_documents": [
+          {
+            "title": "Newbury_District_Fixtures_2627_ColourCoded.xlsx",
+            "role": "Participation, dates and fixture-document reconciliation"
+          }
+        ]
+      }
+    },
+    {
+      "id": "southern-counties-girls-league",
+      "name": "Southern Counties Girls' League",
+      "public_eligible": true,
+      "type": "league",
+      "participants": [
+        "Dacorum",
+        "Gloucester",
+        "Newbury",
+        "Reigate & Banstead",
+        "St Albans",
+        "Woking",
+        "Wycombe"
+      ],
+      "standings": [
+        {
+          "team": "Reigate & Banstead",
+          "p": 2,
+          "w": 1,
+          "d": 1,
+          "l": 0,
+          "pts": 5
+        },
+        {
+          "team": "St Albans",
+          "p": 2,
+          "w": 1,
+          "d": 1,
+          "l": 0,
+          "pts": 5
+        },
+        {
+          "team": "Newbury",
+          "p": 2,
+          "w": 1,
+          "d": 0,
+          "l": 1,
+          "pts": 4
+        },
+        {
+          "team": "Dacorum",
+          "p": 1,
+          "w": 1,
+          "d": 0,
+          "l": 0,
+          "pts": 3
+        },
+        {
+          "team": "Gloucester",
+          "p": 2,
+          "w": 0,
+          "d": 0,
+          "l": 2,
+          "pts": 2
+        },
+        {
+          "team": "Wycombe",
+          "p": 1,
+          "w": 0,
+          "d": 0,
+          "l": 1,
+          "pts": 1
+        },
+        {
+          "team": "Woking",
+          "p": 0,
+          "w": 0,
+          "d": 0,
+          "l": 0,
+          "pts": 0
+        }
+      ],
+      "model": {
+        "simulation_status": "ready",
+        "current_title_probability_pct": {
+          "Woking": 25.77,
+          "St Albans": 19.44,
+          "Newbury": 17.97,
+          "Reigate & Banstead": 17.63,
+          "Dacorum": 15.73,
+          "Wycombe": 2.52,
+          "Gloucester": 0.96
+        }
+      },
+      "data_status": {
+        "model": "ready"
+      },
+      "sources": {
+        "official_public": [
+          {
+            "publisher": "Gloucestershire Primary Schools' FA (GPSFA)",
+            "url": "https://www.gpsfa.com/cups/berkshire-league/",
+            "role": "Official Southern Counties Girls' League page"
+          }
+        ],
+        "authoritative_documents": [
+          {
+            "title": "Newbury_District_Fixtures_2627_ColourCoded.xlsx",
+            "role": "Participation and fixture reconciliation"
+          }
+        ]
+      }
+    },
+    {
+      "id": "southern-counties-girls-cup",
+      "name": "Girls' Southern Counties Cup",
+      "public_eligible": true,
+      "type": "knockout",
+      "participants": [
+        "Newbury",
+        "Oxford",
+        "East Cornwall",
+        "Gloucester",
+        "St Albans",
+        "Merton",
+        "Reigate & Banstead",
+        "Sutton",
+        "Woking",
+        "Wycombe",
+        "Hackney"
+      ],
+      "round1": {
+        "fixtures": [
+          {
+            "home": "Newbury",
+            "away": "Oxford"
+          },
+          {
+            "home": "East Cornwall",
+            "away": "Gloucester"
+          },
+          {
+            "home": "St Albans",
+            "away": "Merton"
+          }
+        ]
+      },
+      "model": {
+        "simulation_status": "ready",
+        "current_title_probability_pct": {
+          "Reigate & Banstead": 14.63,
+          "Hackney": 13.26,
+          "Woking": 12.4,
+          "Sutton": 12.36,
+          "Wycombe": 9.92,
+          "St Albans": 7.35,
+          "East Cornwall": 7.02,
+          "Newbury": 6.71,
+          "Oxford": 6.6,
+          "Merton": 5.78,
+          "Gloucester": 3.98
+        }
+      },
+      "data_status": {
+        "model": "ready"
+      },
+      "sources": {
+        "official_public": [
+          {
+            "publisher": "Gloucestershire Primary Schools' FA (GPSFA)",
+            "url": "https://www.gpsfa.com/southern-counties-cup/",
+            "role": "Official 2026/27 Girls' Southern Counties Cup draw"
+          }
+        ],
+        "authoritative_documents": [
+          {
+            "title": "Newbury_District_Fixtures_2627_ColourCoded.xlsx",
+            "role": "Participation and date reconciliation"
+          }
+        ]
+      }
+    },
+    {
+      "id": "southern-counties-league-cup-girls",
+      "name": "Southern Counties League Cup — Girls",
+      "public_eligible": true,
+      "type": "tournament",
+      "participants": [
+        "Hackney",
+        "Merton",
+        "Newbury",
+        "Oxford",
+        "Reigate & Banstead",
+        "St Albans",
+        "Sutton",
+        "Woking"
+      ],
+      "model": {
+        "simulation_status": "withheld",
+        "blocker": "Tournament Two qualification/allocation rule unverified"
+      },
+      "data_status": {
+        "model": "withheld"
+      },
+      "sources": {
+        "official_public": [
+          {
+            "publisher": "Gloucestershire Primary Schools' FA (GPSFA)",
+            "url": "https://www.gpsfa.com/southern-counties-league-cup/",
+            "role": "Official Tournament One field and Tournament Two tiers"
+          }
+        ],
+        "authoritative_documents": [
+          {
+            "title": "Newbury_District_Fixtures_2627_ColourCoded.xlsx",
+            "role": "Participation and date reconciliation"
+          }
+        ]
+      }
+    },
+    {
+      "id": "southern-counties-girls-trophy",
+      "name": "Southern Counties Girls' Trophy",
+      "public_eligible": true,
+      "type": "tournament",
+      "participants": [
+        "Dacorum",
+        "Gloucester",
+        "Newbury",
+        "Reigate & Banstead",
+        "St Albans",
+        "Woking"
+      ],
+      "model": {
+        "simulation_status": "withheld",
+        "blocker": "Competition mechanics insufficiently verified"
+      },
+      "data_status": {
+        "model": "withheld"
+      },
+      "sources": {
+        "official_public": [
+          {
+            "publisher": "Gloucestershire Primary Schools' FA (GPSFA)",
+            "url": "https://www.gpsfa.com/cups/berkshire-league/",
+            "role": "Official SC Girls' Trophy standings section"
+          }
+        ],
+        "authoritative_documents": [
+          {
+            "title": "Newbury_District_Fixtures_2627_ColourCoded.xlsx",
+            "role": "Participation, date and venue reconciliation"
+          }
+        ]
+      }
+    }
+  ]
+}
