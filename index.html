@@ -1,31 +1,7 @@
-<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>ESFA Girls’ National KO 2026/27 — Competition Tracker</title><link rel="stylesheet" href="styles.css"></head>
-<body><header class="hero"><div class="wrap"><p class="eyebrow">ESFA U11 GIRLS • NATIONAL KNOCKOUT</p><h1>ESFA Girls’ National KO 2026/27</h1><p>Competition-wide fixtures, results and an illustrative probability model.</p></div></header>
-<main class="wrap">
-<section class="journey"><div class="journey-head"><span>TOURNAMENT JOURNEY</span><small>Current stage: Round 1</small></div><div class="stages"><div class="stage active"><strong>44</strong><span>Competition draw</span></div><i></i><div class="stage"><strong>32</strong><span>Round 2</span></div><i></i><div class="stage"><strong>16</strong><span>Round 3</span></div><i></i><div class="stage"><strong>8</strong><span>Quarter-finals</span></div><i></i><div class="stage"><strong>4</strong><span>Semi-finals</span></div><i></i><div class="stage"><strong>2</strong><span>Final</span></div><i></i><div class="stage trophy"><strong>★</strong><span>Champion</span></div></div></section>
-<section class="stat-strip" aria-label="Competition overview">
-<div class="stat"><strong>44</strong><span>Teams</span></div>
-<div class="stat"><strong>12</strong><span>Round 1 ties</span></div>
-<div class="stat"><strong>20</strong><span>Byes</span></div>
-<div class="stat"><strong>2026/27</strong><span>Season</span></div>
-</section>
-<section class="insight"><div class="insight-head"><span class="kicker">MODEL SNAPSHOT</span><h2>Why the leading three start ahead</h2><p>The opening probabilities combine verified history in this competition with each team’s route through Round 1.</p></div><div class="leaders"><article><div class="leader-top"><span>01</span><strong>Brighton</strong><b>5.36%</b></div><p>Brighton’s verified record includes the 2023 title and a 2026 quarter-final. That historical weighting, combined with a Round 1 bye, gives them the highest baseline probability.</p></article><article><div class="leader-top"><span>02</span><strong>West Kent</strong><b>4.79%</b></div><p>West Kent’s position is supported by their verified 2024 championship. The champion weighting combines with a Round 1 bye in the baseline model.</p></article><article><div class="leader-top"><span>03</span><strong>Liverpool</strong><b>4.23%</b></div><p>Liverpool have the deepest verified history: champions in 2021, 2025 and 2026, plus runners-up in 2022. They receive the strongest historical multiplier, but must play Halton in Round 1 while Brighton and West Kent have byes.</p></article></div><p class="insight-note">As official 2026/27 results are added, the working probabilities can be updated to reflect this season while preserving this frozen pre-tournament baseline for comparison.</p></section><section class="model"><div class="section-title"><h2>Baseline title probability</h2><span>All 44 teams</span></div><p class="muted">The baseline uses historical performance in this exact ESFA U11 Girls competition plus the mathematical effect of a Round 1 bye. These are illustrative model probabilities, not betting odds.</p><div class="bars" id="bars"></div><p class="note">Baseline v1.0 • Frozen pre-tournament model. Bar lengths are scaled against the highest baseline probability.</p></section>
-<section><div class="section-title"><h2>Round 1 fixtures & results</h2><span>12 ties</span></div><div id="fixtures" class="fixtures"></div></section>
-<section><div class="section-title"><h2>All teams</h2><span>Baseline probability</span></div><div class="table-wrap"><table><thead><tr><th>#</th><th>Team</th><th>Round 1</th><th>Historical evidence</th><th>Chance</th></tr></thead><tbody id="teams"></tbody></table></div></section>
-<section class="update-status"><span>DATA STATUS</span><strong>Last updated: 3 October 2026</strong><p>Results are added when officially published. Baseline v1.0 remains frozen for comparison as the competition progresses.</p></section>
-<section class="sources"><h2>Sources & model note</h2><p>Draw: Gloucester Primary Schools FA. Historical honours: English Schools’ FA and preserved competition reporting. No league form, academy reputation or other cups are used in the baseline historical rating.</p><p><strong>Important:</strong> probabilities are an illustrative analytical model, not betting odds. Results will be added to this tracker as they are confirmed.</p></section>
-</main><footer><div class="wrap">ESFA Girls’ National KO 2026/27 • Competition tracker • Baseline v1.0</div></footer>
-<script>
-fetch('data.json').then(r=>r.json()).then(d=>{
- const officialFixtures=d.fixtures.map(m=>m[0]==='Newbury'&&m[1]==='Oxford'?[m[0],m[1],'','','Pending']:m);
- const f=document.getElementById('fixtures');
- officialFixtures.forEach(m=>{const x=document.createElement('div');x.className='fixture '+(m[4]==='Complete'?'complete':'');const s=m[4]==='Complete'?'<strong class="score">'+m[2]+'–'+m[3]+'</strong><small>FINAL</small>':'<strong class="vs">VS</strong><small>RESULT PENDING</small>';x.innerHTML='<span class="team home">'+m[0]+'</span><span class="mid">'+s+'</span><span class="team away">'+m[1]+'</span>';f.appendChild(x)});
- const sorted=[...d.teams].sort((a,b)=>b[4]-a[4]||a[0].localeCompare(b[0]));
- const max=Math.max(...sorted.map(x=>x[4]));
- const b=document.getElementById('bars');
- sorted.forEach((x,i)=>{const r=document.createElement('div');r.className='bar';r.innerHTML='<span class="bar-rank">'+(i+1)+'</span><span class="bar-team">'+x[0]+'</span><span class="track"><span class="fill" style="width:'+(x[4]/max*100)+'%"></span></span><strong>'+x[4].toFixed(2)+'%</strong>';b.appendChild(r)});
- const t=document.getElementById('teams');
- sorted.forEach((x,i)=>{const tr=document.createElement('tr');tr.innerHTML='<td>'+(i+1)+'</td><td><strong>'+x[0]+'</strong></td><td>'+(x[1]==='Bye'?'Bye':'v '+x[2])+'</td><td>'+x[3]+'</td><td><strong>'+x[4].toFixed(2)+'%</strong></td>';t.appendChild(tr)});
-});
-</script></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Girls District Football — 2026/27 Competition Tracker</title><link rel="stylesheet" href="styles.css"></head>
+<body><header class="hero"><div class="wrap"><p class="eyebrow">GIRLS DISTRICT FOOTBALL</p><h1>2026/27 Competition Tracker</h1><p>Fixtures, results, standings and tournament progress across selected girls’ district football competitions.</p></div></header>
+<main class="wrap"><section class="stat-strip"><div class="stat"><strong>5</strong><span>Competitions</span></div><div class="stat"><strong>2026/27</strong><span>Season</span></div><div class="stat"><strong>V2.0</strong><span>Model</span></div><div class="stat"><strong>Verified</strong><span>Source-led</span></div></section>
+<section><div class="section-title"><h2>Competitions</h2><span>Official data & analytical models</span></div><div id="cards" class="cards"></div></section>
+<section><div id="tabs" class="tabs"></div><div id="competition" class="view active"></div></section>
+<section class="panel"><span class="kicker">MODEL NOTE</span><h2>Evidence-led probabilities</h2><p class="muted">Baseline models are competition-specific and frozen before results influence them. Current form uses verified 2026/27 equivalent girls’ representative competitive results. Probabilities are illustrative analytical estimates, not betting odds.</p></section></main>
+<footer><div class="wrap">Girls District Football · 2026/27 Competition Tracker · Data contract V1.2</div></footer><script src="app.js"></script></body></html>
