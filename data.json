@@ -18,7 +18,7 @@
       "cross_competition_transfer": 0.25
     }
   },
-  "model_note": "Current V2 uses officially published 2026/27 results. Round Two pairings use the GPSFA draw structure supplied from the live competition page, with published Round One winners substituted where the draw display had not yet refreshed. Progression without a published score does not create invented score evidence.",
+  "model_note": "Current V2 uses officially published 2026/27 results. Round Two pairings use the confirmed GPSFA draw. Where a surviving team has no published 2026/27 score evidence, its frozen baseline probability is retained as the current display value until verified evidence becomes available. No unpublished score is inferred.",
   "teams": [
     [
       "Swansea",
@@ -26,7 +26,7 @@
       "North Shropshire",
       "No verified deep run found",
       1.409443269908386,
-      null
+      1.409
     ],
     [
       "North Shropshire",
@@ -42,7 +42,7 @@
       "Bexley",
       "No verified deep run found",
       1.409443269908386,
-      null
+      1.409
     ],
     [
       "Bexley",
@@ -58,7 +58,7 @@
       "",
       "No verified deep run found",
       2.818886539816772,
-      null
+      2.819
     ],
     [
       "Swale",
@@ -66,7 +66,7 @@
       "",
       "No verified deep run found",
       2.818886539816772,
-      null
+      2.819
     ],
     [
       "Maidstone",
@@ -74,7 +74,7 @@
       "",
       "No verified deep run found",
       2.818886539816772,
-      null
+      2.819
     ],
     [
       "Stockport",
@@ -82,7 +82,7 @@
       "",
       "No verified deep run found",
       2.818886539816772,
-      null
+      2.819
     ],
     [
       "Merton",
@@ -90,7 +90,7 @@
       "",
       "No verified deep run found",
       2.818886539816772,
-      null
+      2.819
     ],
     [
       "Barnsley",
@@ -130,7 +130,7 @@
       "",
       "No verified deep run found",
       2.818886539816772,
-      null
+      2.819
     ],
     [
       "Bolton",
@@ -186,7 +186,7 @@
       "",
       "No verified deep run found",
       2.818886539816772,
-      null
+      2.819
     ],
     [
       "Brighton",
@@ -210,7 +210,7 @@
       "",
       "No verified deep run found",
       2.818886539816772,
-      null
+      2.819
     ],
     [
       "Gainsborough",
@@ -242,7 +242,7 @@
       "",
       "No verified deep run found",
       2.818886539816772,
-      null
+      2.819
     ],
     [
       "Halton",
@@ -282,7 +282,7 @@
       "",
       "No verified deep run found",
       2.818886539816772,
-      null
+      2.819
     ],
     [
       "Leeds",
@@ -314,7 +314,7 @@
       "Dover & Deal",
       "No verified deep run found",
       1.409443269908386,
-      null
+      1.409
     ],
     [
       "West Kent",
@@ -330,7 +330,7 @@
       "",
       "No verified deep run found",
       2.818886539816772,
-      null
+      2.819
     ],
     [
       "Sutton",
@@ -338,7 +338,7 @@
       "",
       "No verified deep run found",
       2.818886539816772,
-      null
+      2.819
     ],
     [
       "Rugby",
@@ -346,7 +346,7 @@
       "South Birmingham",
       "No verified deep run found",
       1.409443269908386,
-      null
+      1.409
     ],
     [
       "South Birmingham",
