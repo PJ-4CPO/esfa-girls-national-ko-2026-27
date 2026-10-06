@@ -2,3 +2,5 @@
 .stage.complete strong{border-color:var(--cyan)!important;color:#fff!important;background:rgba(40,120,255,.18)!important;box-shadow:0 0 24px rgba(53,214,255,.13)}.stage.complete span{color:var(--cyan)!important}
 
 .eliminated{grid-column:1/-1;margin-top:10px;padding-top:15px;border-top:1px solid #233044;display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center}.eliminated-label{width:100%;color:#657589;font-size:.6rem;font-weight:800;letter-spacing:.13em}.eliminated-team{display:flex;gap:6px;align-items:center;color:#657589;font-size:.7rem}.eliminated-team s{text-decoration-color:#657589}.eliminated-team strong{color:#657589;font-size:.68rem;font-weight:600}
+
+.round-byes{margin-top:22px;padding:18px;border:1px solid var(--line);border-radius:14px;background:var(--panel)}.round-byes p{margin:7px 0 14px;color:var(--muted);font-size:.78rem}.bye-teams{display:flex;flex-wrap:wrap;gap:8px}.bye-team{padding:6px 9px;border:1px solid var(--line);border-radius:999px;background:var(--panel2);color:var(--muted);font-size:.68rem;font-weight:700}
