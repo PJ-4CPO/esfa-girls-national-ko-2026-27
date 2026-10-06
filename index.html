@@ -17,11 +17,10 @@
 <section class="sources"><h2>Sources & model note</h2><p>Draw: Gloucester Primary Schools FA. Historical honours: English Schools’ FA and preserved competition reporting. No league form, academy reputation or other cups are used in the baseline historical rating.</p><p><strong>Important:</strong> probabilities are an illustrative analytical model, not betting odds. Results will be added to this tracker as they are confirmed.</p></section>
 </main><footer><div class="wrap">ESFA Girls’ National KO 2026/27 • Competition tracker • Current V2.0</div></footer>
 <script>
-fetch('data.json?v=20261006-r2').then(r=>r.json()).then(d=>{
+fetch('data.json?v=20261006-probability-fix').then(r=>r.json()).then(d=>{
  const f=document.getElementById('fixtures');
  d.fixtures.forEach((m,i)=>{const x=document.createElement('div');x.className='fixture '+(m[4]==='Complete'?'complete':'');const tie='1.'+String(i+1).padStart(2,'0');let s;if(m[4]==='Complete')s='<strong class="score">'+m[2]+'–'+m[3]+'</strong><small>'+tie+' · FINAL</small>';else if(m[4]==='Progressed')s='<strong class="vs">→</strong><small>'+tie+' · PROGRESSED</small>';else s='<strong class="vs">VS</strong><small>'+tie+' · RESULT PENDING</small>';x.innerHTML='<span class="team home">'+m[0]+'</span><span class="mid">'+s+'</span><span class="team away">'+m[1]+'</span>';f.appendChild(x)});
 
- const byes=document.getElementById('round1-byes');d.teams.filter(x=>x[1]==='Bye').map(x=>x[0]).sort((a,b)=>a.localeCompare(b)).forEach(name=>{const s=document.createElement('span');s.className='bye-team';s.textContent=name;byes.appendChild(s)});
  const baseline=[...d.teams].sort((a,b)=>b[4]-a[4]||a[0].localeCompare(b[0]));
  const ranked=[...d.teams].sort((a,b)=>(b[5]??-1)-(a[5]??-1)||b[4]-a[4]||a[0].localeCompare(b[0]));
  const known=ranked.filter(x=>x[5]!==null); const max=Math.max(...known.map(x=>x[5]));
