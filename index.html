@@ -28,7 +28,7 @@ fetch('data.json?v=20261006-r2').then(r=>r.json()).then(d=>{
  const active=ranked.filter(x=>x[5]!==0);
  const eliminated=ranked.filter(x=>x[5]===0);
  active.forEach((x,i)=>{const val=x[5];const r=document.createElement('div');r.className='bar';r.innerHTML='<span class="bar-rank">'+(i+1)+'</span><span class="bar-team">'+x[0]+'</span><span class="track"><span class="fill" style="width:'+((val??0)/max*100)+'%"></span></span><strong>'+(val===null?'Pending':val.toFixed(2)+'%')+'</strong>';bars.appendChild(r)});
- if(eliminated.length){const e=document.createElement('div');e.className='eliminated';e.innerHTML='<span class="eliminated-label">ELIMINATED</span>'+eliminated.map(x=>'<span class="eliminated-team"><s>'+x[0]+'</s><strong>0.00%</strong></span>').join('');bars.appendChild(e)};
+ if(eliminated.length){const e=document.createElement('div');e.className='eliminated';e.innerHTML='<span class="eliminated-label">ELIMINATED</span>'+eliminated.map(x=>'<span class="eliminated-team">'+x[0]+'</span>').join('');bars.appendChild(e)};
  const leaders=document.getElementById('leaders');const copy={'Liverpool':'A 9–0 Round One win adds powerful current-season evidence to the strongest historical profile in the field.','Leeds':'A 6–3 win over Selby strengthens Leeds beyond an already positive historical baseline.','West Kent':'West Kent remain prominent through their frozen historical strength and Round One bye.'};
  ranked.filter(x=>x[5]!==null).slice(0,3).forEach((x,i)=>{const a=document.createElement('article');a.innerHTML='<div class="leader-top"><span>0'+(i+1)+'</span><strong>'+x[0]+'</strong><b>'+x[5].toFixed(2)+'%</b></div><p>'+copy[x[0]]+'</p>';leaders.appendChild(a)});
 });
