@@ -135,6 +135,12 @@
       "name": "Slough Schools FA U11 girls historical",
       "url": "https://sites.google.com/view/slough-schools-fa/home/district-teams/u11-girls-district-team/202526",
       "type": "historical_context_only"
+    },
+    {
+      "name": "Kent Schools FA Canterbury primary district",
+      "url": "https://www.ksfa.org.uk/inter-district/associations/primary/canterbury-sfa/",
+      "type": "participant_association_fixture_database",
+      "note": "2026/27 Girls Super League fixtures; no new National KO score verified. Distinguish primary PSFA from secondary SFA."
     }
   ],
   "historical_evidence": [],
@@ -150,6 +156,13 @@
       "Dover & Deal v Canterbury",
       "Rugby v South Birmingham"
     ],
-    "note": "GPSFA shows seven explicit girls' Round One scores matching tracker. Round Two draw on GPSFA includes apparent inconsistencies (2.08 Wirral v Helton; 2.12 Stafford v Rugby) despite published Round One elimination; do not overwrite tracker draw without organiser clarification."
+    "note": "GPSFA shows seven explicit girls' Round One scores matching tracker. Round Two draw on GPSFA includes apparent inconsistencies (2.08 Wirral v Helton; 2.12 Stafford v Rugby) despite published Round One elimination; do not overwrite tracker draw without organiser clarification.",
+    "additional_check": {
+      "checked_on": "2026-10-10",
+      "scope": "Five missing National KO R1 ties and other district primary girls competition sources",
+      "new_verified_national_ko_scores": 0,
+      "discovery": "Kent Schools FA has dated girls district fixtures, including Canterbury PSFA v Swale PSFA on 10 October 2026 (pending result).",
+      "caution": "Secondary SFA U12/U13 Lionesses results are different age group and must not be used as U11 evidence."
+    }
   }
 }
