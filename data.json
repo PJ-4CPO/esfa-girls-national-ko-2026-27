@@ -18,10 +18,11 @@
       "cross_competition_transfer": 0.25,
       "bracket_assumption": "Adjacent Round Two winners meet in Round Three and subsequent rounds; provisional pending full published bracket",
       "draw_resolution": "Level scores resolved using strength-weighted tie-break proxy; not a prediction of actual competition tie-break rule",
-      "prior_version": "V2.0"
+      "prior_version": "V2.0",
+      "random_generator": "mulberry32"
     }
   },
-  "model_note": "V3 exploratory knockout simulation: frozen historical baseline strength, bounded updates from seven verified 2026/27 Round One scorelines, and 25% transfer of Newbury's shrunken 2025/26/current Southern Counties league evidence. Assumes adjacent Round Two winners meet subsequently; later-round bracket is provisional. Missing public scores are not inferred; private scores are excluded. Illustrative probabilities, not betting odds.",
+  "model_note": "V3 exploratory knockout simulation: frozen historical baseline strength, bounded updates from seven verified 2026/27 Round One scorelines, and 25% transfer of Newbury's shrunken 2025/26/current Southern Counties league evidence. Assumes adjacent Round Two winners meet subsequently; later-round bracket is provisional. Missing public scores are not inferred; private scores are excluded. Illustrative probabilities, not betting odds. Simulated with mulberry32 pseudo-random generator.",
   "teams": [
     [
       "Swansea",
