@@ -1,1 +1,192 @@
-{"state":{"competition":"Southern Counties Girls' League 2026/27","as_of":"2026-10-04","teams":7,"total_matches":42,"played":5,"remaining":37,"model":{"version":"V2.0","status":"Active","simulation_runs":100000,"seed":20261004}},"standings":[["Reigate & Banstead",2,1,1,0,6,3,5],["St Albans",2,1,1,0,6,5,5],["Newbury",2,1,0,1,7,4,4],["Dacorum",1,1,0,0,3,1,3],["Gloucester",2,0,0,2,4,7,2],["Wycombe",1,0,0,1,0,6,1],["Woking",0,0,0,0,0,0,0]],"results":[["Dacorum",3,1,"Gloucester"],["Gloucester",3,4,"St Albans"],["Newbury",6,0,"Wycombe"],["Reigate & Banstead",4,1,"Newbury"],["St Albans",2,2,"Reigate & Banstead"]],"probabilities":[["Woking",25.77],["St Albans",19.44],["Newbury",17.97],["Reigate & Banstead",17.63],["Dacorum",15.73],["Wycombe",2.52],["Gloucester",0.96]],"strengths":[["Woking",1.66,1.66],["Newbury",1.64,1.5777],["St Albans",1.2,1.307],["Gloucester",1.13,0.8712],["Dacorum",1,1.1469],["Reigate & Banstead",1,1.1946],["Wycombe",1,0.8726]]}
+{
+  "state": {
+    "competition": "Southern Counties Girls' League 2026/27",
+    "as_of": "2026-10-10",
+    "teams": 7,
+    "total_matches": 42,
+    "played": 5,
+    "remaining": 37,
+    "model": {
+      "version": "V3.0",
+      "status": "Active",
+      "simulation_runs": 100000,
+      "seed": 20261010,
+      "previous_version": "V2.0",
+      "historical_season": "2025/26",
+      "historical_weight_note": "Historical prior heavily shrunk; prior season has different player cohort",
+      "tie_break_assumption": "Points, goal difference, goals scored, alphabetical fallback; official tie-break policy not verified"
+    }
+  },
+  "standings": [
+    [
+      "Reigate & Banstead",
+      2,
+      1,
+      1,
+      0,
+      6,
+      3,
+      5
+    ],
+    [
+      "St Albans",
+      2,
+      1,
+      1,
+      0,
+      6,
+      5,
+      5
+    ],
+    [
+      "Newbury",
+      2,
+      1,
+      0,
+      1,
+      7,
+      4,
+      4
+    ],
+    [
+      "Dacorum",
+      1,
+      1,
+      0,
+      0,
+      3,
+      1,
+      3
+    ],
+    [
+      "Gloucester",
+      2,
+      0,
+      0,
+      2,
+      4,
+      7,
+      2
+    ],
+    [
+      "Wycombe",
+      1,
+      0,
+      0,
+      1,
+      0,
+      6,
+      1
+    ],
+    [
+      "Woking",
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "results": [
+    [
+      "Dacorum",
+      3,
+      1,
+      "Gloucester"
+    ],
+    [
+      "Gloucester",
+      3,
+      4,
+      "St Albans"
+    ],
+    [
+      "Newbury",
+      6,
+      0,
+      "Wycombe"
+    ],
+    [
+      "Reigate & Banstead",
+      4,
+      1,
+      "Newbury"
+    ],
+    [
+      "St Albans",
+      2,
+      2,
+      "Reigate & Banstead"
+    ]
+  ],
+  "probabilities": [
+    [
+      "Newbury",
+      26.86
+    ],
+    [
+      "St Albans",
+      23.94
+    ],
+    [
+      "Dacorum",
+      17.06
+    ],
+    [
+      "Woking",
+      15.96
+    ],
+    [
+      "Reigate & Banstead",
+      15.25
+    ],
+    [
+      "Wycombe",
+      0.67
+    ],
+    [
+      "Gloucester",
+      0.26
+    ]
+  ],
+  "strengths": [
+    [
+      "Woking",
+      1.66,
+      1.1252
+    ],
+    [
+      "Newbury",
+      1.64,
+      1.3539
+    ],
+    [
+      "St Albans",
+      1.2,
+      1.2003
+    ],
+    [
+      "Gloucester",
+      1.13,
+      0.71609
+    ],
+    [
+      "Dacorum",
+      1,
+      1.06498
+    ],
+    [
+      "Reigate & Banstead",
+      1,
+      0.98858
+    ],
+    [
+      "Wycombe",
+      1,
+      0.72539
+    ]
+  ],
+  "model_note": "V3 uses a shrunken 2025/26 girls' league prior and the five previously recorded 2026/27 scores. Four of five scores still lack independent match-specific verification. This is a scenario model, not an official prediction. Seven-team double round robin and 3/2/1 scoring assumed. No private unverified new score included."
+}
