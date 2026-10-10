@@ -1,7 +1,7 @@
 {
   "state": {
     "competition": "ESFA U11 Girls Inter-Association / National KO 2026/27",
-    "as_of": "2026-10-06",
+    "as_of": "2026-10-10",
     "teams_in_draw": 44,
     "round1_matches": 12,
     "round1_byes": 20,
@@ -11,14 +11,17 @@
       "status": "Frozen"
     },
     "current_model": {
-      "version": "V2.0",
+      "version": "V3.0",
       "status": "Active",
       "simulation_runs": 100000,
-      "seed": 20261004,
-      "cross_competition_transfer": 0.25
+      "seed": 20261011,
+      "cross_competition_transfer": 0.25,
+      "bracket_assumption": "Adjacent Round Two winners meet in Round Three and subsequent rounds; provisional pending full published bracket",
+      "draw_resolution": "Level scores resolved using strength-weighted tie-break proxy; not a prediction of actual competition tie-break rule",
+      "prior_version": "V2.0"
     }
   },
-  "model_note": "Current V2 uses officially published 2026/27 results. Round Two pairings use the confirmed GPSFA draw. Where a surviving team has no published 2026/27 score evidence, its frozen baseline probability is retained as the current display value until verified evidence becomes available. No unpublished score is inferred.",
+  "model_note": "V3 exploratory knockout simulation: frozen historical baseline strength, bounded updates from seven verified 2026/27 Round One scorelines, and 25% transfer of Newbury's shrunken 2025/26/current Southern Counties league evidence. Assumes adjacent Round Two winners meet subsequently; later-round bracket is provisional. Missing public scores are not inferred; private scores are excluded. Illustrative probabilities, not betting odds.",
   "teams": [
     [
       "Swansea",
@@ -26,7 +29,7 @@
       "North Shropshire",
       "No verified deep run found",
       1.409443269908386,
-      1.409
+      0
     ],
     [
       "North Shropshire",
@@ -42,7 +45,7 @@
       "Bexley",
       "No verified deep run found",
       1.409443269908386,
-      1.409
+      0
     ],
     [
       "Bexley",
@@ -58,7 +61,7 @@
       "",
       "No verified deep run found",
       2.818886539816772,
-      2.819
+      0
     ],
     [
       "Swale",
@@ -66,7 +69,7 @@
       "",
       "No verified deep run found",
       2.818886539816772,
-      2.819
+      0
     ],
     [
       "Maidstone",
@@ -74,7 +77,7 @@
       "",
       "No verified deep run found",
       2.818886539816772,
-      2.819
+      0
     ],
     [
       "Stockport",
@@ -82,7 +85,7 @@
       "",
       "No verified deep run found",
       2.818886539816772,
-      2.819
+      0
     ],
     [
       "Merton",
@@ -90,7 +93,7 @@
       "",
       "No verified deep run found",
       2.818886539816772,
-      2.819
+      0
     ],
     [
       "Barnsley",
@@ -98,7 +101,7 @@
       "",
       "Verified quarter-finalist",
       3.10077519379845,
-      2.731
+      0
     ],
     [
       "Wirral",
@@ -114,7 +117,7 @@
       "Wirral",
       "Recent semi-finalist",
       1.9027484143763214,
-      3.959
+      0
     ],
     [
       "Hull",
@@ -122,7 +125,7 @@
       "",
       "No verified deep run found",
       2.818886539816772,
-      2.761
+      0
     ],
     [
       "York",
@@ -130,7 +133,7 @@
       "",
       "No verified deep run found",
       2.818886539816772,
-      2.819
+      0
     ],
     [
       "Bolton",
@@ -138,7 +141,7 @@
       "",
       "No verified deep run found",
       2.818886539816772,
-      2.724
+      0
     ],
     [
       "Warrington",
@@ -146,7 +149,7 @@
       "",
       "No verified deep run found",
       2.818886539816772,
-      2.731
+      0
     ],
     [
       "SE Sussex",
@@ -154,7 +157,7 @@
       "Chelmsford",
       "No verified deep run found",
       1.409443269908386,
-      3.682
+      100
     ],
     [
       "Chelmsford",
@@ -170,7 +173,7 @@
       "Oxford",
       "No verified deep run found",
       1.409443269908386,
-      2.669
+      0
     ],
     [
       "Oxford",
@@ -186,7 +189,7 @@
       "",
       "No verified deep run found",
       2.818886539816772,
-      2.819
+      0
     ],
     [
       "Brighton",
@@ -194,7 +197,7 @@
       "",
       "Champion + another recent deep run",
       5.355884425651867,
-      3.788
+      0
     ],
     [
       "Barnet",
@@ -202,7 +205,7 @@
       "",
       "No verified deep run found",
       2.818886539816772,
-      2.745
+      0
     ],
     [
       "Rotherham",
@@ -210,7 +213,7 @@
       "",
       "No verified deep run found",
       2.818886539816772,
-      2.819
+      0
     ],
     [
       "Gainsborough",
@@ -218,7 +221,7 @@
       "",
       "Verified quarter-finalist",
       3.10077519379845,
-      2.703
+      0
     ],
     [
       "Stafford",
@@ -234,7 +237,7 @@
       "Stafford",
       "No verified deep run found",
       1.409443269908386,
-      3.479
+      0
     ],
     [
       "Newcastle",
@@ -242,7 +245,7 @@
       "",
       "No verified deep run found",
       2.818886539816772,
-      2.819
+      0
     ],
     [
       "Halton",
@@ -258,7 +261,7 @@
       "Halton",
       "Repeated champion / repeated finalist",
       4.2283298097251585,
-      8.723
+      0
     ],
     [
       "Rossendale",
@@ -266,7 +269,7 @@
       "Hyndburn & Ribble",
       "No verified deep run found",
       1.409443269908386,
-      3.608
+      0
     ],
     [
       "Hyndburn & Ribble",
@@ -282,7 +285,7 @@
       "",
       "No verified deep run found",
       2.818886539816772,
-      2.819
+      0
     ],
     [
       "Leeds",
@@ -290,7 +293,7 @@
       "Selby",
       "Runner-up / multiple deep runs",
       2.1141649048625792,
-      4.165
+      0
     ],
     [
       "Selby",
@@ -314,7 +317,7 @@
       "Dover & Deal",
       "No verified deep run found",
       1.409443269908386,
-      1.409
+      0
     ],
     [
       "West Kent",
@@ -322,7 +325,7 @@
       "",
       "Champion",
       4.792107117688513,
-      4
+      0
     ],
     [
       "Sunderland",
@@ -330,7 +333,7 @@
       "",
       "No verified deep run found",
       2.818886539816772,
-      2.819
+      0
     ],
     [
       "Sutton",
@@ -338,7 +341,7 @@
       "",
       "No verified deep run found",
       2.818886539816772,
-      2.819
+      0
     ],
     [
       "Rugby",
@@ -346,7 +349,7 @@
       "South Birmingham",
       "No verified deep run found",
       1.409443269908386,
-      1.409
+      0
     ],
     [
       "South Birmingham",
@@ -370,7 +373,7 @@
       "West Cornwall",
       "No verified deep run found",
       1.409443269908386,
-      3.36
+      0
     ]
   ],
   "fixtures": [
