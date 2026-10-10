@@ -15,10 +15,10 @@
 <section class="sources"><h2>Sources & model note</h2><p>Competition data: Gloucestershire Primary Schools’ FA (GPSFA), reconciled with the authoritative 2026/27 district fixture documentation. The V3 model includes a conservatively weighted 2025/26 U11 girls' league table. Four of the five recorded current-season results await independent match-specific verification.</p><p><strong>Important:</strong> probabilities are an illustrative analytical model, not betting odds. The published table uses the competition’s 3 points for a win, 2 for a draw and 1 for a loss.</p></section>
 </main><footer><div class="wrap">Southern Counties Girls’ League 2026/27 • Competition tracker • Current V3.0</div></footer>
 <script>
-fetch('data.json').then(r=>r.json()).then(d=>{
+fetch('data.json?v=20261010-v3-fixed').then(r=>{if(!r.ok)throw new Error('League data HTTP '+r.status);return r.json()}).then(d=>{
  const p=[...d.probabilities].sort((a,b)=>b[1]-a[1]), max=p[0][1];
  const leaders=document.getElementById('leaders');
- const copy={Woking:'Woking's previous-season record contributes to the revised estimate, moderated by season-to-season uncertainty.','St Albans':'St Albans combine a strong previous-season record with a positive opening to 2026/27.','Newbury':'Newbury's previous-season record and current recorded results combine for the revised estimate.'};
+ const copy={Woking:"Woking's previous-season record contributes to the revised estimate, moderated by season-to-season uncertainty.",'St Albans':'St Albans combine a strong previous-season record with a positive opening to 2026/27.','Newbury':'Newbury's previous-season record and current recorded results combine for the revised estimate.'};
  p.slice(0,3).forEach((x,i)=>{let a=document.createElement('article');a.innerHTML='<div class="leader-top"><span>0'+(i+1)+'</span><strong>'+x[0]+'</strong><b>'+x[1].toFixed(2)+'%</b></div><p>'+copy[x[0]]+'</p>';leaders.appendChild(a)});
  const bars=document.getElementById('bars');p.forEach((x,i)=>{let r=document.createElement('div');r.className='bar';r.innerHTML='<span class="bar-rank">'+(i+1)+'</span><span class="bar-team">'+x[0]+'</span><span class="track"><span class="fill" style="width:'+(x[1]/max*100)+'%"></span></span><strong>'+x[1].toFixed(2)+'%</strong>';bars.appendChild(r)});
  const tb=document.getElementById('table');d.standings.forEach((x,i)=>{let tr=document.createElement('tr');tr.innerHTML='<td>'+(i+1)+'</td><td><strong>'+x[0]+'</strong></td>'+x.slice(1).map(v=>'<td>'+v+'</td>').join('');tb.appendChild(tr)});
