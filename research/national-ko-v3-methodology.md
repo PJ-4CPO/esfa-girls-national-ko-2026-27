@@ -50,7 +50,7 @@ The scheme is a transparent illustrative rating, **not** a fitted predictive mod
 | SE Sussex | 3.158 |
 | Afan Nedd | 2.856 |
 | Newbury | 2.207 |
-| Other 20 remaining teams combined | 36.765 |
+| Other 20 remaining teams combined | 35.208 |
 
 32 active teams together total 100%; 12 eliminated teams total 0%.
 
