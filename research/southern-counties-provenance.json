@@ -1,0 +1,114 @@
+{
+  "schema_version": "1.0",
+  "competition": "Southern Counties Girls' League 2026/27",
+  "provenance_created": "2026-10-10",
+  "scope": "Internal research register; not displayed on public tracker or consumed by forecasting model.",
+  "verification_policy": {
+    "organiser": "Official competition organiser's explicitly published score",
+    "participant": "Original score published by either participating district association",
+    "corroborated": "Two independent credible public reports agree",
+    "unconfirmed": "Private report, repost or insufficient public evidence; do not publish",
+    "note": "A competition landing-page URL is a discovery pointer, not necessarily a permanent match-specific citation. Recheck original source before claiming independently reverified."
+  },
+  "results": [
+    {
+      "home": "Dacorum",
+      "away": "Gloucester",
+      "home_score": 3,
+      "away_score": 1,
+      "match_date": null,
+      "date_confidence": "not_independently_verified",
+      "source_type": "competition_organiser",
+      "source_url": "https://www.gpsfa.com/cups/berkshire-league/",
+      "source_granularity": "competition_page",
+      "source_capture": "previously recorded on tracker; individual match citation not yet archived",
+      "independently_rechecked_on": null,
+      "verification_status": "previously_published_pending_source_recheck"
+    },
+    {
+      "home": "Gloucester",
+      "away": "St Albans",
+      "home_score": 3,
+      "away_score": 4,
+      "match_date": null,
+      "date_confidence": "not_independently_verified",
+      "source_type": "competition_organiser",
+      "source_url": "https://www.gpsfa.com/cups/berkshire-league/",
+      "source_granularity": "competition_page",
+      "source_capture": "previously recorded on tracker; individual match citation not yet archived",
+      "independently_rechecked_on": null,
+      "verification_status": "previously_published_pending_source_recheck"
+    },
+    {
+      "home": "Newbury",
+      "away": "Wycombe",
+      "home_score": 6,
+      "away_score": 0,
+      "match_date": "2026-09-19",
+      "date_confidence": "previously_verified",
+      "source_type": "competition_organiser",
+      "source_url": "https://www.gpsfa.com/cups/berkshire-league/",
+      "source_granularity": "competition_page",
+      "source_capture": "previously recorded on tracker; individual match citation not yet archived",
+      "independently_rechecked_on": null,
+      "verification_status": "previously_published_pending_source_recheck"
+    },
+    {
+      "home": "Reigate & Banstead",
+      "away": "Newbury",
+      "home_score": 4,
+      "away_score": 1,
+      "match_date": "2026-09-26",
+      "date_confidence": "previously_verified",
+      "source_type": "competition_organiser",
+      "source_url": "https://www.gpsfa.com/cups/berkshire-league/",
+      "source_granularity": "competition_page",
+      "source_capture": "previously recorded on tracker; individual match citation not yet archived",
+      "independently_rechecked_on": null,
+      "verification_status": "previously_published_pending_source_recheck"
+    },
+    {
+      "home": "St Albans",
+      "away": "Reigate & Banstead",
+      "home_score": 2,
+      "away_score": 2,
+      "match_date": null,
+      "date_confidence": "not_independently_verified",
+      "source_type": "competition_organiser",
+      "source_url": "https://www.gpsfa.com/cups/berkshire-league/",
+      "source_granularity": "competition_page",
+      "source_capture": "previously recorded on tracker; individual match citation not yet archived",
+      "independently_rechecked_on": null,
+      "verification_status": "previously_published_pending_source_recheck"
+    }
+  ],
+  "candidate_sources": [
+    {
+      "name": "GPSFA",
+      "url": "https://www.gpsfa.com/cups/regional-competitons/",
+      "type": "organiser"
+    },
+    {
+      "name": "GPSFA Southern Counties",
+      "url": "https://www.gpsfa.com/cups/berkshire-league/",
+      "type": "organiser"
+    },
+    {
+      "name": "ESFA girls competitions",
+      "url": "https://www.esfa.co.uk/competitions/?view=girls",
+      "type": "organiser_portal"
+    },
+    {
+      "name": "St Albans Schools FA",
+      "url": "https://x.com/StAlbansSchools",
+      "type": "participant_social"
+    },
+    {
+      "name": "Slough Schools FA U11 girls historical",
+      "url": "https://sites.google.com/view/slough-schools-fa/home/district-teams/u11-girls-district-team/202526",
+      "type": "historical_context_only"
+    }
+  ],
+  "historical_evidence": [],
+  "unverified_private_results": "Excluded deliberately; never put privately reported scores in this repository."
+}
