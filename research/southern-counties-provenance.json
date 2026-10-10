@@ -190,8 +190,8 @@
         ]
       ],
       "points_system": "3 win, 2 draw, 1 loss (inferred from published totals)",
-      "use_in_current_model": false,
-      "note": "Historical team cohorts change annually; not a direct current-season power rating."
+      "use_in_current_model": true,
+      "note": "V4 uses previous-season points per game and goal difference per game as a discounted prior; cohort differences limit predictive value. No current match scores were inferred from this table."
     }
   ],
   "unverified_private_results": "Excluded deliberately; never put privately reported scores in this repository.",
@@ -202,5 +202,22 @@
     "verified_independent_scores": 1,
     "other_results": "Four remaining tracked scores not independently verified from public primary match-specific sources during this check.",
     "new_scores_found": 0
+  },
+  "model_audit": {
+    "as_of": "2026-10-10",
+    "published_version": "V4.0",
+    "research_methodology_path": "research/southern-counties-v4-methodology.md",
+    "conclusion": "Legacy V3 Newbury starting advantage was not sufficiently supported by 2025/26 league evidence. Removed legacy base ratings and recalibrated title estimates.",
+    "primary_forecasts": {
+      "St Albans": 29.77,
+      "Dacorum": 21.95,
+      "Reigate & Banstead": 19.67,
+      "Newbury": 13.28,
+      "Woking": 12.97,
+      "Wycombe": 2.25,
+      "Gloucester": 0.11
+    },
+    "sensitivity": "The relative strength of the top teams is sensitive to the weight given to early-season matches, and only one of five existing scores has independent match-specific confirmation.",
+    "validation": "100,000 simulated seasons; deterministic rerun and second-seed check; all 37 outstanding pairings included; 3/2/1 points; 100% probability total; equal credit for tied highest points."
   }
 }
