@@ -4,3 +4,14 @@
 .eliminated{grid-column:1/-1;margin-top:10px;padding-top:15px;border-top:1px solid #233044;display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center}.eliminated-label{width:100%;color:#657589;font-size:.6rem;font-weight:800;letter-spacing:.13em}.eliminated-team{display:flex;gap:6px;align-items:center;color:#657589;font-size:.7rem}.eliminated-team s{text-decoration-color:#657589}.eliminated-team strong{color:#657589;font-size:.68rem;font-weight:600}
 
 .round-byes{margin-top:22px;padding:18px;border:1px solid var(--line);border-radius:14px;background:var(--panel)}.round-byes p{margin:7px 0 14px;color:var(--muted);font-size:.78rem}.bye-teams{display:flex;flex-wrap:wrap;gap:8px}.bye-team{padding:6px 9px;border:1px solid var(--line);border-radius:999px;background:var(--panel2);color:var(--muted);font-size:.68rem;font-weight:700}
+
+/* Shared 2026/27 competition tracker visual system */
+.competition-nav{margin-top:16px!important;margin-bottom:0!important}
+.competition-nav a{font-family:inherit;line-height:1.35;min-height:48px;display:flex!important;align-items:center;justify-content:center}
+main.wrap>section{margin-top:26px}
+main.wrap>section.journey{margin-top:0}
+main.wrap>section.model,main.wrap>section.fixtures.round-one,main.wrap>section.fixtures.round-two{background:rgba(16,23,34,.9);border:1px solid var(--line);border-radius:16px;padding:26px;box-shadow:0 16px 45px rgba(0,0,0,.16)}
+.section-title.stacked-heading{display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;gap:0;margin-bottom:18px}
+.section-title.stacked-heading .section-kicker{display:block;padding:0;color:var(--cyan);font-size:.7rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;line-height:1.4}
+.section-title.stacked-heading h2{display:block;align-self:flex-start;text-align:left;width:100%;margin:8px 0 0;line-height:1.2;font-size:1.55rem}
+@media(max-width:700px){main.wrap>section{margin-top:20px}main.wrap>section.model,main.wrap>section.fixtures.round-one,main.wrap>section.fixtures.round-two{padding:20px 16px}.section-title.stacked-heading h2{font-size:1.45rem}.competition-nav a{font-size:.86rem!important}}
