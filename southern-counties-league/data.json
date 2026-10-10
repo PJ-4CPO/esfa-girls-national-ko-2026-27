@@ -7,14 +7,19 @@
     "played": 5,
     "remaining": 37,
     "model": {
-      "version": "V3.0",
+      "version": "V4.0",
       "status": "Active",
       "simulation_runs": 100000,
       "seed": 20261010,
-      "previous_version": "V2.0",
+      "previous_version": "V3.0",
       "historical_season": "2025/26",
-      "historical_weight_note": "Historical prior heavily shrunk; prior season has different player cohort",
-      "tie_break_assumption": "Points, goal difference, goals scored, alphabetical fallback; official tie-break policy not verified"
+      "historical_method": "Current 7 teams; prior-season relative points/game and goal difference/game, shrunk to account for cohort change. Missing historical records get neutral prior. No legacy initial strength values used.",
+      "current_season_method": "Five recorded results (one independently confirmed) using goal difference capped at +/-3, match result and relative opponent prior; Bayesian-style shrinkage of small match samples.",
+      "remaining_fixture_method": "All 37 unplayed ordered home-away pairings, Poisson goals calibrated at 2.8 per match with 1.05 modest home multiplier.",
+      "tie_break_assumption": "Championship points 3/2/1; ties for highest points divided equally across tied teams because official title tie-break is unverified.",
+      "random_generator": "mulberry32",
+      "sensitivity": "Primary seed independently repeated, 2nd seed stable; alternate historical/current season weighting tested. Forecasts sensitive to weights due to limited results.",
+      "publication_status": "scenario_estimates"
     }
   },
   "standings": [
@@ -123,70 +128,70 @@
   ],
   "probabilities": [
     [
-      "Newbury",
-      26.86
-    ],
-    [
       "St Albans",
-      23.94
+      29.77
     ],
     [
       "Dacorum",
-      17.06
-    ],
-    [
-      "Woking",
-      15.96
+      21.95
     ],
     [
       "Reigate & Banstead",
-      15.25
+      19.67
+    ],
+    [
+      "Newbury",
+      13.28
+    ],
+    [
+      "Woking",
+      12.97
     ],
     [
       "Wycombe",
-      0.67
+      2.25
     ],
     [
       "Gloucester",
-      0.26
+      0.11
     ]
   ],
   "strengths": [
     [
       "Woking",
       1.66,
-      1.1252
+      1.06964
     ],
     [
       "Newbury",
       1.64,
-      1.3539
+      1.14051
     ],
     [
       "St Albans",
       1.2,
-      1.2003
+      1.27937
     ],
     [
       "Gloucester",
       1.13,
-      0.71609
+      0.61143
     ],
     [
       "Dacorum",
       1,
-      1.06498
+      1.14455
     ],
     [
       "Reigate & Banstead",
       1,
-      0.98858
+      1.07548
     ],
     [
       "Wycombe",
       1,
-      0.72539
+      0.8513
     ]
   ],
-  "model_note": "V3 uses a shrunken 2025/26 girls' league prior and the five previously recorded 2026/27 scores. Four of five scores still lack independent match-specific verification. This is a scenario model, not an official prediction. Seven-team double round robin and 3/2/1 scoring assumed. No private unverified new score included."
+  "model_note": "V4 uses 2025/26 U11 girls league points and goal difference, carefully shrunk because a new cohort plays each season, and the five previously recorded 2026/27 results. The older unsupported legacy strength advantage for Newbury is removed. Four of five 2026/27 scores are still missing independent match-specific validation. No privately reported scores included. Tied champions share scenario credit. Illustrative only."
 }
