@@ -50,7 +50,7 @@ fetch('data.json?v=20261006-probability-fix').then(r=>r.json()).then(d=>{
   if(!home||!away)return;
   card.classList.add('forecast-fixture');
   const row=card.innerHTML;
-  card.innerHTML='<div class="match-teams">'+row.replace(/(<small>2\\.\\d+<\\/small>)/,'$1<small>DATE TBC</small>')+'</div>'+probabilityRow(home,away);
+  card.innerHTML='<div class="match-teams">'+row.replace('</span><span class="team away">','<small>DATE TBC</small></span><span class="team away">')+'</div>'+probabilityRow(home,away);
  });
  document.querySelectorAll('#fixtures .fixture').forEach(card=>{
   const home=card.querySelector('.team.home')?.textContent.trim(),away=card.querySelector('.team.away')?.textContent.trim();
