@@ -56,3 +56,6 @@ No prior-season history: Dacorum 28.74%, Reigate & Banstead 27.83%, St Albans 21
 
 ## Future work
 Confirm the four source-unverified current-season scorelines; verify league roster includes Wycombe; obtain official title tie-breaks. Recalculate only after source verification and preserve previous estimates for comparison. Keep methodology technical details out of public copy.
+
+## Seasonal weighting policy for future revisions (adopted 10 October 2026)
+As independent match-specific results become available, gradually decrease the 2025/26 historical prior rather than carrying its full starting weight throughout 2026/27. At the next recalculation, use a documented shrinkage factor such as `historical_prior/(1+verified_current_matches/2)` **per team**, so two independently verified current-season matches halve the historical influence, and four reduce it to one-third. Re-test the discount against emerging results before deployment; preserve V4 as a comparable baseline. Do **not** alter the current published V4 percentages simply by editing metadata. A result previously listed on the tracker but not independently verified should not count toward the verified-results decay until its source has been checked.
