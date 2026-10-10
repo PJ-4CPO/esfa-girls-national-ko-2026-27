@@ -20,10 +20,10 @@
       "date_confidence": "unknown",
       "source_type": "competition_organiser",
       "source_url": "https://www.gpsfa.com/cups/regional-competitons/",
-      "source_granularity": "competition_page",
-      "source_capture": "previously recorded on tracker; individual match citation not yet archived",
-      "independently_rechecked_on": null,
-      "verification_status": "previously_published_pending_source_recheck"
+      "source_granularity": "match_specific_on_competition_page",
+      "source_capture": "Independently checked against explicit ESFA Girls' National KO 2026/27 Round One scoreline on GPSFA page",
+      "independently_rechecked_on": "2026-10-10",
+      "verification_status": "verified_organiser"
     },
     {
       "home": "SE Sussex",
@@ -34,10 +34,10 @@
       "date_confidence": "unknown",
       "source_type": "competition_organiser",
       "source_url": "https://www.gpsfa.com/cups/regional-competitons/",
-      "source_granularity": "competition_page",
-      "source_capture": "previously recorded on tracker; individual match citation not yet archived",
-      "independently_rechecked_on": null,
-      "verification_status": "previously_published_pending_source_recheck"
+      "source_granularity": "match_specific_on_competition_page",
+      "source_capture": "Independently checked against explicit ESFA Girls' National KO 2026/27 Round One scoreline on GPSFA page",
+      "independently_rechecked_on": "2026-10-10",
+      "verification_status": "verified_organiser"
     },
     {
       "home": "Stafford",
@@ -48,10 +48,10 @@
       "date_confidence": "unknown",
       "source_type": "competition_organiser",
       "source_url": "https://www.gpsfa.com/cups/regional-competitons/",
-      "source_granularity": "competition_page",
-      "source_capture": "previously recorded on tracker; individual match citation not yet archived",
-      "independently_rechecked_on": null,
-      "verification_status": "previously_published_pending_source_recheck"
+      "source_granularity": "match_specific_on_competition_page",
+      "source_capture": "Independently checked against explicit ESFA Girls' National KO 2026/27 Round One scoreline on GPSFA page",
+      "independently_rechecked_on": "2026-10-10",
+      "verification_status": "verified_organiser"
     },
     {
       "home": "Halton",
@@ -62,10 +62,10 @@
       "date_confidence": "unknown",
       "source_type": "competition_organiser",
       "source_url": "https://www.gpsfa.com/cups/regional-competitons/",
-      "source_granularity": "competition_page",
-      "source_capture": "previously recorded on tracker; individual match citation not yet archived",
-      "independently_rechecked_on": null,
-      "verification_status": "previously_published_pending_source_recheck"
+      "source_granularity": "match_specific_on_competition_page",
+      "source_capture": "Independently checked against explicit ESFA Girls' National KO 2026/27 Round One scoreline on GPSFA page",
+      "independently_rechecked_on": "2026-10-10",
+      "verification_status": "verified_organiser"
     },
     {
       "home": "Rossendale",
@@ -76,10 +76,10 @@
       "date_confidence": "unknown",
       "source_type": "competition_organiser",
       "source_url": "https://www.gpsfa.com/cups/regional-competitons/",
-      "source_granularity": "competition_page",
-      "source_capture": "previously recorded on tracker; individual match citation not yet archived",
-      "independently_rechecked_on": null,
-      "verification_status": "previously_published_pending_source_recheck"
+      "source_granularity": "match_specific_on_competition_page",
+      "source_capture": "Independently checked against explicit ESFA Girls' National KO 2026/27 Round One scoreline on GPSFA page",
+      "independently_rechecked_on": "2026-10-10",
+      "verification_status": "verified_organiser"
     },
     {
       "home": "Leeds",
@@ -90,10 +90,10 @@
       "date_confidence": "unknown",
       "source_type": "competition_organiser",
       "source_url": "https://www.gpsfa.com/cups/regional-competitons/",
-      "source_granularity": "competition_page",
-      "source_capture": "previously recorded on tracker; individual match citation not yet archived",
-      "independently_rechecked_on": null,
-      "verification_status": "previously_published_pending_source_recheck"
+      "source_granularity": "match_specific_on_competition_page",
+      "source_capture": "Independently checked against explicit ESFA Girls' National KO 2026/27 Round One scoreline on GPSFA page",
+      "independently_rechecked_on": "2026-10-10",
+      "verification_status": "verified_organiser"
     },
     {
       "home": "West Cornwall",
@@ -104,10 +104,10 @@
       "date_confidence": "unknown",
       "source_type": "competition_organiser",
       "source_url": "https://www.gpsfa.com/cups/regional-competitons/",
-      "source_granularity": "competition_page",
-      "source_capture": "previously recorded on tracker; individual match citation not yet archived",
-      "independently_rechecked_on": null,
-      "verification_status": "previously_published_pending_source_recheck"
+      "source_granularity": "match_specific_on_competition_page",
+      "source_capture": "Independently checked against explicit ESFA Girls' National KO 2026/27 Round One scoreline on GPSFA page",
+      "independently_rechecked_on": "2026-10-10",
+      "verification_status": "verified_organiser"
     }
   ],
   "candidate_sources": [
@@ -138,5 +138,18 @@
     }
   ],
   "historical_evidence": [],
-  "unverified_private_results": "Excluded deliberately; never put privately reported scores in this repository."
+  "unverified_private_results": "Excluded deliberately; never put privately reported scores in this repository.",
+  "source_audit": {
+    "checked_on": "2026-10-10",
+    "source_url": "https://www.gpsfa.com/cups/regional-competitons/",
+    "new_scores_found": 0,
+    "unscored_round_one": [
+      "Swansea v North Shropshire",
+      "Lewisham v Bexley",
+      "Newbury v Oxford",
+      "Dover & Deal v Canterbury",
+      "Rugby v South Birmingham"
+    ],
+    "note": "GPSFA shows seven explicit girls' Round One scores matching tracker. Round Two draw on GPSFA includes apparent inconsistencies (2.08 Wirral v Helton; 2.12 Stafford v Rugby) despite published Round One elimination; do not overwrite tracker draw without organiser clarification."
+  }
 }
