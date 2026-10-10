@@ -26,7 +26,7 @@
 <section class="sources"><h2>Sources & model note</h2><p>Draw: Gloucester Primary Schools FA. Historical honours: English Schools’ FA and preserved competition reporting. No league form, academy reputation or other cups are used in the baseline historical rating.</p><p><strong>Important:</strong> probabilities are an illustrative analytical model, not betting odds. Results will be added to this tracker as they are confirmed.</p></section>
 </main><footer><div class="wrap">ESFA Girls’ National KO 2026/27 • Competition tracker • Current V2.0</div></footer>
 <script>
-fetch('data.json?v=20261006-probability-fix').then(r=>r.json()).then(d=>{
+fetch('data.json?v=20261010-match-forecast-v2').then(r=>r.json()).then(d=>{
  const f=document.getElementById('fixtures');
  d.fixtures.forEach((m,i)=>{const x=document.createElement('div');x.className='fixture '+(m[4]==='Complete'?'complete':'');const tie='1.'+String(i+1).padStart(2,'0');let s;if(m[4]==='Complete')s='<strong class="score">'+m[2]+'–'+m[3]+'</strong><small>'+tie+' · FINAL</small>';else if(m[4]==='Progressed')s='<strong class="vs">→</strong><small>'+tie+' · PROGRESSED</small>';else s='<strong class="vs">VS</strong><small>'+tie+' · RESULT PENDING</small>';x.innerHTML='<span class="team home">'+m[0]+'</span><span class="mid">'+s+'</span><span class="team away">'+m[1]+'</span>';f.appendChild(x)});
 
@@ -50,7 +50,8 @@ fetch('data.json?v=20261006-probability-fix').then(r=>r.json()).then(d=>{
   if(!home||!away)return;
   card.classList.add('forecast-fixture');
   const row=card.innerHTML;
-  card.innerHTML='<div class="match-teams">'+row.replace('</span><span class="team away">','<small>DATE TBC</small></span><span class="team away">')+'</div>'+probabilityRow(home,away);
+  const date=home==='Newbury'&&away==='Barnet'?'2 Nov 2026 · ROUND DATE':'DATE TBC';
+  card.innerHTML='<div class="match-teams">'+row.replace('</span><span class="team away">','<small>'+date+'</small></span><span class="team away">')+'</div>'+probabilityRow(home,away);
  });
  document.querySelectorAll('#fixtures .fixture').forEach(card=>{
   const home=card.querySelector('.team.home')?.textContent.trim(),away=card.querySelector('.team.away')?.textContent.trim();
@@ -58,7 +59,8 @@ fetch('data.json?v=20261006-probability-fix').then(r=>r.json()).then(d=>{
   const status=card.querySelector('.mid small')?.textContent||'';
   card.classList.add('forecast-fixture');
   const row=card.innerHTML;
-  card.innerHTML='<div class="match-teams">'+row.replace('</span><span class="team away">','<small class="match-date">DATE UNCONFIRMED</small></span><span class="team away">')+'</div>'+(status.includes('FINAL')?'':probabilityRow(home,away));
+  const date=home==='Newbury'&&away==='Oxford'?'3 Oct 2026':'DATE UNCONFIRMED';
+  card.innerHTML='<div class="match-teams">'+row.replace('</span><span class="team away">','<small class="match-date">'+date+'</small></span><span class="team away">')+'</div>'+(status.includes('FINAL')?'':probabilityRow(home,away));
  });
  const baseline=[...d.teams].sort((a,b)=>b[4]-a[4]||a[0].localeCompare(b[0]));
  const ranked=[...d.teams].sort((a,b)=>(b[5]??-1)-(a[5]??-1)||b[4]-a[4]||a[0].localeCompare(b[0]));
