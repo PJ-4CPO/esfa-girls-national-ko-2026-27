@@ -15,3 +15,24 @@ main.wrap>section.model,main.wrap>section.fixtures.round-one,main.wrap>section.f
 .section-title.stacked-heading .section-kicker{display:block;padding:0;color:var(--cyan);font-size:.7rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;line-height:1.4}
 .section-title.stacked-heading h2{display:block;align-self:flex-start;text-align:left;width:100%;margin:8px 0 0;line-height:1.2;font-size:1.55rem}
 @media(max-width:700px){main.wrap>section{margin-top:20px}main.wrap>section.model,main.wrap>section.fixtures.round-one,main.wrap>section.fixtures.round-two{padding:20px 16px}.section-title.stacked-heading h2{font-size:1.45rem}.competition-nav a{font-size:.86rem!important}}
+
+/* National KO fixture sections: heading above the full-width fixture list.
+   The outer section previously inherited .fixtures grid, shrinking cards in landscape. */
+main.wrap>section.fixtures.round-one,
+main.wrap>section.fixtures.round-two{display:block}
+main.wrap>section.fixtures.round-one>.section-title,
+main.wrap>section.fixtures.round-two>.section-title{width:100%}
+main.wrap>section.fixtures.round-one>#fixtures,
+main.wrap>section.fixtures.round-two>#round2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;width:100%;min-width:0}
+main.wrap>section.fixtures .fixture{min-width:0}
+main.wrap>section.fixtures .forecast-fixture .match-teams{min-width:0;grid-template-columns:minmax(0,1fr) 90px minmax(0,1fr)}
+main.wrap>section.fixtures .team{min-width:0;overflow-wrap:anywhere}
+main.wrap>section.fixtures .mid{min-width:0}
+main.wrap>section.fixtures .match-forecast{flex-wrap:wrap}
+@media(max-width:900px){
+ main.wrap>section.fixtures.round-one>#fixtures,
+ main.wrap>section.fixtures.round-two>#round2{grid-template-columns:1fr}
+}
+@media(max-width:700px){
+ main.wrap>section.fixtures .forecast-fixture .match-teams{grid-template-columns:minmax(0,1fr) 76px minmax(0,1fr)}
+}
