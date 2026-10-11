@@ -216,8 +216,8 @@
     "checked_on": "2026-10-11",
     "organiser_url": "https://www.gpsfa.com/cups/berkshire-league/",
     "organiser_status": "User-supplied organiser webpage screenshots directly confirm seven girls teams (Dacorum, Gloucester, Newbury, Reigate & Banstead, St Albans, Woking, Wycombe), new Dacorum 1–5 Newbury official result, and corresponding 2026/27 girls league standings.",
-    "verified_independent_scores": 2,
-    "other_results": "Four remaining previously tracked results lack archived match-specific independently checked primary sources; the screenshots independently confirm Reigate 4–1 Newbury and St Albans 2–2 Reigate, Dacorum 3–1 Gloucester as well, so these three are now organiser corroborated.",
+    "verified_independent_scores": 4,
+    "other_results": "Two earlier tracker results are not visible in the cropped screenshots (Newbury 6–0 Wycombe and Gloucester 3–4 St Albans) and still need direct source recheck. The four organiser-grid-confirmed results are Dacorum 3–1 Gloucester, Reigate & Banstead 4–1 Newbury, St Albans 2–2 Reigate & Banstead, and Dacorum 1–5 Newbury.",
     "new_scores_found": 1,
     "discrepancy_resolution": "Previous six-team roster statement arose from cached text extraction of organiser page; direct screenshot shows Wycombe as seventh girls-league team. Do not confuse the boys Southern Counties League table with the girls table."
   },
