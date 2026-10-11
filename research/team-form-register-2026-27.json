@@ -194,6 +194,19 @@
       "source_type": "official_participating_association_match_record",
       "status": "verified_official_assoc_record_2026_10_11",
       "notes": "Other girls' competition; may inform team form but is not an ESFA National KO result."
+    },
+    {
+      "date": "2026-10-10",
+      "competition": "Kent Girls Super League",
+      "team": "Canterbury",
+      "opponent": "Swale",
+      "score_for": 11,
+      "score_against": 0,
+      "source_url": "https://www.ksfa.org.uk/inter-district/associations/primary/canterbury-sfa/",
+      "source_type": "official_participating_association_girls_fixture_record",
+      "status": "official_canterbury_result_complete_but_swale_page_still_pending",
+      "checked_on": "2026-10-11",
+      "notes": "Canterbury's official association page explicitly lists Canterbury 11–0 Swale under KSFA Girls Super League as Complete. Swale's official association fixture view still says Pending; preserve discrepancy. Not an ESFA Girls National KO or Southern Counties Girls League result."
     }
   ],
   "investigation_queue": [
@@ -243,7 +256,7 @@
       "team": "Canterbury",
       "opponent": "Swale",
       "fixture": "2026-10-10",
-      "question": "Kent Schools FA latest-results feed displays Canterbury 11–0 Swale as girls' league, but the girls competition fixture page still shows it unplayed; reconcile official views before treating as verified."
+      "question": "Canterbury official girls association match record confirms 11–0 as Complete; Swale official page still shows Pending. Seek confirmation or update from Swale, but retain Canterbury's official published score as sourced external form."
     }
   ],
   "source_directory": [
