@@ -122,6 +122,78 @@
       "source_type": "organiser_grid_live_screenshot",
       "status": "official_organiser_screenshot_verified_2026_10_11",
       "notes": "Association source screenshot independently corroborates league entry; now included in league tracker, not just external form."
+    },
+    {
+      "date": "2026-09-26",
+      "competition": "Kent Girls Super League",
+      "team": "West Kent",
+      "opponent": "Tonbridge & Malling",
+      "score_for": 12,
+      "score_against": 1,
+      "source_url": "https://www.ksfa.org.uk/inter-district/associations/primary/west-kent-psfa/",
+      "source_type": "official_participating_association_match_record",
+      "status": "verified_official_assoc_record_2026_10_11",
+      "notes": "Other girls' competition; may inform team form but is not an ESFA National KO result."
+    },
+    {
+      "date": "2026-09-12",
+      "competition": "Kent Girls Super League",
+      "team": "Canterbury",
+      "opponent": "Maidstone",
+      "score_for": 7,
+      "score_against": 0,
+      "source_url": "https://www.ksfa.org.uk/inter-district/associations/primary/maidstone-psfa/",
+      "source_type": "official_participating_association_match_record",
+      "status": "verified_official_assoc_record_2026_10_11",
+      "notes": "Other girls' competition; may inform team form but is not an ESFA National KO result."
+    },
+    {
+      "date": "2026-09-19",
+      "competition": "Kent Girls Super League",
+      "team": "Thanet",
+      "opponent": "Maidstone",
+      "score_for": 3,
+      "score_against": 1,
+      "source_url": "https://www.ksfa.org.uk/inter-district/associations/primary/maidstone-psfa/",
+      "source_type": "official_participating_association_match_record",
+      "status": "verified_official_assoc_record_2026_10_11",
+      "notes": "Other girls' competition; may inform team form but is not an ESFA National KO result."
+    },
+    {
+      "date": "2026-09-26",
+      "competition": "Kent Girls Super League",
+      "team": "Maidstone",
+      "opponent": "Medway",
+      "score_for": 3,
+      "score_against": 0,
+      "source_url": "https://www.ksfa.org.uk/inter-district/associations/primary/medway-psfa/",
+      "source_type": "official_participating_association_match_record",
+      "status": "verified_official_assoc_record_2026_10_11",
+      "notes": "Other girls' competition; may inform team form but is not an ESFA National KO result."
+    },
+    {
+      "date": "2026-09-26",
+      "competition": "Kent Girls Super League",
+      "team": "Thanet",
+      "opponent": "Swale",
+      "score_for": 5,
+      "score_against": 2,
+      "source_url": "https://www.ksfa.org.uk/inter-district/associations/primary/thanet-psfa/",
+      "source_type": "official_participating_association_match_record",
+      "status": "verified_official_assoc_record_2026_10_11",
+      "notes": "Other girls' competition; may inform team form but is not an ESFA National KO result."
+    },
+    {
+      "date": "2026-10-10",
+      "competition": "Kent Girls Super League",
+      "team": "Thanet",
+      "opponent": "Medway",
+      "score_for": 4,
+      "score_against": 0,
+      "source_url": "https://www.ksfa.org.uk/inter-district/associations/primary/medway-psfa/",
+      "source_type": "official_participating_association_match_record",
+      "status": "verified_official_assoc_record_2026_10_11",
+      "notes": "Other girls' competition; may inform team form but is not an ESFA National KO result."
     }
   ],
   "investigation_queue": [
@@ -166,6 +238,12 @@
       "opponent": "Dartford",
       "fixture": "2026-10-10",
       "question": "Locate first-person report for the 11–0 result."
+    },
+    {
+      "team": "Canterbury",
+      "opponent": "Swale",
+      "fixture": "2026-10-10",
+      "question": "Kent Schools FA latest-results feed displays Canterbury 11–0 Swale as girls' league, but the girls competition fixture page still shows it unplayed; reconcile official views before treating as verified."
     }
   ],
   "source_directory": [
