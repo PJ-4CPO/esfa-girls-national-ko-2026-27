@@ -7,19 +7,19 @@
     "played": 6,
     "remaining": 36,
     "model": {
-      "version": "V4.0",
+      "version": "V4.1",
       "status": "Active",
       "simulation_runs": 100000,
-      "seed": 20261010,
-      "previous_version": "V3.0",
+      "seed": 20261011,
+      "previous_version": "V4.0",
       "historical_season": "2025/26",
       "historical_method": "Current 7 teams; prior-season relative points/game and goal difference/game, shrunk to account for cohort change. Missing historical records get neutral prior. No legacy initial strength values used.",
-      "current_season_method": "Five recorded results (one independently confirmed) using goal difference capped at +/-3, match result and relative opponent prior; Bayesian-style shrinkage of small match samples.",
-      "remaining_fixture_method": "All 37 unplayed ordered home-away pairings, Poisson goals calibrated at 2.8 per match with 1.05 modest home multiplier.",
+      "current_season_method": "Six recorded girls league results, including organiser-confirmed Dacorum 1–5 Newbury; capped goal margins and conservative opponent adjustment.",
+      "remaining_fixture_method": "36 unplayed home-away pairings, 2.8 expected goals per match, 1.05 home multiplier.",
       "tie_break_assumption": "Championship points 3/2/1; ties for highest points divided equally across tied teams because official title tie-break is unverified.",
       "random_generator": "mulberry32",
       "sensitivity": "Primary seed independently repeated, 2nd seed stable; alternate historical/current season weighting tested. Forecasts sensitive to weights due to limited results.",
-      "publication_status": "pending_recalibration_after_official_new_result"
+      "publication_status": "recalibrated_2026_10_11"
     }
   },
   "standings": [
@@ -134,28 +134,28 @@
   ],
   "probabilities": [
     [
-      "St Albans",
-      29.77
+      "Newbury",
+      29.84
     ],
     [
-      "Dacorum",
-      21.95
+      "St Albans",
+      29.14
     ],
     [
       "Reigate & Banstead",
-      19.67
-    ],
-    [
-      "Newbury",
-      13.28
+      19.85
     ],
     [
       "Woking",
-      12.97
+      12.81
+    ],
+    [
+      "Dacorum",
+      6.04
     ],
     [
       "Wycombe",
-      2.25
+      2.21
     ],
     [
       "Gloucester",
@@ -166,38 +166,38 @@
     [
       "Woking",
       1.66,
-      1.06964
+      1.07594
     ],
     [
       "Newbury",
       1.64,
-      1.14051
+      1.29937
     ],
     [
       "St Albans",
       1.2,
-      1.27937
+      1.2869
     ],
     [
       "Gloucester",
       1.13,
-      0.61143
+      0.61503
     ],
     [
       "Dacorum",
       1,
-      1.14455
+      0.97555
     ],
     [
       "Reigate & Banstead",
       1,
-      1.07548
+      1.08181
     ],
     [
       "Wycombe",
       1,
-      0.8513
+      0.85631
     ]
   ],
-  "model_note": "V4 uses 2025/26 U11 girls league points and goal difference, carefully shrunk because a new cohort plays each season, and the five previously recorded 2026/27 results. The older unsupported legacy strength advantage for Newbury is removed. Four of five 2026/27 scores are still missing independent match-specific validation. No privately reported scores included. Tied champions share scenario credit. Illustrative only. Official Dacorum 1–5 Newbury published by GPSFA and captured in user screenshot 11 October; existing title forecasts temporarily retain pre-match V4 basis until recalculated."
+  "model_note": "Six girls league scores recorded; new Dacorum 1–5 Newbury result confirmed by GPSFA result grid and league table in 11 Oct user-supplied screenshots. Championship estimates recalculated on 36 remaining home-away pairings using previous documented V4 assumptions, 100,000 seasons, and equal credit for teams tied at the top. Other match-specific source verifications remain outstanding."
 }
