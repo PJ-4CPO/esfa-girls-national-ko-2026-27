@@ -23,7 +23,8 @@
       "source_granularity": "competition_page",
       "source_capture": "previously recorded on tracker; individual match citation not yet archived",
       "independently_rechecked_on": null,
-      "verification_status": "previously_published_pending_source_recheck"
+      "verification_status": "previously_published_pending_source_recheck",
+      "organiser_screenshot_confirmation": "Visible in official Southern Counties Girls' League result matrix provided 11 Oct 2026"
     },
     {
       "home": "Gloucester",
@@ -65,7 +66,8 @@
       "source_granularity": "match_specific_public_post_on_profile",
       "source_capture": "Public first-person coach report says girls' league campaign opened with a 4–1 win against Newbury; check post permalink if available.",
       "independently_rechecked_on": "2026-10-10",
-      "verification_status": "verified_participant_coach_public_report"
+      "verification_status": "verified_participant_coach_public_report",
+      "organiser_screenshot_confirmation": "Visible in official Southern Counties Girls' League result matrix provided 11 Oct 2026"
     },
     {
       "home": "St Albans",
@@ -79,7 +81,22 @@
       "source_granularity": "competition_page",
       "source_capture": "previously recorded on tracker; individual match citation not yet archived",
       "independently_rechecked_on": null,
-      "verification_status": "previously_published_pending_source_recheck"
+      "verification_status": "previously_published_pending_source_recheck",
+      "organiser_screenshot_confirmation": "Visible in official Southern Counties Girls' League result matrix provided 11 Oct 2026"
+    },
+    {
+      "home": "Dacorum",
+      "away": "Newbury",
+      "home_score": 1,
+      "away_score": 5,
+      "match_date": "2026-10-10",
+      "date_confidence": "association_fixture_schedule",
+      "source_type": "competition_organiser_screenshot",
+      "source_url": "https://www.gpsfa.com/cups/berkshire-league/",
+      "source_granularity": "official_girls_results_grid_and_girls_table_in_user_supplied_2026_10_11_screenshots",
+      "source_capture": "Organizer's Southern Counties Girls' League results row Dacorum, column Newbury reads 1-5. Girls league standings show Newbury P3 W2 D0 L1 GF12 GA5 Pts7; Dacorum P2 W1 D0 L1 GF4 GA6 Pts4. Screenshots captured 11 Oct 2026. Web search text extraction still provides an older version; screenshot treated as point-in-time source.",
+      "independently_rechecked_on": "2026-10-11",
+      "verification_status": "verified_organiser_user_supplied_live_screenshot"
     }
   ],
   "candidate_sources": [
@@ -196,28 +213,29 @@
   ],
   "unverified_private_results": "Excluded deliberately; never put privately reported scores in this repository.",
   "source_audit": {
-    "checked_on": "2026-10-10",
+    "checked_on": "2026-10-11",
     "organiser_url": "https://www.gpsfa.com/cups/berkshire-league/",
-    "organiser_status": "girls league table and result grid show zero results, and differ from current seven-team tracker roster",
-    "verified_independent_scores": 1,
-    "other_results": "Four remaining tracked scores not independently verified from public primary match-specific sources during this check.",
-    "new_scores_found": 0
+    "organiser_status": "User-supplied organiser webpage screenshots directly confirm seven girls teams (Dacorum, Gloucester, Newbury, Reigate & Banstead, St Albans, Woking, Wycombe), new Dacorum 1–5 Newbury official result, and corresponding 2026/27 girls league standings.",
+    "verified_independent_scores": 2,
+    "other_results": "Four remaining previously tracked results lack archived match-specific independently checked primary sources; the screenshots independently confirm Reigate 4–1 Newbury and St Albans 2–2 Reigate, Dacorum 3–1 Gloucester as well, so these three are now organiser corroborated.",
+    "new_scores_found": 1,
+    "discrepancy_resolution": "Previous six-team roster statement arose from cached text extraction of organiser page; direct screenshot shows Wycombe as seventh girls-league team. Do not confuse the boys Southern Counties League table with the girls table."
   },
   "model_audit": {
-    "as_of": "2026-10-10",
-    "published_version": "V4.0",
+    "as_of": "2026-10-11",
+    "published_version": "V4.1",
     "research_methodology_path": "research/southern-counties-v4-methodology.md",
     "conclusion": "Legacy V3 Newbury starting advantage was not sufficiently supported by 2025/26 league evidence. Removed legacy base ratings and recalibrated title estimates.",
     "primary_forecasts": {
-      "St Albans": 29.77,
-      "Dacorum": 21.95,
-      "Reigate & Banstead": 19.67,
-      "Newbury": 13.28,
-      "Woking": 12.97,
-      "Wycombe": 2.25,
+      "Newbury": 29.84,
+      "St Albans": 29.14,
+      "Reigate & Banstead": 19.85,
+      "Woking": 12.81,
+      "Dacorum": 6.04,
+      "Wycombe": 2.21,
       "Gloucester": 0.11
     },
     "sensitivity": "The relative strength of the top teams is sensitive to the weight given to early-season matches, and only one of five existing scores has independent match-specific confirmation.",
-    "validation": "100,000 simulated seasons; deterministic rerun and second-seed check; all 37 outstanding pairings included; 3/2/1 points; 100% probability total; equal credit for tied highest points."
+    "validation": "Newbury 5–1 Dacorum added as sixth result, standings reconstructed, 36 matches remaining, 100,000 Monte Carlo seasons, secondary seed sanity check; probabilities sum to 100%."
   }
 }
