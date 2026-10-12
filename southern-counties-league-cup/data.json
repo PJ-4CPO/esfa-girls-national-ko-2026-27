@@ -1,0 +1,336 @@
+{
+  "status": "UNPUBLISHED PREVIEW — preliminary, not official predictions",
+  "competition": "Southern Counties Girls’ League Cup 2026/27",
+  "stage": "Tournament One · Central & East",
+  "date": "2026-10-17",
+  "venue": "Brockwood Farm Sports Park, Woking",
+  "format": {
+    "teams": 7,
+    "matches_per_team": 6,
+    "match_minutes": 11,
+    "pitches": 2,
+    "play": "9-a-side",
+    "arrival": "12:45",
+    "tournament_time": "13:30–16:30",
+    "structure": "Seven-team single round robin inferred from six matches per team",
+    "points": "UNVERIFIED",
+    "tie_breaks": "UNVERIFIED",
+    "april_qualification": "UNVERIFIED",
+    "round_order": "UNVERIFIED"
+  },
+  "teams": [
+    {
+      "team": "Newbury",
+      "rating": 1.29937,
+      "rating_kind": "league V4.1"
+    },
+    {
+      "team": "St Albans",
+      "rating": 1.2869,
+      "rating_kind": "league V4.1"
+    },
+    {
+      "team": "Hackney",
+      "rating": 1.1,
+      "rating_kind": "provisional historical estimate"
+    },
+    {
+      "team": "Reigate & Banstead",
+      "rating": 1.08181,
+      "rating_kind": "league V4.1"
+    },
+    {
+      "team": "Woking",
+      "rating": 1.07594,
+      "rating_kind": "league V4.1"
+    },
+    {
+      "team": "Merton",
+      "rating": 1.04,
+      "rating_kind": "provisional historical estimate"
+    },
+    {
+      "team": "Sutton",
+      "rating": 0.98,
+      "rating_kind": "provisional historical estimate"
+    }
+  ],
+  "projections": [
+    {
+      "team": "Newbury",
+      "firstPlacePct": 17.4,
+      "averagePosition": 3.72
+    },
+    {
+      "team": "St Albans",
+      "firstPlacePct": 17.4,
+      "averagePosition": 3.73
+    },
+    {
+      "team": "Hackney",
+      "firstPlacePct": 14,
+      "averagePosition": 4.03
+    },
+    {
+      "team": "Reigate & Banstead",
+      "firstPlacePct": 13.4,
+      "averagePosition": 4.06
+    },
+    {
+      "team": "Woking",
+      "firstPlacePct": 13.2,
+      "averagePosition": 4.07
+    },
+    {
+      "team": "Merton",
+      "firstPlacePct": 12.9,
+      "averagePosition": 4.14
+    },
+    {
+      "team": "Sutton",
+      "firstPlacePct": 11.7,
+      "averagePosition": 4.25
+    }
+  ],
+  "fixtures": [
+    {
+      "id": "01",
+      "teams": [
+        "Hackney",
+        "Merton"
+      ],
+      "date": "2026-10-17",
+      "kickoff": null,
+      "status": "INFERRED PAIRING"
+    },
+    {
+      "id": "02",
+      "teams": [
+        "Hackney",
+        "Newbury"
+      ],
+      "date": "2026-10-17",
+      "kickoff": null,
+      "status": "INFERRED PAIRING"
+    },
+    {
+      "id": "03",
+      "teams": [
+        "Hackney",
+        "Reigate & Banstead"
+      ],
+      "date": "2026-10-17",
+      "kickoff": null,
+      "status": "INFERRED PAIRING"
+    },
+    {
+      "id": "04",
+      "teams": [
+        "Hackney",
+        "St Albans"
+      ],
+      "date": "2026-10-17",
+      "kickoff": null,
+      "status": "INFERRED PAIRING"
+    },
+    {
+      "id": "05",
+      "teams": [
+        "Hackney",
+        "Sutton"
+      ],
+      "date": "2026-10-17",
+      "kickoff": null,
+      "status": "INFERRED PAIRING"
+    },
+    {
+      "id": "06",
+      "teams": [
+        "Hackney",
+        "Woking"
+      ],
+      "date": "2026-10-17",
+      "kickoff": null,
+      "status": "INFERRED PAIRING"
+    },
+    {
+      "id": "07",
+      "teams": [
+        "Merton",
+        "Newbury"
+      ],
+      "date": "2026-10-17",
+      "kickoff": null,
+      "status": "INFERRED PAIRING"
+    },
+    {
+      "id": "08",
+      "teams": [
+        "Merton",
+        "Reigate & Banstead"
+      ],
+      "date": "2026-10-17",
+      "kickoff": null,
+      "status": "INFERRED PAIRING"
+    },
+    {
+      "id": "09",
+      "teams": [
+        "Merton",
+        "St Albans"
+      ],
+      "date": "2026-10-17",
+      "kickoff": null,
+      "status": "INFERRED PAIRING"
+    },
+    {
+      "id": "10",
+      "teams": [
+        "Merton",
+        "Sutton"
+      ],
+      "date": "2026-10-17",
+      "kickoff": null,
+      "status": "INFERRED PAIRING"
+    },
+    {
+      "id": "11",
+      "teams": [
+        "Merton",
+        "Woking"
+      ],
+      "date": "2026-10-17",
+      "kickoff": null,
+      "status": "INFERRED PAIRING"
+    },
+    {
+      "id": "12",
+      "teams": [
+        "Newbury",
+        "Reigate & Banstead"
+      ],
+      "date": "2026-10-17",
+      "kickoff": null,
+      "status": "INFERRED PAIRING"
+    },
+    {
+      "id": "13",
+      "teams": [
+        "Newbury",
+        "St Albans"
+      ],
+      "date": "2026-10-17",
+      "kickoff": null,
+      "status": "INFERRED PAIRING"
+    },
+    {
+      "id": "14",
+      "teams": [
+        "Newbury",
+        "Sutton"
+      ],
+      "date": "2026-10-17",
+      "kickoff": null,
+      "status": "INFERRED PAIRING"
+    },
+    {
+      "id": "15",
+      "teams": [
+        "Newbury",
+        "Woking"
+      ],
+      "date": "2026-10-17",
+      "kickoff": null,
+      "status": "INFERRED PAIRING"
+    },
+    {
+      "id": "16",
+      "teams": [
+        "Reigate & Banstead",
+        "St Albans"
+      ],
+      "date": "2026-10-17",
+      "kickoff": null,
+      "status": "INFERRED PAIRING"
+    },
+    {
+      "id": "17",
+      "teams": [
+        "Reigate & Banstead",
+        "Sutton"
+      ],
+      "date": "2026-10-17",
+      "kickoff": null,
+      "status": "INFERRED PAIRING"
+    },
+    {
+      "id": "18",
+      "teams": [
+        "Reigate & Banstead",
+        "Woking"
+      ],
+      "date": "2026-10-17",
+      "kickoff": null,
+      "status": "INFERRED PAIRING"
+    },
+    {
+      "id": "19",
+      "teams": [
+        "St Albans",
+        "Sutton"
+      ],
+      "date": "2026-10-17",
+      "kickoff": null,
+      "status": "INFERRED PAIRING"
+    },
+    {
+      "id": "20",
+      "teams": [
+        "St Albans",
+        "Woking"
+      ],
+      "date": "2026-10-17",
+      "kickoff": null,
+      "status": "INFERRED PAIRING"
+    },
+    {
+      "id": "21",
+      "teams": [
+        "Sutton",
+        "Woking"
+      ],
+      "date": "2026-10-17",
+      "kickoff": null,
+      "status": "INFERRED PAIRING"
+    }
+  ],
+  "model": {
+    "version": "V0.1 preliminary research preview",
+    "source": "Earlier offline 100,000-run illustrative simulation; not recalculated in this preparation",
+    "total_goals_per_11_min_match": 0.65,
+    "match_format": "Illustrative Poisson outcome probabilities; conservative strength uncertainty",
+    "ranking_method": "Shared first-place probability divided when points tied; true official tie breaks unverified",
+    "warning": "Short duration and missing current evidence for three teams make precise rankings unreliable",
+    "assumptions": [
+      "Seven-team complete round robin",
+      "No fixed match order or pitch assignment",
+      "Previous U11 cohort performance discounted",
+      "Current league V4.1 strengths for four teams",
+      "Near-neutral provisional ratings for Hackney Merton Sutton"
+    ]
+  },
+  "sources": [
+    {
+      "label": "GPSFA Southern Counties League Cup",
+      "url": "https://www.gpsfa.com/southern-counties-league-cup/"
+    },
+    {
+      "label": "Newbury tournament instructions",
+      "url": null
+    },
+    {
+      "label": "Existing Southern Counties League tracker",
+      "url": "https://pj-4cpo.github.io/esfa-girls-national-ko-2026-27/southern-counties-league/"
+    }
+  ]
+}
