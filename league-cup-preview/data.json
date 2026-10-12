@@ -1,0 +1,192 @@
+{
+  "state": {
+    "competition": "Southern Counties Girls’ League Cup 2026/27 — Central & East",
+    "tournament_date": "2026-10-17",
+    "stage": "Tournament One",
+    "status": "RESEARCH PREVIEW — NOT PUBLISHED",
+    "location": "Brockwood Farm Sports Park, Knaphill, Woking",
+    "teams": 7,
+    "assumed_total_matches": 21,
+    "reported_matches_per_team": 6,
+    "match_minutes": 11,
+    "format": "9-a-side",
+    "confirmed_match_order": false,
+    "points_rules_confirmed": false,
+    "tie_breaks_confirmed": false,
+    "april_qualification_confirmed": false,
+    "model": {
+      "version": "V0.1",
+      "simulation_runs": 100000,
+      "seed": 20261012,
+      "goals_per_11_minute_match": 0.65,
+      "uncertainty_log_sigma": 0.18,
+      "assumed_points": "W=3, D=1, L=0 (UNCONFIRMED)",
+      "first_place_ties": "shared equally among points leaders",
+      "model_warning": "Research-only probabilities; qualification and tie-break rules not verified."
+    }
+  },
+  "teams": [
+    {
+      "name": "Newbury",
+      "rating": 1.29937,
+      "first_place_percent": 17.63,
+      "mean_position": 3.72,
+      "basis": "Southern Counties League V4.1 current rating"
+    },
+    {
+      "name": "St Albans",
+      "rating": 1.2869,
+      "first_place_percent": 17.47,
+      "mean_position": 3.74,
+      "basis": "Southern Counties League V4.1 current rating"
+    },
+    {
+      "name": "Hackney",
+      "rating": 1.1,
+      "first_place_percent": 13.73,
+      "mean_position": 4.03,
+      "basis": "Provisional discounted historical cup evidence"
+    },
+    {
+      "name": "Reigate & Banstead",
+      "rating": 1.08181,
+      "first_place_percent": 13.51,
+      "mean_position": 4.06,
+      "basis": "Southern Counties League V4.1 current rating"
+    },
+    {
+      "name": "Woking",
+      "rating": 1.07594,
+      "first_place_percent": 13.41,
+      "mean_position": 4.07,
+      "basis": "Southern Counties League V4.1 current rating"
+    },
+    {
+      "name": "Merton",
+      "rating": 1.04,
+      "first_place_percent": 12.53,
+      "mean_position": 4.14,
+      "basis": "Provisional discounted historical cup evidence"
+    },
+    {
+      "name": "Sutton",
+      "rating": 0.98,
+      "first_place_percent": 11.71,
+      "mean_position": 4.24,
+      "basis": "Provisional discounted historical cup evidence"
+    }
+  ],
+  "pairings": [
+    [
+      "Newbury",
+      "St Albans"
+    ],
+    [
+      "Newbury",
+      "Hackney"
+    ],
+    [
+      "Newbury",
+      "Reigate & Banstead"
+    ],
+    [
+      "Newbury",
+      "Woking"
+    ],
+    [
+      "Newbury",
+      "Merton"
+    ],
+    [
+      "Newbury",
+      "Sutton"
+    ],
+    [
+      "St Albans",
+      "Hackney"
+    ],
+    [
+      "St Albans",
+      "Reigate & Banstead"
+    ],
+    [
+      "St Albans",
+      "Woking"
+    ],
+    [
+      "St Albans",
+      "Merton"
+    ],
+    [
+      "St Albans",
+      "Sutton"
+    ],
+    [
+      "Hackney",
+      "Reigate & Banstead"
+    ],
+    [
+      "Hackney",
+      "Woking"
+    ],
+    [
+      "Hackney",
+      "Merton"
+    ],
+    [
+      "Hackney",
+      "Sutton"
+    ],
+    [
+      "Reigate & Banstead",
+      "Woking"
+    ],
+    [
+      "Reigate & Banstead",
+      "Merton"
+    ],
+    [
+      "Reigate & Banstead",
+      "Sutton"
+    ],
+    [
+      "Woking",
+      "Merton"
+    ],
+    [
+      "Woking",
+      "Sutton"
+    ],
+    [
+      "Merton",
+      "Sutton"
+    ]
+  ],
+  "results": [],
+  "sensitivity": {
+    "goals035": [
+      16.77,
+      16.47,
+      14.09,
+      13.86,
+      13.7,
+      12.91,
+      12.2
+    ],
+    "goals100": [
+      18.35,
+      18.17,
+      13.69,
+      13.31,
+      13.18,
+      12.42,
+      10.88
+    ]
+  },
+  "sources": [
+    "GPSFA Southern Counties League Cup competition page",
+    "Newbury District Tournament One instructions, 17 Oct 2026",
+    "Kent Schools' FA U11 Girls Cup historical results 2025/26",
+    "Southern Counties Girls' League V4.1 ratings (2026/27)"
+  ]
+}
