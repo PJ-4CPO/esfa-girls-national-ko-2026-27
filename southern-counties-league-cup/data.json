@@ -3,190 +3,309 @@
     "competition": "Southern Counties Girls’ League Cup 2026/27 — Central & East",
     "tournament_date": "2026-10-17",
     "stage": "Tournament One",
-    "status": "PRE-TOURNAMENT PREVIEW — PROVISIONAL",
-    "location": "Brockwood Farm Sports Park, Knaphill, Woking",
+    "status": "OFFICIAL FIXTURE SCHEDULE — PRE-TOURNAMENT FORECAST",
+    "location": "Brookwood Farm Sports Ground, Brookwood Farm Drive, Woking, GU21 2FH",
     "teams": 7,
-    "assumed_total_matches": 21,
     "reported_matches_per_team": 6,
     "match_minutes": 11,
     "format": "9-a-side",
-    "confirmed_match_order": false,
-    "points_rules_confirmed": false,
-    "tie_breaks_confirmed": false,
+    "confirmed_match_order": true,
+    "points_rules_confirmed": true,
+    "tie_breaks_confirmed": true,
     "april_qualification_confirmed": false,
     "model": {
-      "version": "V0.1",
+      "version": "V0.2",
       "simulation_runs": 100000,
-      "seed": 20261012,
+      "seed": 20261015,
       "goals_per_11_minute_match": 0.65,
       "uncertainty_log_sigma": 0.18,
-      "assumed_points": "W=3, D=1, L=0 (UNCONFIRMED)",
-      "first_place_ties": "shared equally among points leaders",
-      "model_warning": "Research-only probabilities; qualification and tie-break rules not verified."
-    }
+      "method": "Independent Poisson goals, relative team ratings with per-tournament lognormal strength variation; 21 fixed pairings; official 3/1/0 points, GD, GF, head-to-head (2-team exact ties). Unresolved multiway ties apportioned evenly.",
+      "first_place_ties": "remaining unresolved ties shared equally",
+      "model_warning": "Historical prior strength and short-match scoring assumptions provisional; finishing-first forecasts are not overall Cup title chances."
+    },
+    "official_total_matches": 21,
+    "points_system": {
+      "win": 3,
+      "draw": 1,
+      "loss": 0
+    },
+    "tie_break_order": [
+      "points",
+      "goal difference",
+      "goals scored",
+      "head-to-head"
+    ],
+    "live_results_url": "https://leaguehub365.com/c/c3pdPtMzAGeXKzuHSUaH"
   },
   "teams": [
     {
       "name": "Newbury",
       "rating": 1.29937,
-      "first_place_percent": 17.63,
-      "mean_position": 3.72,
+      "first_place_percent": 17.895,
+      "mean_position": 3.656,
       "basis": "Southern Counties League V4.1 current rating"
     },
     {
       "name": "St Albans",
       "rating": 1.2869,
-      "first_place_percent": 17.47,
-      "mean_position": 3.74,
+      "first_place_percent": 17.461,
+      "mean_position": 3.699,
       "basis": "Southern Counties League V4.1 current rating"
     },
     {
       "name": "Hackney",
       "rating": 1.1,
-      "first_place_percent": 13.73,
-      "mean_position": 4.03,
+      "first_place_percent": 13.788,
+      "mean_position": 3.985,
       "basis": "Provisional discounted historical cup evidence"
     },
     {
       "name": "Reigate & Banstead",
       "rating": 1.08181,
-      "first_place_percent": 13.51,
-      "mean_position": 4.06,
+      "first_place_percent": 13.344,
+      "mean_position": 4.026,
       "basis": "Southern Counties League V4.1 current rating"
     },
     {
       "name": "Woking",
       "rating": 1.07594,
-      "first_place_percent": 13.41,
-      "mean_position": 4.07,
+      "first_place_percent": 13.497,
+      "mean_position": 4.02,
       "basis": "Southern Counties League V4.1 current rating"
     },
     {
       "name": "Merton",
       "rating": 1.04,
-      "first_place_percent": 12.53,
-      "mean_position": 4.14,
+      "first_place_percent": 12.619,
+      "mean_position": 4.103,
       "basis": "Provisional discounted historical cup evidence"
     },
     {
       "name": "Sutton",
       "rating": 0.98,
-      "first_place_percent": 11.71,
-      "mean_position": 4.24,
+      "first_place_percent": 11.395,
+      "mean_position": 4.218,
       "basis": "Provisional discounted historical cup evidence"
     }
   ],
-  "pairings": [
-    [
-      "Newbury",
-      "St Albans"
-    ],
-    [
-      "Newbury",
-      "Hackney"
-    ],
-    [
-      "Newbury",
-      "Reigate & Banstead"
-    ],
-    [
-      "Newbury",
-      "Woking"
-    ],
-    [
-      "Newbury",
-      "Merton"
-    ],
-    [
-      "Newbury",
-      "Sutton"
-    ],
-    [
-      "St Albans",
-      "Hackney"
-    ],
-    [
-      "St Albans",
-      "Reigate & Banstead"
-    ],
-    [
-      "St Albans",
-      "Woking"
-    ],
-    [
-      "St Albans",
-      "Merton"
-    ],
-    [
-      "St Albans",
-      "Sutton"
-    ],
-    [
-      "Hackney",
-      "Reigate & Banstead"
-    ],
-    [
-      "Hackney",
-      "Woking"
-    ],
-    [
-      "Hackney",
-      "Merton"
-    ],
-    [
-      "Hackney",
-      "Sutton"
-    ],
-    [
-      "Reigate & Banstead",
-      "Woking"
-    ],
-    [
-      "Reigate & Banstead",
-      "Merton"
-    ],
-    [
-      "Reigate & Banstead",
-      "Sutton"
-    ],
-    [
-      "Woking",
-      "Merton"
-    ],
-    [
-      "Woking",
-      "Sutton"
-    ],
-    [
-      "Merton",
-      "Sutton"
-    ]
-  ],
   "results": [],
-  "sensitivity": {
-    "goals035": [
-      16.77,
-      16.47,
-      14.09,
-      13.86,
-      13.7,
-      12.91,
-      12.2
-    ],
-    "goals100": [
-      18.35,
-      18.17,
-      13.69,
-      13.31,
-      13.18,
-      12.42,
-      10.88
-    ]
-  },
   "sources": [
+    "Woking SCLC 17 Oct organiser programme, girls fixture schedule page 5, rules page 6 and live score procedure page 7",
     "GPSFA Southern Counties League Cup competition page",
     "Newbury District Tournament One instructions, 17 Oct 2026",
     "Kent Schools' FA U11 Girls Cup historical results 2025/26",
     "Southern Counties Girls' League V4.1 ratings (2026/27)"
+  ],
+  "fixtures": [
+    {
+      "id": "C01",
+      "date": "2026-10-17",
+      "time": "13:30",
+      "pitch": 1,
+      "home": "Woking",
+      "away": "St Albans",
+      "status": "Scheduled",
+      "score": null
+    },
+    {
+      "id": "C02",
+      "date": "2026-10-17",
+      "time": "13:30",
+      "pitch": 2,
+      "home": "Newbury",
+      "away": "Merton",
+      "status": "Scheduled",
+      "score": null
+    },
+    {
+      "id": "C03",
+      "date": "2026-10-17",
+      "time": "13:45",
+      "pitch": 1,
+      "home": "Hackney",
+      "away": "Sutton",
+      "status": "Scheduled",
+      "score": null
+    },
+    {
+      "id": "C04",
+      "date": "2026-10-17",
+      "time": "13:45",
+      "pitch": 2,
+      "home": "Merton",
+      "away": "Reigate & Banstead",
+      "status": "Scheduled",
+      "score": null
+    },
+    {
+      "id": "C05",
+      "date": "2026-10-17",
+      "time": "14:00",
+      "pitch": 1,
+      "home": "Newbury",
+      "away": "Woking",
+      "status": "Scheduled",
+      "score": null
+    },
+    {
+      "id": "C06",
+      "date": "2026-10-17",
+      "time": "14:00",
+      "pitch": 2,
+      "home": "Reigate & Banstead",
+      "away": "St Albans",
+      "status": "Scheduled",
+      "score": null
+    },
+    {
+      "id": "C07",
+      "date": "2026-10-17",
+      "time": "14:15",
+      "pitch": 1,
+      "home": "Hackney",
+      "away": "Woking",
+      "status": "Scheduled",
+      "score": null
+    },
+    {
+      "id": "C08",
+      "date": "2026-10-17",
+      "time": "14:15",
+      "pitch": 2,
+      "home": "Merton",
+      "away": "Sutton",
+      "status": "Scheduled",
+      "score": null
+    },
+    {
+      "id": "C09",
+      "date": "2026-10-17",
+      "time": "14:30",
+      "pitch": 1,
+      "home": "St Albans",
+      "away": "Newbury",
+      "status": "Scheduled",
+      "score": null
+    },
+    {
+      "id": "C10",
+      "date": "2026-10-17",
+      "time": "14:30",
+      "pitch": 2,
+      "home": "Sutton",
+      "away": "Reigate & Banstead",
+      "status": "Scheduled",
+      "score": null
+    },
+    {
+      "id": "C11",
+      "date": "2026-10-17",
+      "time": "14:45",
+      "pitch": 1,
+      "home": "Woking",
+      "away": "Merton",
+      "status": "Scheduled",
+      "score": null
+    },
+    {
+      "id": "C12",
+      "date": "2026-10-17",
+      "time": "14:45",
+      "pitch": 2,
+      "home": "Hackney",
+      "away": "St Albans",
+      "status": "Scheduled",
+      "score": null
+    },
+    {
+      "id": "C13",
+      "date": "2026-10-17",
+      "time": "15:00",
+      "pitch": 1,
+      "home": "Sutton",
+      "away": "Newbury",
+      "status": "Scheduled",
+      "score": null
+    },
+    {
+      "id": "C14",
+      "date": "2026-10-17",
+      "time": "15:00",
+      "pitch": 2,
+      "home": "Reigate & Banstead",
+      "away": "Hackney",
+      "status": "Scheduled",
+      "score": null
+    },
+    {
+      "id": "C15",
+      "date": "2026-10-17",
+      "time": "15:15",
+      "pitch": 1,
+      "home": "Sutton",
+      "away": "Woking",
+      "status": "Scheduled",
+      "score": null
+    },
+    {
+      "id": "C16",
+      "date": "2026-10-17",
+      "time": "15:15",
+      "pitch": 2,
+      "home": "Merton",
+      "away": "St Albans",
+      "status": "Scheduled",
+      "score": null
+    },
+    {
+      "id": "C17",
+      "date": "2026-10-17",
+      "time": "15:30",
+      "pitch": 1,
+      "home": "Woking",
+      "away": "Reigate & Banstead",
+      "status": "Scheduled",
+      "score": null
+    },
+    {
+      "id": "C18",
+      "date": "2026-10-17",
+      "time": "15:30",
+      "pitch": 2,
+      "home": "Newbury",
+      "away": "Hackney",
+      "status": "Scheduled",
+      "score": null
+    },
+    {
+      "id": "C19",
+      "date": "2026-10-17",
+      "time": "15:45",
+      "pitch": 1,
+      "home": "Sutton",
+      "away": "St Albans",
+      "status": "Scheduled",
+      "score": null
+    },
+    {
+      "id": "C20",
+      "date": "2026-10-17",
+      "time": "15:45",
+      "pitch": 2,
+      "home": "Reigate & Banstead",
+      "away": "Newbury",
+      "status": "Scheduled",
+      "score": null
+    },
+    {
+      "id": "C21",
+      "date": "2026-10-17",
+      "time": "16:00",
+      "pitch": 1,
+      "home": "Hackney",
+      "away": "Merton",
+      "status": "Scheduled",
+      "score": null
+    }
   ]
 }
