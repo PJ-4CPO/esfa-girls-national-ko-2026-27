@@ -1189,5 +1189,37 @@
         "goal_difference_per_game": -1.667
       }
     ]
+  },
+  "provisional_qualification": {
+    "status": "ASSUMPTION — NOT OFFICIAL",
+    "as_of": "2026-10-23",
+    "ranking_basis": "combined_provisional.standings; points/game, goal difference/game, goals scored/game",
+    "bands": [
+      {
+        "start": 1,
+        "end": 10,
+        "competition": "Champions Trophy"
+      },
+      {
+        "start": 11,
+        "end": 20,
+        "competition": "Intermediate Competition"
+      },
+      {
+        "start": 21,
+        "end": 24,
+        "competition": "Plate Trophy"
+      }
+    ],
+    "assumptions": [
+      "The top 10 in the independent 24-team comparison enter Champions",
+      "Ranks 11–20 enter Intermediate",
+      "Ranks 21–24 enter Plate",
+      "All regional teams are treated together; participation restrictions for A/B teams are unknown",
+      "Finals allocation may change when original missing entry and official criteria become known"
+    ],
+    "newbury_projected_competition": "Intermediate Competition",
+    "newbury_rank": 11,
+    "validation_status": "Awaiting organiser's official April entrant lists"
   }
 }
