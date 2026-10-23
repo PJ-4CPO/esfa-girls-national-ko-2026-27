@@ -3,7 +3,7 @@
     "competition": "Southern Counties Girls’ League Cup 2026/27 — Central & East",
     "tournament_date": "2026-10-17",
     "stage": "Tournament One",
-    "status": "OFFICIAL FIXTURE SCHEDULE — PRE-TOURNAMENT FORECAST",
+    "status": "TOURNAMENT ONE COMPLETE — OFFICIAL RESULTS RECORDED",
     "location": "Brookwood Farm Sports Ground, Brookwood Farm Drive, Woking, GU21 2FH",
     "teams": 7,
     "reported_matches_per_team": 6,
@@ -21,7 +21,9 @@
       "uncertainty_log_sigma": 0.18,
       "method": "Independent Poisson goals, relative team ratings with per-tournament lognormal strength variation; 21 fixed pairings; official 3/1/0 points, GD, GF, head-to-head (2-team exact ties). Unresolved multiway ties apportioned evenly.",
       "first_place_ties": "remaining unresolved ties shared equally",
-      "model_warning": "Historical prior strength and short-match scoring assumptions provisional; finishing-first forecasts are not overall Cup title chances."
+      "model_warning": "Historical prior strength and short-match scoring assumptions provisional; finishing-first forecasts are not overall Cup title chances.",
+      "status": "Archived pre-tournament forecast; no longer current",
+      "probabilities_frozen_pre_tournament": true
     },
     "official_total_matches": 21,
     "points_system": {
@@ -35,7 +37,10 @@
       "goals scored",
       "head-to-head"
     ],
-    "live_results_url": "https://leaguehub365.com/c/c3pdPtMzAGeXKzuHSUaH"
+    "live_results_url": "https://leaguehub365.com/c/c3pdPtMzAGeXKzuHSUaH",
+    "results_as_of": "2026-10-23",
+    "matches_played": 21,
+    "completed": true
   },
   "teams": [
     {
@@ -88,8 +93,220 @@
       "basis": "Provisional discounted historical cup evidence"
     }
   ],
-  "results": [],
+  "results": [
+    {
+      "fixture_id": "C01",
+      "home": "Woking",
+      "away": "St Albans",
+      "home_score": 0,
+      "away_score": 1,
+      "time": "13:30",
+      "pitch": 1,
+      "source": "LeagueHub365 official competition screenshots received 2026-10-23"
+    },
+    {
+      "fixture_id": "C02",
+      "home": "Newbury",
+      "away": "Merton",
+      "home_score": 5,
+      "away_score": 2,
+      "time": "13:30",
+      "pitch": 2,
+      "source": "LeagueHub365 official competition screenshots received 2026-10-23"
+    },
+    {
+      "fixture_id": "C03",
+      "home": "Hackney",
+      "away": "Sutton",
+      "home_score": 0,
+      "away_score": 0,
+      "time": "13:45",
+      "pitch": 1,
+      "source": "LeagueHub365 official competition screenshots received 2026-10-23"
+    },
+    {
+      "fixture_id": "C04",
+      "home": "Merton",
+      "away": "Reigate & Banstead",
+      "home_score": 0,
+      "away_score": 0,
+      "time": "13:45",
+      "pitch": 2,
+      "source": "LeagueHub365 official competition screenshots received 2026-10-23"
+    },
+    {
+      "fixture_id": "C05",
+      "home": "Newbury",
+      "away": "Woking",
+      "home_score": 1,
+      "away_score": 0,
+      "time": "14:00",
+      "pitch": 1,
+      "source": "LeagueHub365 official competition screenshots received 2026-10-23"
+    },
+    {
+      "fixture_id": "C06",
+      "home": "Reigate & Banstead",
+      "away": "St Albans",
+      "home_score": 2,
+      "away_score": 0,
+      "time": "14:00",
+      "pitch": 2,
+      "source": "LeagueHub365 official competition screenshots received 2026-10-23"
+    },
+    {
+      "fixture_id": "C07",
+      "home": "Hackney",
+      "away": "Woking",
+      "home_score": 0,
+      "away_score": 1,
+      "time": "14:15",
+      "pitch": 1,
+      "source": "LeagueHub365 official competition screenshots received 2026-10-23"
+    },
+    {
+      "fixture_id": "C08",
+      "home": "Merton",
+      "away": "Sutton",
+      "home_score": 0,
+      "away_score": 1,
+      "time": "14:15",
+      "pitch": 2,
+      "source": "LeagueHub365 official competition screenshots received 2026-10-23"
+    },
+    {
+      "fixture_id": "C09",
+      "home": "St Albans",
+      "away": "Newbury",
+      "home_score": 1,
+      "away_score": 0,
+      "time": "14:30",
+      "pitch": 1,
+      "source": "LeagueHub365 official competition screenshots received 2026-10-23"
+    },
+    {
+      "fixture_id": "C10",
+      "home": "Sutton",
+      "away": "Reigate & Banstead",
+      "home_score": 1,
+      "away_score": 0,
+      "time": "14:30",
+      "pitch": 2,
+      "source": "LeagueHub365 official competition screenshots received 2026-10-23"
+    },
+    {
+      "fixture_id": "C11",
+      "home": "Woking",
+      "away": "Merton",
+      "home_score": 0,
+      "away_score": 0,
+      "time": "14:45",
+      "pitch": 1,
+      "source": "LeagueHub365 official competition screenshots received 2026-10-23"
+    },
+    {
+      "fixture_id": "C12",
+      "home": "Hackney",
+      "away": "St Albans",
+      "home_score": 0,
+      "away_score": 1,
+      "time": "14:45",
+      "pitch": 2,
+      "source": "LeagueHub365 official competition screenshots received 2026-10-23"
+    },
+    {
+      "fixture_id": "C13",
+      "home": "Sutton",
+      "away": "Newbury",
+      "home_score": 2,
+      "away_score": 0,
+      "time": "15:00",
+      "pitch": 1,
+      "source": "LeagueHub365 official competition screenshots received 2026-10-23"
+    },
+    {
+      "fixture_id": "C14",
+      "home": "Reigate & Banstead",
+      "away": "Hackney",
+      "home_score": 0,
+      "away_score": 0,
+      "time": "15:00",
+      "pitch": 2,
+      "source": "LeagueHub365 official competition screenshots received 2026-10-23"
+    },
+    {
+      "fixture_id": "C15",
+      "home": "Sutton",
+      "away": "Woking",
+      "home_score": 0,
+      "away_score": 0,
+      "time": "15:15",
+      "pitch": 1,
+      "source": "LeagueHub365 official competition screenshots received 2026-10-23"
+    },
+    {
+      "fixture_id": "C16",
+      "home": "Merton",
+      "away": "St Albans",
+      "home_score": 0,
+      "away_score": 1,
+      "time": "15:15",
+      "pitch": 2,
+      "source": "LeagueHub365 official competition screenshots received 2026-10-23"
+    },
+    {
+      "fixture_id": "C17",
+      "home": "Woking",
+      "away": "Reigate & Banstead",
+      "home_score": 1,
+      "away_score": 0,
+      "time": "15:30",
+      "pitch": 1,
+      "source": "LeagueHub365 official competition screenshots received 2026-10-23"
+    },
+    {
+      "fixture_id": "C18",
+      "home": "Newbury",
+      "away": "Hackney",
+      "home_score": 0,
+      "away_score": 1,
+      "time": "15:30",
+      "pitch": 2,
+      "source": "LeagueHub365 official competition screenshots received 2026-10-23"
+    },
+    {
+      "fixture_id": "C19",
+      "home": "Sutton",
+      "away": "St Albans",
+      "home_score": 0,
+      "away_score": 0,
+      "time": "15:45",
+      "pitch": 1,
+      "source": "LeagueHub365 official competition screenshots received 2026-10-23"
+    },
+    {
+      "fixture_id": "C20",
+      "home": "Reigate & Banstead",
+      "away": "Newbury",
+      "home_score": 0,
+      "away_score": 0,
+      "time": "15:45",
+      "pitch": 2,
+      "source": "LeagueHub365 official competition screenshots received 2026-10-23"
+    },
+    {
+      "fixture_id": "C21",
+      "home": "Hackney",
+      "away": "Merton",
+      "home_score": 1,
+      "away_score": 1,
+      "time": "16:00",
+      "pitch": 1,
+      "source": "LeagueHub365 official competition screenshots received 2026-10-23"
+    }
+  ],
   "sources": [
+    "Official LeagueHub365 Girls Central & East completed fixtures and final standings screenshots, supplied 23 October 2026",
     "Woking SCLC 17 Oct organiser programme, girls fixture schedule page 5, rules page 6 and live score procedure page 7",
     "GPSFA Southern Counties League Cup competition page",
     "Newbury District Tournament One instructions, 17 Oct 2026",
@@ -104,8 +321,11 @@
       "pitch": 1,
       "home": "Woking",
       "away": "St Albans",
-      "status": "Scheduled",
-      "score": null
+      "status": "Complete",
+      "score": {
+        "home": 0,
+        "away": 1
+      }
     },
     {
       "id": "C02",
@@ -114,8 +334,11 @@
       "pitch": 2,
       "home": "Newbury",
       "away": "Merton",
-      "status": "Scheduled",
-      "score": null
+      "status": "Complete",
+      "score": {
+        "home": 5,
+        "away": 2
+      }
     },
     {
       "id": "C03",
@@ -124,8 +347,11 @@
       "pitch": 1,
       "home": "Hackney",
       "away": "Sutton",
-      "status": "Scheduled",
-      "score": null
+      "status": "Complete",
+      "score": {
+        "home": 0,
+        "away": 0
+      }
     },
     {
       "id": "C04",
@@ -134,8 +360,11 @@
       "pitch": 2,
       "home": "Merton",
       "away": "Reigate & Banstead",
-      "status": "Scheduled",
-      "score": null
+      "status": "Complete",
+      "score": {
+        "home": 0,
+        "away": 0
+      }
     },
     {
       "id": "C05",
@@ -144,8 +373,11 @@
       "pitch": 1,
       "home": "Newbury",
       "away": "Woking",
-      "status": "Scheduled",
-      "score": null
+      "status": "Complete",
+      "score": {
+        "home": 1,
+        "away": 0
+      }
     },
     {
       "id": "C06",
@@ -154,8 +386,11 @@
       "pitch": 2,
       "home": "Reigate & Banstead",
       "away": "St Albans",
-      "status": "Scheduled",
-      "score": null
+      "status": "Complete",
+      "score": {
+        "home": 2,
+        "away": 0
+      }
     },
     {
       "id": "C07",
@@ -164,8 +399,11 @@
       "pitch": 1,
       "home": "Hackney",
       "away": "Woking",
-      "status": "Scheduled",
-      "score": null
+      "status": "Complete",
+      "score": {
+        "home": 0,
+        "away": 1
+      }
     },
     {
       "id": "C08",
@@ -174,8 +412,11 @@
       "pitch": 2,
       "home": "Merton",
       "away": "Sutton",
-      "status": "Scheduled",
-      "score": null
+      "status": "Complete",
+      "score": {
+        "home": 0,
+        "away": 1
+      }
     },
     {
       "id": "C09",
@@ -184,8 +425,11 @@
       "pitch": 1,
       "home": "St Albans",
       "away": "Newbury",
-      "status": "Scheduled",
-      "score": null
+      "status": "Complete",
+      "score": {
+        "home": 1,
+        "away": 0
+      }
     },
     {
       "id": "C10",
@@ -194,8 +438,11 @@
       "pitch": 2,
       "home": "Sutton",
       "away": "Reigate & Banstead",
-      "status": "Scheduled",
-      "score": null
+      "status": "Complete",
+      "score": {
+        "home": 1,
+        "away": 0
+      }
     },
     {
       "id": "C11",
@@ -204,8 +451,11 @@
       "pitch": 1,
       "home": "Woking",
       "away": "Merton",
-      "status": "Scheduled",
-      "score": null
+      "status": "Complete",
+      "score": {
+        "home": 0,
+        "away": 0
+      }
     },
     {
       "id": "C12",
@@ -214,8 +464,11 @@
       "pitch": 2,
       "home": "Hackney",
       "away": "St Albans",
-      "status": "Scheduled",
-      "score": null
+      "status": "Complete",
+      "score": {
+        "home": 0,
+        "away": 1
+      }
     },
     {
       "id": "C13",
@@ -224,8 +477,11 @@
       "pitch": 1,
       "home": "Sutton",
       "away": "Newbury",
-      "status": "Scheduled",
-      "score": null
+      "status": "Complete",
+      "score": {
+        "home": 2,
+        "away": 0
+      }
     },
     {
       "id": "C14",
@@ -234,8 +490,11 @@
       "pitch": 2,
       "home": "Reigate & Banstead",
       "away": "Hackney",
-      "status": "Scheduled",
-      "score": null
+      "status": "Complete",
+      "score": {
+        "home": 0,
+        "away": 0
+      }
     },
     {
       "id": "C15",
@@ -244,8 +503,11 @@
       "pitch": 1,
       "home": "Sutton",
       "away": "Woking",
-      "status": "Scheduled",
-      "score": null
+      "status": "Complete",
+      "score": {
+        "home": 0,
+        "away": 0
+      }
     },
     {
       "id": "C16",
@@ -254,8 +516,11 @@
       "pitch": 2,
       "home": "Merton",
       "away": "St Albans",
-      "status": "Scheduled",
-      "score": null
+      "status": "Complete",
+      "score": {
+        "home": 0,
+        "away": 1
+      }
     },
     {
       "id": "C17",
@@ -264,8 +529,11 @@
       "pitch": 1,
       "home": "Woking",
       "away": "Reigate & Banstead",
-      "status": "Scheduled",
-      "score": null
+      "status": "Complete",
+      "score": {
+        "home": 1,
+        "away": 0
+      }
     },
     {
       "id": "C18",
@@ -274,8 +542,11 @@
       "pitch": 2,
       "home": "Newbury",
       "away": "Hackney",
-      "status": "Scheduled",
-      "score": null
+      "status": "Complete",
+      "score": {
+        "home": 0,
+        "away": 1
+      }
     },
     {
       "id": "C19",
@@ -284,8 +555,11 @@
       "pitch": 1,
       "home": "Sutton",
       "away": "St Albans",
-      "status": "Scheduled",
-      "score": null
+      "status": "Complete",
+      "score": {
+        "home": 0,
+        "away": 0
+      }
     },
     {
       "id": "C20",
@@ -294,8 +568,11 @@
       "pitch": 2,
       "home": "Reigate & Banstead",
       "away": "Newbury",
-      "status": "Scheduled",
-      "score": null
+      "status": "Complete",
+      "score": {
+        "home": 0,
+        "away": 0
+      }
     },
     {
       "id": "C21",
@@ -304,8 +581,97 @@
       "pitch": 1,
       "home": "Hackney",
       "away": "Merton",
-      "status": "Scheduled",
-      "score": null
+      "status": "Complete",
+      "score": {
+        "home": 1,
+        "away": 1
+      }
+    }
+  ],
+  "standings": [
+    {
+      "name": "St Albans",
+      "played": 6,
+      "won": 4,
+      "drawn": 1,
+      "lost": 1,
+      "goals_for": 4,
+      "goals_against": 2,
+      "points": 13,
+      "position": 1,
+      "goal_difference": 2
+    },
+    {
+      "name": "Sutton",
+      "played": 6,
+      "won": 3,
+      "drawn": 3,
+      "lost": 0,
+      "goals_for": 4,
+      "goals_against": 0,
+      "points": 12,
+      "position": 2,
+      "goal_difference": 4
+    },
+    {
+      "name": "Woking",
+      "played": 6,
+      "won": 2,
+      "drawn": 2,
+      "lost": 2,
+      "goals_for": 2,
+      "goals_against": 2,
+      "points": 8,
+      "position": 3,
+      "goal_difference": 0
+    },
+    {
+      "name": "Newbury",
+      "played": 6,
+      "won": 2,
+      "drawn": 1,
+      "lost": 3,
+      "goals_for": 6,
+      "goals_against": 6,
+      "points": 7,
+      "position": 4,
+      "goal_difference": 0
+    },
+    {
+      "name": "Reigate & Banstead",
+      "played": 6,
+      "won": 1,
+      "drawn": 3,
+      "lost": 2,
+      "goals_for": 2,
+      "goals_against": 2,
+      "points": 6,
+      "position": 5,
+      "goal_difference": 0
+    },
+    {
+      "name": "Hackney",
+      "played": 6,
+      "won": 1,
+      "drawn": 3,
+      "lost": 2,
+      "goals_for": 2,
+      "goals_against": 3,
+      "points": 6,
+      "position": 6,
+      "goal_difference": -1
+    },
+    {
+      "name": "Merton",
+      "played": 6,
+      "won": 0,
+      "drawn": 3,
+      "lost": 3,
+      "goals_for": 3,
+      "goals_against": 8,
+      "points": 3,
+      "position": 7,
+      "goal_difference": -5
     }
   ]
 }
