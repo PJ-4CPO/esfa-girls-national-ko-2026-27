@@ -306,6 +306,7 @@
     }
   ],
   "sources": [
+    "LeagueHub365 Wales & West four group final tables (17 teams), user screenshots received 23 October 2026",
     "Official LeagueHub365 Girls Central & East completed fixtures and final standings screenshots, supplied 23 October 2026",
     "Woking SCLC 17 Oct organiser programme, girls fixture schedule page 5, rules page 6 and live score procedure page 7",
     "GPSFA Southern Counties League Cup competition page",
@@ -673,5 +674,520 @@
       "position": 7,
       "goal_difference": -5
     }
-  ]
+  ],
+  "other_region": {
+    "name": "Wales & West",
+    "location": "Bath",
+    "date": "2026-10-17",
+    "source": "LeagueHub365 Wales & West regional Group 1–4 final tables supplied as screenshots 23 Oct 2026",
+    "fixture_scorelines_available": false,
+    "original_entries_listed": 18,
+    "teams_in_final_tables": 17,
+    "discrepancy": "GPSFA previously listed 18 Wales & West entries; 17 appear across four final group tables; missing entry not determined",
+    "groups": [
+      {
+        "group": 1,
+        "standings": [
+          {
+            "position": 1,
+            "name": "Caerphilly A",
+            "played": 3,
+            "won": 3,
+            "drawn": 0,
+            "lost": 0,
+            "goals_for": 4,
+            "goals_against": 0,
+            "points": 9
+          },
+          {
+            "position": 2,
+            "name": "East Cornwall",
+            "played": 3,
+            "won": 2,
+            "drawn": 0,
+            "lost": 1,
+            "goals_for": 5,
+            "goals_against": 1,
+            "points": 6
+          },
+          {
+            "position": 3,
+            "name": "Afan Nedd A",
+            "played": 3,
+            "won": 1,
+            "drawn": 0,
+            "lost": 2,
+            "goals_for": 2,
+            "goals_against": 5,
+            "points": 3
+          },
+          {
+            "position": 4,
+            "name": "Newport B",
+            "played": 3,
+            "won": 0,
+            "drawn": 0,
+            "lost": 3,
+            "goals_for": 0,
+            "goals_against": 5,
+            "points": 0
+          }
+        ]
+      },
+      {
+        "group": 2,
+        "standings": [
+          {
+            "position": 1,
+            "name": "RCT A",
+            "played": 3,
+            "won": 2,
+            "drawn": 1,
+            "lost": 0,
+            "goals_for": 4,
+            "goals_against": 1,
+            "points": 7
+          },
+          {
+            "position": 2,
+            "name": "Gloucester A",
+            "played": 3,
+            "won": 1,
+            "drawn": 2,
+            "lost": 0,
+            "goals_for": 2,
+            "goals_against": 1,
+            "points": 5
+          },
+          {
+            "position": 3,
+            "name": "Cardiff & Vale B",
+            "played": 3,
+            "won": 1,
+            "drawn": 0,
+            "lost": 2,
+            "goals_for": 4,
+            "goals_against": 3,
+            "points": 3
+          },
+          {
+            "position": 4,
+            "name": "Swansea B",
+            "played": 3,
+            "won": 0,
+            "drawn": 1,
+            "lost": 2,
+            "goals_for": 1,
+            "goals_against": 6,
+            "points": 1
+          }
+        ]
+      },
+      {
+        "group": 3,
+        "standings": [
+          {
+            "position": 1,
+            "name": "Newport A",
+            "played": 4,
+            "won": 3,
+            "drawn": 1,
+            "lost": 0,
+            "goals_for": 5,
+            "goals_against": 0,
+            "points": 10
+          },
+          {
+            "position": 2,
+            "name": "RCT B",
+            "played": 4,
+            "won": 2,
+            "drawn": 1,
+            "lost": 1,
+            "goals_for": 2,
+            "goals_against": 1,
+            "points": 7
+          },
+          {
+            "position": 3,
+            "name": "Swansea A",
+            "played": 4,
+            "won": 1,
+            "drawn": 1,
+            "lost": 2,
+            "goals_for": 3,
+            "goals_against": 3,
+            "points": 4
+          },
+          {
+            "position": 4,
+            "name": "Stroud",
+            "played": 4,
+            "won": 0,
+            "drawn": 3,
+            "lost": 1,
+            "goals_for": 1,
+            "goals_against": 3,
+            "points": 3
+          },
+          {
+            "position": 5,
+            "name": "Afan Nedd B",
+            "played": 4,
+            "won": 0,
+            "drawn": 2,
+            "lost": 2,
+            "goals_for": 0,
+            "goals_against": 4,
+            "points": 2
+          }
+        ]
+      },
+      {
+        "group": 4,
+        "standings": [
+          {
+            "position": 1,
+            "name": "Cardiff & Vale A",
+            "played": 3,
+            "won": 3,
+            "drawn": 0,
+            "lost": 0,
+            "goals_for": 5,
+            "goals_against": 0,
+            "points": 9
+          },
+          {
+            "position": 2,
+            "name": "Carmarthen",
+            "played": 3,
+            "won": 1,
+            "drawn": 0,
+            "lost": 2,
+            "goals_for": 1,
+            "goals_against": 2,
+            "points": 3
+          },
+          {
+            "position": 3,
+            "name": "Gloucester B",
+            "played": 3,
+            "won": 1,
+            "drawn": 0,
+            "lost": 2,
+            "goals_for": 1,
+            "goals_against": 3,
+            "points": 3
+          },
+          {
+            "position": 4,
+            "name": "Caerphilly B",
+            "played": 3,
+            "won": 1,
+            "drawn": 0,
+            "lost": 2,
+            "goals_for": 1,
+            "goals_against": 3,
+            "points": 3
+          }
+        ]
+      }
+    ]
+  },
+  "combined_provisional": {
+    "method": "Points per match, then goal difference per match, then goals scored per match; alphabetical for remaining equality. Editorial comparison, NOT GPSFA official cross-region ranking or qualification.",
+    "team_count": 24,
+    "qualifier_allocation_status": "Unconfirmed",
+    "original_wales_west_entry_discrepancy": 1,
+    "standings": [
+      {
+        "rank": 1,
+        "name": "Cardiff & Vale A",
+        "region": "Wales & West",
+        "group": "Group 4",
+        "played": 3,
+        "points": 9,
+        "goals_for": 5,
+        "goals_against": 0,
+        "points_per_game": 3,
+        "goal_difference_per_game": 1.667
+      },
+      {
+        "rank": 2,
+        "name": "Caerphilly A",
+        "region": "Wales & West",
+        "group": "Group 1",
+        "played": 3,
+        "points": 9,
+        "goals_for": 4,
+        "goals_against": 0,
+        "points_per_game": 3,
+        "goal_difference_per_game": 1.333
+      },
+      {
+        "rank": 3,
+        "name": "Newport A",
+        "region": "Wales & West",
+        "group": "Group 3",
+        "played": 4,
+        "points": 10,
+        "goals_for": 5,
+        "goals_against": 0,
+        "points_per_game": 2.5,
+        "goal_difference_per_game": 1.25
+      },
+      {
+        "rank": 4,
+        "name": "RCT A",
+        "region": "Wales & West",
+        "group": "Group 2",
+        "played": 3,
+        "points": 7,
+        "goals_for": 4,
+        "goals_against": 1,
+        "points_per_game": 2.333,
+        "goal_difference_per_game": 1
+      },
+      {
+        "rank": 5,
+        "name": "St Albans",
+        "region": "Central & East",
+        "group": "Group 1",
+        "played": 6,
+        "points": 13,
+        "goals_for": 4,
+        "goals_against": 2,
+        "points_per_game": 2.167,
+        "goal_difference_per_game": 0.333
+      },
+      {
+        "rank": 6,
+        "name": "East Cornwall",
+        "region": "Wales & West",
+        "group": "Group 1",
+        "played": 3,
+        "points": 6,
+        "goals_for": 5,
+        "goals_against": 1,
+        "points_per_game": 2,
+        "goal_difference_per_game": 1.333
+      },
+      {
+        "rank": 7,
+        "name": "Sutton",
+        "region": "Central & East",
+        "group": "Group 1",
+        "played": 6,
+        "points": 12,
+        "goals_for": 4,
+        "goals_against": 0,
+        "points_per_game": 2,
+        "goal_difference_per_game": 0.667
+      },
+      {
+        "rank": 8,
+        "name": "RCT B",
+        "region": "Wales & West",
+        "group": "Group 3",
+        "played": 4,
+        "points": 7,
+        "goals_for": 2,
+        "goals_against": 1,
+        "points_per_game": 1.75,
+        "goal_difference_per_game": 0.25
+      },
+      {
+        "rank": 9,
+        "name": "Gloucester A",
+        "region": "Wales & West",
+        "group": "Group 2",
+        "played": 3,
+        "points": 5,
+        "goals_for": 2,
+        "goals_against": 1,
+        "points_per_game": 1.667,
+        "goal_difference_per_game": 0.333
+      },
+      {
+        "rank": 10,
+        "name": "Woking",
+        "region": "Central & East",
+        "group": "Group 1",
+        "played": 6,
+        "points": 8,
+        "goals_for": 2,
+        "goals_against": 2,
+        "points_per_game": 1.333,
+        "goal_difference_per_game": 0
+      },
+      {
+        "rank": 11,
+        "name": "Newbury",
+        "region": "Central & East",
+        "group": "Group 1",
+        "played": 6,
+        "points": 7,
+        "goals_for": 6,
+        "goals_against": 6,
+        "points_per_game": 1.167,
+        "goal_difference_per_game": 0
+      },
+      {
+        "rank": 12,
+        "name": "Cardiff & Vale B",
+        "region": "Wales & West",
+        "group": "Group 2",
+        "played": 3,
+        "points": 3,
+        "goals_for": 4,
+        "goals_against": 3,
+        "points_per_game": 1,
+        "goal_difference_per_game": 0.333
+      },
+      {
+        "rank": 13,
+        "name": "Swansea A",
+        "region": "Wales & West",
+        "group": "Group 3",
+        "played": 4,
+        "points": 4,
+        "goals_for": 3,
+        "goals_against": 3,
+        "points_per_game": 1,
+        "goal_difference_per_game": 0
+      },
+      {
+        "rank": 14,
+        "name": "Reigate & Banstead",
+        "region": "Central & East",
+        "group": "Group 1",
+        "played": 6,
+        "points": 6,
+        "goals_for": 2,
+        "goals_against": 2,
+        "points_per_game": 1,
+        "goal_difference_per_game": 0
+      },
+      {
+        "rank": 15,
+        "name": "Hackney",
+        "region": "Central & East",
+        "group": "Group 1",
+        "played": 6,
+        "points": 6,
+        "goals_for": 2,
+        "goals_against": 3,
+        "points_per_game": 1,
+        "goal_difference_per_game": -0.167
+      },
+      {
+        "rank": 16,
+        "name": "Carmarthen",
+        "region": "Wales & West",
+        "group": "Group 4",
+        "played": 3,
+        "points": 3,
+        "goals_for": 1,
+        "goals_against": 2,
+        "points_per_game": 1,
+        "goal_difference_per_game": -0.333
+      },
+      {
+        "rank": 17,
+        "name": "Caerphilly B",
+        "region": "Wales & West",
+        "group": "Group 4",
+        "played": 3,
+        "points": 3,
+        "goals_for": 1,
+        "goals_against": 3,
+        "points_per_game": 1,
+        "goal_difference_per_game": -0.667
+      },
+      {
+        "rank": 18,
+        "name": "Gloucester B",
+        "region": "Wales & West",
+        "group": "Group 4",
+        "played": 3,
+        "points": 3,
+        "goals_for": 1,
+        "goals_against": 3,
+        "points_per_game": 1,
+        "goal_difference_per_game": -0.667
+      },
+      {
+        "rank": 19,
+        "name": "Afan Nedd A",
+        "region": "Wales & West",
+        "group": "Group 1",
+        "played": 3,
+        "points": 3,
+        "goals_for": 2,
+        "goals_against": 5,
+        "points_per_game": 1,
+        "goal_difference_per_game": -1
+      },
+      {
+        "rank": 20,
+        "name": "Stroud",
+        "region": "Wales & West",
+        "group": "Group 3",
+        "played": 4,
+        "points": 3,
+        "goals_for": 1,
+        "goals_against": 3,
+        "points_per_game": 0.75,
+        "goal_difference_per_game": -0.5
+      },
+      {
+        "rank": 21,
+        "name": "Merton",
+        "region": "Central & East",
+        "group": "Group 1",
+        "played": 6,
+        "points": 3,
+        "goals_for": 3,
+        "goals_against": 8,
+        "points_per_game": 0.5,
+        "goal_difference_per_game": -0.833
+      },
+      {
+        "rank": 22,
+        "name": "Afan Nedd B",
+        "region": "Wales & West",
+        "group": "Group 3",
+        "played": 4,
+        "points": 2,
+        "goals_for": 0,
+        "goals_against": 4,
+        "points_per_game": 0.5,
+        "goal_difference_per_game": -1
+      },
+      {
+        "rank": 23,
+        "name": "Swansea B",
+        "region": "Wales & West",
+        "group": "Group 2",
+        "played": 3,
+        "points": 1,
+        "goals_for": 1,
+        "goals_against": 6,
+        "points_per_game": 0.333,
+        "goal_difference_per_game": -1.667
+      },
+      {
+        "rank": 24,
+        "name": "Newport B",
+        "region": "Wales & West",
+        "group": "Group 1",
+        "played": 3,
+        "points": 0,
+        "goals_for": 0,
+        "goals_against": 5,
+        "points_per_game": 0,
+        "goal_difference_per_game": -1.667
+      }
+    ]
+  }
 }
