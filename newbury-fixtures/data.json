@@ -1,0 +1,258 @@
+{
+  "state": {
+    "title": "Newbury District U11 Girls — Fixtures & Results 2026/27",
+    "as_of": "2026-10-29",
+    "scope": "Only Newbury's district representative girls' matches in the tracked competitions. Dates and scores reflect existing source records; future fixtures may move.",
+    "quality": "Verified results are separated from scheduled, tentative, postponed and projected items."
+  },
+  "entries": [
+    {
+      "id": "NB-01",
+      "date": "2026-09-19",
+      "competition": "Southern Counties Girls’ League",
+      "home": "Newbury",
+      "away": "Wycombe",
+      "home_score": 6,
+      "away_score": 0,
+      "status": "completed",
+      "note": "Date from district fixture schedule"
+    },
+    {
+      "id": "NB-02",
+      "date": "2026-09-26",
+      "competition": "Southern Counties Girls’ League",
+      "home": "Reigate & Banstead",
+      "away": "Newbury",
+      "home_score": 4,
+      "away_score": 1,
+      "status": "completed",
+      "note": "Score confirmed by team firsthand"
+    },
+    {
+      "id": "NB-03",
+      "date": "2026-10-03",
+      "competition": "ESFA Girls’ National Knockout",
+      "home": "Newbury",
+      "away": "Oxford",
+      "home_score": null,
+      "away_score": null,
+      "status": "advanced",
+      "note": "Scheduled date; Newbury progressed, public score unpublished"
+    },
+    {
+      "id": "NB-04",
+      "date": "2026-10-03",
+      "competition": "Southern Counties Girls’ League",
+      "home": "Newbury",
+      "away": "Woking",
+      "home_score": null,
+      "away_score": null,
+      "status": "postponed",
+      "note": "Original scheduled date; rearranged date not confirmed"
+    },
+    {
+      "id": "NB-05",
+      "date": "2026-10-10",
+      "competition": "Southern Counties Girls’ League",
+      "home": "Dacorum",
+      "away": "Newbury",
+      "home_score": 1,
+      "away_score": 5,
+      "status": "completed",
+      "note": "Official GPSFA league result"
+    },
+    {
+      "id": "NB-06",
+      "date": "2026-10-17",
+      "competition": "Southern Counties Girls’ League Cup",
+      "home": "Newbury",
+      "away": "Merton",
+      "home_score": 5,
+      "away_score": 2,
+      "status": "completed",
+      "note": "Official LeagueHub365 Central & East tournament",
+      "time": "13:30"
+    },
+    {
+      "id": "NB-07",
+      "date": "2026-10-17",
+      "competition": "Southern Counties Girls’ League Cup",
+      "home": "Newbury",
+      "away": "Woking",
+      "home_score": 1,
+      "away_score": 0,
+      "status": "completed",
+      "note": "Official LeagueHub365 Central & East tournament",
+      "time": "14:00"
+    },
+    {
+      "id": "NB-08",
+      "date": "2026-10-17",
+      "competition": "Southern Counties Girls’ League Cup",
+      "home": "St Albans",
+      "away": "Newbury",
+      "home_score": 1,
+      "away_score": 0,
+      "status": "completed",
+      "note": "Official LeagueHub365 Central & East tournament",
+      "time": "14:30"
+    },
+    {
+      "id": "NB-09",
+      "date": "2026-10-17",
+      "competition": "Southern Counties Girls’ League Cup",
+      "home": "Sutton",
+      "away": "Newbury",
+      "home_score": 2,
+      "away_score": 0,
+      "status": "completed",
+      "note": "Official LeagueHub365 Central & East tournament",
+      "time": "15:00"
+    },
+    {
+      "id": "NB-10",
+      "date": "2026-10-17",
+      "competition": "Southern Counties Girls’ League Cup",
+      "home": "Newbury",
+      "away": "Hackney",
+      "home_score": 0,
+      "away_score": 1,
+      "status": "completed",
+      "note": "Official LeagueHub365 Central & East tournament",
+      "time": "15:30"
+    },
+    {
+      "id": "NB-11",
+      "date": "2026-10-17",
+      "competition": "Southern Counties Girls’ League Cup",
+      "home": "Reigate & Banstead",
+      "away": "Newbury",
+      "home_score": 0,
+      "away_score": 0,
+      "status": "completed",
+      "note": "Official LeagueHub365 Central & East tournament",
+      "time": "15:45"
+    },
+    {
+      "id": "NB-12",
+      "date": "2026-10-31",
+      "competition": "ESFA Girls’ National Knockout",
+      "home": "Newbury",
+      "away": "Barnet",
+      "home_score": null,
+      "away_score": null,
+      "status": "tentative",
+      "note": "Round Two pairing confirmed; 31 October date not independently confirmed"
+    },
+    {
+      "id": "NB-13",
+      "date": "2026-11-14",
+      "competition": "Southern Counties Girls’ League",
+      "home": "Woking",
+      "away": "Newbury",
+      "home_score": null,
+      "away_score": null,
+      "status": "scheduled",
+      "note": "District fixture workbook date"
+    },
+    {
+      "id": "NB-14",
+      "date": "2026-11-21",
+      "competition": "Southern Counties Girls’ Cup",
+      "home": "Newbury",
+      "away": "Oxford",
+      "home_score": null,
+      "away_score": null,
+      "status": "scheduled",
+      "note": "Separate Southern Counties Girls’ Cup; scheduled date from district programme"
+    },
+    {
+      "id": "NB-15",
+      "date": "2026-12-05",
+      "competition": "Southern Counties Girls’ League",
+      "home": "Gloucester",
+      "away": "Newbury",
+      "home_score": null,
+      "away_score": null,
+      "status": "scheduled",
+      "note": "District fixture workbook date"
+    },
+    {
+      "id": "NB-16",
+      "date": "2027-01-16",
+      "competition": "Southern Counties Girls’ League",
+      "home": "St Albans",
+      "away": "Newbury",
+      "home_score": null,
+      "away_score": null,
+      "status": "scheduled",
+      "note": "District fixture workbook date"
+    },
+    {
+      "id": "NB-17",
+      "date": "2027-01-23",
+      "competition": "Southern Counties Girls’ League",
+      "home": "Newbury",
+      "away": "Reigate & Banstead",
+      "home_score": null,
+      "away_score": null,
+      "status": "scheduled",
+      "note": "District fixture workbook date"
+    },
+    {
+      "id": "NB-18",
+      "date": "2027-02-13",
+      "competition": "Southern Counties Girls’ League",
+      "home": "Newbury",
+      "away": "Dacorum",
+      "home_score": null,
+      "away_score": null,
+      "status": "scheduled",
+      "note": "District fixture workbook date"
+    },
+    {
+      "id": "NB-19",
+      "date": "2027-02-27",
+      "competition": "Southern Counties Girls’ League",
+      "home": "Newbury",
+      "away": "Gloucester",
+      "home_score": null,
+      "away_score": null,
+      "status": "scheduled",
+      "note": "District fixture workbook date"
+    },
+    {
+      "id": "NB-20",
+      "date": "2027-03-13",
+      "competition": "Southern Counties Girls’ League",
+      "home": "Newbury",
+      "away": "St Albans",
+      "home_score": null,
+      "away_score": null,
+      "status": "scheduled",
+      "note": "District fixture workbook date"
+    },
+    {
+      "id": "NB-21",
+      "date": "2027-03-20",
+      "competition": "Southern Counties Girls’ League",
+      "home": "Wycombe",
+      "away": "Newbury",
+      "home_score": null,
+      "away_score": null,
+      "status": "scheduled",
+      "note": "District fixture workbook date"
+    },
+    {
+      "id": "NB-22",
+      "date": "2027-04-24",
+      "competition": "Southern Counties Girls’ League Cup",
+      "home": "Newbury",
+      "away": "Opponent TBC",
+      "home_score": null,
+      "away_score": null,
+      "status": "provisional",
+      "note": "Projected Intermediate finals pathway, not officially confirmed"
+    }
+  ]
+}
