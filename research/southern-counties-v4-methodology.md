@@ -59,3 +59,9 @@ Confirm the four source-unverified current-season scorelines; verify league rost
 
 ## Seasonal weighting policy for future revisions (adopted 10 October 2026)
 As independent match-specific results become available, gradually decrease the 2025/26 historical prior rather than carrying its full starting weight throughout 2026/27. At the next recalculation, use a documented shrinkage factor such as `historical_prior/(1+verified_current_matches/2)` **per team**, so two independently verified current-season matches halve the historical influence, and four reduce it to one-third. Re-test the discount against emerging results before deployment; preserve V4 as a comparable baseline. Do **not** alter the current published V4 percentages simply by editing metadata. A result previously listed on the tracker but not independently verified should not count toward the verified-results decay until its source has been checked.
+
+## V4.2 refresh — 10 November 2026
+
+- All seven results were reconciled against the [dedicated girls’ results grid and standings](https://www.gpsfa.com/cups/berkshire-league/). The remaining 35 home-away fixtures are simulated. The result dates come from the [GPSFA bulletin](https://www.gpsfa.com/information-board/). The Reigate score conflict is recorded in provenance.
+- Apply the documented V4 historical formula with each team’s prior divided by `1 + verified current matches / 2` before calculating opponent-adjusted residuals. Use the existing capped score signal, regularisation, 2.8 total-goal mean, 3/2/1 scoring and shared credit for teams tied at the top.
+- The match forecasts and simulations use the same 1.05 home multiplier and team ratings. Two 100,000-season NumPy PCG64 runs (seeds 20261110 and 20261111) differed by less than one percentage point per team. Published probabilities sum to 100.00%. The preceding V4.1 snapshot is in commit `ae2ae16`.
