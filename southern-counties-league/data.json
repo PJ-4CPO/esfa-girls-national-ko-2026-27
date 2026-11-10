@@ -1,25 +1,25 @@
 {
   "state": {
     "competition": "Southern Counties Girls' League 2026/27",
-    "as_of": "2026-10-11",
+    "as_of": "2026-11-10",
     "teams": 7,
     "total_matches": 42,
-    "played": 6,
-    "remaining": 36,
+    "played": 7,
+    "remaining": 35,
     "model": {
-      "version": "V4.1",
+      "version": "V4.2",
       "status": "Active",
       "simulation_runs": 100000,
-      "seed": 20261011,
-      "previous_version": "V4.0",
+      "seed": 20261110,
+      "previous_version": "V4.1",
       "historical_season": "2025/26",
-      "historical_method": "Current 7 teams; prior-season relative points/game and goal difference/game, shrunk to account for cohort change. Missing historical records get neutral prior. No legacy initial strength values used.",
-      "current_season_method": "Six recorded girls league results, including organiser-confirmed Dacorum 1–5 Newbury; capped goal margins and conservative opponent adjustment.",
-      "remaining_fixture_method": "36 unplayed home-away pairings, 2.8 expected goals per match, 1.05 home multiplier.",
+      "historical_method": "V4 prior divided by 1 + verified current matches / 2 per team.",
+      "current_season_method": "Seven dedicated girls’ grid results with capped margins and opponent adjustment.",
+      "remaining_fixture_method": "35 unplayed home-away pairings, 2.8 expected goals per match, 1.05 home multiplier.",
       "tie_break_assumption": "Championship points 3/2/1; ties for highest points divided equally across tied teams because official title tie-break is unverified.",
-      "random_generator": "mulberry32",
-      "sensitivity": "Primary seed independently repeated, 2nd seed stable; alternate historical/current season weighting tested. Forecasts sensitive to weights due to limited results.",
-      "publication_status": "recalibrated_2026_10_11"
+      "random_generator": "NumPy PCG64",
+      "sensitivity": "Second seed differs by less than one percentage point per team.",
+      "publication_status": "review_snapshot_2026_11_10"
     }
   },
   "standings": [
@@ -32,6 +32,16 @@
       12,
       5,
       7
+    ],
+    [
+      "Dacorum",
+      3,
+      1,
+      1,
+      1,
+      6,
+      8,
+      6
     ],
     [
       "Reigate & Banstead",
@@ -54,24 +64,14 @@
       5
     ],
     [
-      "Dacorum",
-      2,
-      1,
-      0,
-      1,
-      4,
-      6,
-      4
-    ],
-    [
       "Gloucester",
-      2,
+      3,
       0,
-      0,
+      1,
       2,
-      4,
-      7,
-      2
+      6,
+      9,
+      4
     ],
     [
       "Wycombe",
@@ -96,108 +96,121 @@
   ],
   "results": [
     [
-      "Dacorum",
-      3,
-      1,
-      "Gloucester"
-    ],
-    [
       "Gloucester",
       3,
       4,
-      "St Albans"
+      "St Albans",
+      "2026-09-19"
     ],
     [
       "Newbury",
       6,
       0,
-      "Wycombe"
+      "Wycombe",
+      "2026-09-19"
+    ],
+    [
+      "Dacorum",
+      3,
+      1,
+      "Gloucester",
+      "2026-09-26"
     ],
     [
       "Reigate & Banstead",
       4,
       1,
-      "Newbury"
+      "Newbury",
+      "2026-09-26"
     ],
     [
       "St Albans",
       2,
       2,
-      "Reigate & Banstead"
+      "Reigate & Banstead",
+      "2026-10-03"
     ],
     [
       "Dacorum",
       1,
       5,
-      "Newbury"
+      "Newbury",
+      "2026-10-10"
+    ],
+    [
+      "Gloucester",
+      2,
+      2,
+      "Dacorum",
+      "2026-11-07"
     ]
   ],
   "probabilities": [
     [
-      "Newbury",
-      29.84
+      "St Albans",
+      27.26
     ],
     [
-      "St Albans",
-      29.14
+      "Newbury",
+      26.01
     ],
     [
       "Reigate & Banstead",
-      19.85
+      24.65
     ],
     [
       "Woking",
-      12.81
+      13.51
     ],
     [
       "Dacorum",
-      6.04
+      5.99
     ],
     [
       "Wycombe",
-      2.21
+      2.19
     ],
     [
       "Gloucester",
-      0.11
+      0.39
     ]
   ],
   "strengths": [
     [
       "Woking",
       1.66,
-      1.07594
+      1.05545975
     ],
     [
       "Newbury",
       1.64,
-      1.29937
+      1.19259955
     ],
     [
       "St Albans",
       1.2,
-      1.2869
+      1.19184647
     ],
     [
       "Gloucester",
       1.13,
-      0.61503
+      0.74844655
     ],
     [
       "Dacorum",
       1,
-      0.97555
+      0.9635228
     ],
     [
       "Reigate & Banstead",
       1,
-      1.08181
+      1.11572426
     ],
     [
       "Wycombe",
       1,
-      0.85631
+      0.82844505
     ]
   ],
-  "model_note": "Six girls league scores recorded; new Dacorum 1–5 Newbury result confirmed by GPSFA result grid and league table in 11 Oct user-supplied screenshots. Championship estimates recalculated on 36 remaining home-away pairings using previous documented V4 assumptions, 100,000 seasons, and equal credit for teams tied at the top. Other match-specific source verifications remain outstanding."
+  "model_note": "Seven girls’ grid results, including Gloucester 2–2 Dacorum. The earlier cohort’s league evidence decays as current matches accumulate. Simulated leaders share credit when level on points."
 }

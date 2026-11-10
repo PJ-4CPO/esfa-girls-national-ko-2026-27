@@ -62,3 +62,10 @@ The scheme is a transparent illustrative rating, **not** a fitted predictive mod
 
 ## Important limitations and next revision
 Only seven confirmed National KO scores, and only one current-season league score individually corroborated. Cup-history tags may relate to earlier squads, not current players. Beyond Round Two the true knockout path needs independent verification; older competition honours must automatically diminish with accumulating verified current-season results. Do not silently introduce privately reported scores. Recompute both match and title probabilities together from the same `current_strengths`. Maintain public football language and keep these mechanics in the research folder.
+
+## V3.1 refresh — 10 November 2026
+
+- The [girls’ draw](https://www.gpsfa.com/cups/regional-competitons/) lists seven Round One scores, twelve Round Two scores, a Round Two bye and eight Round Three pairings. Only the three unresolved Round Two ties are simulated. Their winners fill the specified Round Three slots. The 19 teams with a path to the title receive the model’s title estimates.
+- Use the documented V3 rating formula with the current verified scores and the league V4.2 strength for Newbury’s transfer. The published later rounds say SE Essex. Leave SE Sussex’s title status unresolved and transfer no rating or result between the two labels.
+- Quarter-final and later opponents are shuffled independently in each campaign because the draw is blank. The [ESFA U11 9-a-side rule](https://www.esfa.co.uk/competitions/rules.asp?id=23) specifies penalties in a tournament knockout section. Its regional tournament format does not establish how this published inter-district bracket resolves a level tie. The model retains the strength-weighted progression proxy without asserting a competition rule.
+- Match estimates and title simulations both use a 1.05 home multiplier and a 2.8 total-goal mean. Two 100,000-campaign NumPy PCG64 runs (seeds 20261110 and 20261111) differed by less than one percentage point for each team. Published probabilities sum to 100.00%. The preceding V3.0 snapshot is in commit `ae2ae16`.

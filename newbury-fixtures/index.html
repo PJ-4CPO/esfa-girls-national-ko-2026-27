@@ -20,27 +20,27 @@
 <nav class="competition-nav" aria-label="Competition trackers"><a href="../">National KO</a><a href="../southern-counties-league/">Counties League</a><a href="../southern-counties-league-cup/">League Cup</a><a href="./" aria-current="page">Newbury Fixtures</a></nav>
 <main class="wrap">
 <section class="stat-strip" aria-label="Newbury schedule overview"><div class="stat"><strong id="completed">—</strong><span>Recorded results</span></div><div class="stat"><strong id="future">—</strong><span>Scheduled / tentative</span></div><div class="stat"><strong id="competitions">—</strong><span>Competitions</span></div><div class="stat"><strong>2026/27</strong><span>Season</span></div></section>
-<section class="model"><div class="section-title"><div><span class="section-kicker">DATE ORDER</span><h2>All Newbury fixtures</h2></div></div><p class="muted">Matches are listed by date, then kickoff time. Confirmed scores are distinguished from unplayed fixtures, postponed games and projected finals. Dates may change; this is not an official live fixture feed.</p><div class="legend"><span>✓ Recorded result</span><span>○ Scheduled fixture</span><span>! Tentative / postponed / projected</span></div><div id="timeline" class="timeline" aria-live="polite"><p class="muted">Loading fixtures…</p></div></section>
-<section class="sources"><h2>Sources &amp; accuracy</h2><p>Results: existing verified Southern Counties Girls’ League, Central &amp; East League Cup and published National Knockout progression records. League fixture dates: Newbury district association schedule. The National Cup result against Oxford remains unpublished on the public competition source; no score is shown. Barnet's proposed 31 October match date remains unconfirmed. The 24 April League Cup final is shown only as a projected pathway.</p><p><strong>Excluded:</strong> boys' Cotswold League and boys' Southern Counties League results. Southern Counties Girls' Cup is a separate competition and included where the fixture is dated.</p></section>
+<section class="model"><div class="section-title"><div><span class="section-kicker">DATE ORDER</span><h2>All Newbury fixtures</h2></div></div><p class="muted">Matches are listed by date, then kickoff time. Confirmed scores are distinguished from unplayed fixtures, postponed games and projected finals. Fixtures without a confirmed date appear below the dated matches.</p><div class="legend"><span>✓ Recorded result</span><span>○ Scheduled fixture</span><span>! Tentative / postponed / projected</span></div><div id="timeline" class="timeline" aria-live="polite"><p class="muted">Loading fixtures…</p></div></section>
+<section class="sources"><h2>Sources &amp; accuracy</h2><p>Results: existing verified Southern Counties Girls’ League, Central &amp; East League Cup and published National Knockout progression records. League fixture dates: Newbury district association schedule. The National Cup result against Oxford remains unpublished on the public competition source; no score is shown. The Barnet match date and result remain unconfirmed. The winner faces Swansea in Round Three. The 24 April League Cup final is shown only as a projected pathway.</p><p><strong>Excluded:</strong> boys' Cotswold League and boys' Southern Counties League results. Southern Counties Girls' Cup is a separate competition and included where the fixture is dated.</p></section>
 </main><footer><div class="wrap">Newbury District U11 Girls • Consolidated fixture list • Evidence-aware tracking</div></footer>
 <script>
 const safe=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const dateLabel=s=>new Intl.DateTimeFormat('en-GB',{day:'numeric',month:'short',year:'numeric',timeZone:'UTC'}).format(new Date(s+'T12:00:00Z'));
-const statusName={completed:'Final',advanced:'Progressed',scheduled:'Scheduled',tentative:'Date unconfirmed',postponed:'Postponed',provisional:'Projected only'};
-fetch('data.json?v=20261029-v1').then(r=>{if(!r.ok)throw Error('Unable to load fixtures');return r.json()}).then(data=>{
-const entries=[...data.entries].sort((a,b)=>a.date.localeCompare(b.date)||(a.time||'').localeCompare(b.time||''));
+const statusName={completed:'Final',advanced:'Progressed',scheduled:'Scheduled',tentative:'Date unconfirmed',postponed:'Postponed',provisional:'Projected only',conditional:'Conditional'};
+fetch('data.json?v=20261110-v2').then(r=>{if(!r.ok)throw Error('Unable to load fixtures');return r.json()}).then(data=>{
+const entries=[...data.entries].sort((a,b)=>(a.date??'9999').localeCompare(b.date??'9999')||(a.time||'').localeCompare(b.time||''));
 document.getElementById('completed').textContent=entries.filter(x=>x.status==='completed').length;
-document.getElementById('future').textContent=entries.filter(x=>['scheduled','tentative','provisional'].includes(x.status)).length;
+document.getElementById('future').textContent=entries.filter(x=>['scheduled','tentative','provisional','conditional'].includes(x.status)).length;
 document.getElementById('competitions').textContent=new Set(entries.map(x=>x.competition)).size;
 const root=document.getElementById('timeline');root.textContent='';let month='';
 for(const x of entries){
-const m=new Intl.DateTimeFormat('en-GB',{month:'long',year:'numeric',timeZone:'UTC'}).format(new Date(x.date+'T12:00:00Z'));
+const m=x.date?new Intl.DateTimeFormat('en-GB',{month:'long',year:'numeric',timeZone:'UTC'}).format(new Date(x.date+'T12:00:00Z')):'Date to be confirmed';
 if(m!==month){month=m;const h=document.createElement('div');h.className='group-label';h.textContent=m;root.appendChild(h)}
 const score=x.status==='completed'?x.home_score+'–'+x.away_score:'';
 const label=x.status==='completed'?score:statusName[x.status]||'TBC';
-const cls=x.status==='completed'?'result':['tentative','postponed','provisional'].includes(x.status)?'caution':'pending';
+const cls=x.status==='completed'?'result':['tentative','postponed','provisional','conditional'].includes(x.status)?'caution':'pending';
 const row=document.createElement('article');row.className='match-row '+cls;
-row.innerHTML='<div class="match-date">'+safe(dateLabel(x.date))+(x.time?'<div class="match-time">'+safe(x.time)+' kickoff</div>':'')+'</div>'+
+row.innerHTML='<div class="match-date">'+safe(x.date?dateLabel(x.date):'Date TBC')+(x.time?'<div class="match-time">'+safe(x.time)+' kickoff</div>':'')+'</div>'+
 '<div><div class="match-meta">'+safe(x.competition)+'</div><div class="match-teams">'+safe(x.home)+' <span style="color:#718299">v</span> '+safe(x.away)+'</div><div class="match-note">'+safe(x.note)+'</div></div>'+
 '<div class="match-status">'+safe(label)+'<small>'+ (x.status==='completed'?'Full time':'')+'</small></div>';
 root.appendChild(row)}
