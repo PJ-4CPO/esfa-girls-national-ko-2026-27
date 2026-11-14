@@ -1190,36 +1190,53 @@
       }
     ]
   },
-  "provisional_qualification": {
-    "status": "ASSUMPTION — NOT OFFICIAL",
-    "as_of": "2026-10-23",
-    "ranking_basis": "combined_provisional.standings; points/game, goal difference/game, goals scored/game",
-    "bands": [
+  "finals": {
+    "date": "2027-04-24",
+    "source_url": "https://www.gpsfa.com/southern-counties-league-cup/",
+    "checked_on": "2026-11-14",
+    "events": [
       {
-        "start": 1,
-        "end": 10,
-        "competition": "Champions Trophy"
+        "name": "Champions Trophy",
+        "location": "Woking",
+        "teams": [
+          "St Albans",
+          "Sutton",
+          "Woking",
+          "Newbury",
+          "Caerphilly A",
+          "Carmarthen A",
+          "Newport A",
+          "RCT A"
+        ]
       },
       {
-        "start": 11,
-        "end": 20,
-        "competition": "Intermediate Competition"
+        "name": "Intermediate Competition",
+        "location": "Bath",
+        "teams": [
+          "East Cornwall",
+          "RCT B",
+          "Cardiff B",
+          "Gloucester",
+          "Swansea A",
+          "Hackney",
+          "Carmarthen",
+          "Caerphilly B"
+        ]
       },
       {
-        "start": 21,
-        "end": 24,
-        "competition": "Plate Trophy"
+        "name": "Plate Trophy",
+        "location": "Oxford",
+        "teams": [
+          "Newport B",
+          "Afan Nedd B",
+          "Stroud",
+          "Merton",
+          "Swansea B",
+          "Gloucester B",
+          "Afan Nedd A",
+          "Reigate & Banstead"
+        ]
       }
-    ],
-    "assumptions": [
-      "The top 10 in the independent 24-team comparison enter Champions",
-      "Ranks 11–20 enter Intermediate",
-      "Ranks 21–24 enter Plate",
-      "All regional teams are treated together; participation restrictions for A/B teams are unknown",
-      "Finals allocation may change when original missing entry and official criteria become known"
-    ],
-    "newbury_projected_competition": "Intermediate Competition",
-    "newbury_rank": 11,
-    "validation_status": "Awaiting organiser's official April entrant lists"
+    ]
   }
 }

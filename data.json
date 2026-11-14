@@ -1,30 +1,30 @@
 {
   "state": {
     "competition": "ESFA U11 Girls Inter-Association / National KO 2026/27",
-    "as_of": "2026-11-10",
-    "teams_in_draw": 44,
-    "round1_matches": 12,
-    "round1_byes": 20,
-    "official_results_published": 19,
+    "as_of": "2026-11-14",
+    "teams_in_draw": 45,
+    "round1_matches": 13,
+    "round1_byes": 19,
+    "official_results_published": 22,
     "baseline_model": {
       "version": "V2.0",
       "status": "Frozen"
     },
     "current_model": {
-      "version": "V3.1",
+      "version": "V3.2",
       "status": "Active",
       "simulation_runs": 100000,
-      "seed": 20261110,
-      "previous_version": "V3.0",
+      "seed": 20261114,
+      "previous_version": "V3.1",
       "historical_decay": "log prior strength divided by (1 + verified current-cup matches / 2)",
       "prior_evidence": "Categorical documented national cup honours; no inherited V2 base rating advantage",
-      "current_evidence": "Seven Round One scores and twelve Round Two scores from the girls’ draw.",
+      "current_evidence": "Nine Round One scores and thirteen Round Two scores from the official ESFA feed. Forfeits affect progression only.",
       "league_transfer": "Newbury only: 0.25 × log of current league V4.2 strength.",
       "draw_assumption": "Published Round Two outcomes and Round Three paths; varied opponents from the quarter-finals.",
       "draw_ties": "Strength-proportional resolution of level knockout scores is illustrative only; not an official competition rule",
       "goals_assumption": "Independent Poisson scores, 2.8 expected total goals, modest home multiplier 1.05",
       "rng": "numpy PCG64 with fixed seed",
-      "validation": "100,000 simulations; 19 possible champions; second seed within one percentage point per team."
+      "validation": "100,000 campaigns; 17 possible champions; second seed within one percentage point per team."
     }
   },
   "model_note": "The model follows the published Round Three bracket. Quarter-final and later opponents vary while the draw is blank. Level simulated matches use a strength-weighted progression estimate.",
@@ -35,7 +35,7 @@
       "North Shropshire",
       "No verified deep run found",
       1.409443269908386,
-      5.91
+      5.28
     ],
     [
       "North Shropshire",
@@ -59,7 +59,7 @@
       "Lewisham",
       "No verified deep run found",
       1.409443269908386,
-      4.08
+      3.94
     ],
     [
       "Havering",
@@ -83,7 +83,7 @@
       "",
       "No verified deep run found",
       2.818886539816772,
-      4.64
+      4.39
     ],
     [
       "Stockport",
@@ -91,7 +91,7 @@
       "",
       "No verified deep run found",
       2.818886539816772,
-      5.32
+      4.63
     ],
     [
       "Merton",
@@ -99,7 +99,7 @@
       "",
       "No verified deep run found",
       2.818886539816772,
-      5.47
+      4.63
     ],
     [
       "Barnsley",
@@ -107,7 +107,7 @@
       "",
       "Verified quarter-finalist",
       3.10077519379845,
-      6.83
+      6.2
     ],
     [
       "Wirral",
@@ -123,7 +123,7 @@
       "Wirral",
       "Recent semi-finalist",
       1.9027484143763214,
-      4.04
+      0
     ],
     [
       "Hull",
@@ -131,7 +131,7 @@
       "",
       "No verified deep run found",
       2.818886539816772,
-      4.37
+      2.8
     ],
     [
       "York",
@@ -143,11 +143,11 @@
     ],
     [
       "Bolton",
-      "Bye",
-      "",
+      "Play",
+      "St Helens",
       "No verified deep run found",
       2.818886539816772,
-      1.65
+      6.73
     ],
     [
       "Warrington",
@@ -156,14 +156,6 @@
       "No verified deep run found",
       2.818886539816772,
       0
-    ],
-    [
-      "SE Sussex",
-      "Play",
-      "Chelmsford",
-      "No verified deep run found",
-      1.409443269908386,
-      null
     ],
     [
       "Chelmsford",
@@ -179,7 +171,7 @@
       "Oxford",
       "No verified deep run found",
       1.409443269908386,
-      2.01
+      2.63
     ],
     [
       "Oxford",
@@ -203,7 +195,7 @@
       "",
       "Champion + another recent deep run",
       5.355884425651867,
-      13.63
+      12.78
     ],
     [
       "Barnet",
@@ -211,7 +203,7 @@
       "",
       "No verified deep run found",
       2.818886539816772,
-      1.53
+      1.3
     ],
     [
       "Rotherham",
@@ -251,7 +243,7 @@
       "",
       "No verified deep run found",
       2.818886539816772,
-      4.95
+      4.45
     ],
     [
       "Halton",
@@ -267,7 +259,7 @@
       "Halton",
       "Repeated champion / repeated finalist",
       4.2283298097251585,
-      9.03
+      14.55
     ],
     [
       "Rossendale",
@@ -275,7 +267,7 @@
       "Hyndburn & Ribble",
       "No verified deep run found",
       1.409443269908386,
-      2.94
+      0
     ],
     [
       "Hyndburn & Ribble",
@@ -299,7 +291,7 @@
       "Selby",
       "Runner-up / multiple deep runs",
       2.1141649048625792,
-      9.36
+      9.26
     ],
     [
       "Selby",
@@ -323,7 +315,7 @@
       "Dover & Deal",
       "No verified deep run found",
       1.409443269908386,
-      5.3
+      4.92
     ],
     [
       "West Kent",
@@ -355,7 +347,7 @@
       "South Birmingham",
       "No verified deep run found",
       1.409443269908386,
-      3.74
+      3.31
     ],
     [
       "South Birmingham",
@@ -383,28 +375,36 @@
     ],
     [
       "SE Essex",
-      "",
-      "",
+      "Play",
+      "Chelmsford",
+      "No verified deep run found",
+      1.409443269908386,
+      8.2
+    ],
+    [
+      "St Helens",
+      "Play",
+      "Bolton",
       "No verified deep run found",
       0,
-      5.2
+      0
     ]
   ],
   "fixtures": [
     [
       "Swansea",
       "North Shropshire",
-      "",
-      "",
-      "Progressed",
+      null,
+      null,
+      "Forfeit",
       "1.01"
     ],
     [
       "Lewisham",
       "Bexley",
-      "",
-      "",
-      "Progressed",
+      null,
+      null,
+      "Forfeit",
       "1.02"
     ],
     [
@@ -416,7 +416,15 @@
       "1.09"
     ],
     [
-      "SE Sussex",
+      "Bolton",
+      "St Helens",
+      8,
+      1,
+      "Complete",
+      "1.12"
+    ],
+    [
+      "SE Essex",
       "Chelmsford",
       7,
       0,
@@ -426,9 +434,9 @@
     [
       "Newbury",
       "Oxford",
-      "",
-      "",
-      "Progressed",
+      4,
+      3,
+      "Complete",
       "1.15"
     ],
     [
@@ -443,7 +451,7 @@
       "Halton",
       "Liverpool",
       0,
-      9,
+      12,
       "Complete",
       "1.23"
     ],
@@ -466,17 +474,17 @@
     [
       "Dover & Deal",
       "Canterbury",
-      "",
-      "",
-      "Progressed",
+      null,
+      null,
+      "Forfeit",
       "1.27"
     ],
     [
       "Rugby",
       "South Birmingham",
-      "",
-      "",
-      "Progressed",
+      null,
+      null,
+      "Forfeit",
       "1.31"
     ],
     [
@@ -489,12 +497,13 @@
     ]
   ],
   "public_progression": {
-    "Newbury": "Round Two v Barnet; winner away to Swansea in Round Three"
+    "Newbury": "Beat Oxford City 4–3; Round Two v Barnet; winner away to Swansea in Round Three"
   },
   "source": {
-    "name": "Gloucestershire Primary Schools' FA (GPSFA)",
-    "url": "https://www.gpsfa.com/cups/regional-competitons/",
-    "verified": "2026-11-10"
+    "name": "English Schools’ Football Association (ESFA)",
+    "url": "https://www.schoolsfootball.org/competitions/fixtures/year/2026-2027/946",
+    "verified": "2026-11-14",
+    "cross_check_url": "https://www.gpsfa.com/cups/regional-competitons/"
   },
   "round2": [
     [
@@ -502,199 +511,222 @@
       "Newbury",
       "Barnet",
       null,
-      null
+      null,
+      {
+        "detail": "7 Nov 2026 · 10:00 · Trinity School"
+      }
     ],
     [
       "2.02",
       "Canterbury",
       "Swale",
       9,
-      1
+      1,
+      {}
     ],
     [
       "2.03",
       "Warrington",
       "Stockport",
       4,
-      7
+      7,
+      {}
     ],
     [
       "2.04",
       "Maidstone",
       "Medway",
       2,
-      1
+      1,
+      {}
     ],
     [
       "2.05",
       "South London",
       "Merton",
       1,
-      5
+      5,
+      {}
     ],
     [
       "2.06",
       "Gainsborough",
       "Hull",
-      0,
-      1
+      null,
+      null,
+      {
+        "winner": "Hull"
+      }
     ],
     [
       "2.07",
       "Brighton",
       "Sutton",
       5,
-      1
+      1,
+      {}
     ],
     [
       "2.08",
       "Sefton",
       "Liverpool",
-      null,
-      null
+      0,
+      2,
+      {}
     ],
     [
       "2.09",
       "Barnsley",
       "Rotherham",
       3,
-      1
+      1,
+      {}
     ],
     [
       "2.10",
       "Newcastle",
       "Sunderland",
       2,
-      0
+      0,
+      {}
     ],
     [
       "2.11",
       "Swansea",
       "Afan Nedd",
       5,
-      2
+      2,
+      {}
     ],
     [
       "2.12",
       "Wolverhampton",
       "Rugby",
       0,
-      1
+      1,
+      {}
     ],
     [
       "2.13",
       "West Kent",
       "Bexley",
       0,
-      1
+      1,
+      {}
     ],
     [
       "2.14",
       "Bolton",
       "Rossendale",
-      null,
-      null
+      1,
+      0,
+      {}
     ],
     [
       "2.15",
       "Leeds",
-      "Bye",
+      "York",
       null,
-      null
+      null,
+      {
+        "winner": "Leeds"
+      }
     ],
     [
       "2.16",
       "Havering",
       "SE Essex",
       1,
-      5
+      5,
+      {}
     ]
   ],
   "progression_without_score": [
-    "Newbury",
-    "Canterbury",
     "Swansea",
     "Bexley",
-    "Rugby"
+    "Canterbury",
+    "Rugby",
+    "Hull",
+    "Leeds"
   ],
   "eliminated_without_score": [
-    "Oxford",
-    "Dover & Deal",
     "North Shropshire",
     "Lewisham",
-    "South Birmingham"
+    "Dover & Deal",
+    "South Birmingham",
+    "Gainsborough",
+    "York"
   ],
   "current_strengths": {
     "Barnet": 1.0,
     "Barnsley": 1.24400167,
     "Bexley": 1.13598487,
-    "Bolton": 1.0,
+    "Bolton": 1.25441166,
     "Brighton": 1.55270722,
     "Canterbury": 1.14644594,
-    "Hull": 1.11071061,
+    "Hull": 1.0,
     "Leeds": 1.38172585,
-    "Liverpool": 1.65560527,
+    "Liverpool": 1.62147031,
     "Maidstone": 1.09417428,
     "Merton": 1.14644594,
-    "Newbury": 1.04501773,
+    "Newbury": 1.14343153,
     "Newcastle": 1.12000521,
-    "Rossendale": 1.14644594,
     "Rugby": 1.09417428,
-    "SE Essex": 1.14644594,
-    "Sefton": 1.31872672,
+    "SE Essex": 1.34985881,
     "Stockport": 1.14644594,
     "Swansea": 1.14644594
   },
   "previous_model_snapshot": {
-    "version": "V2.0",
-    "as_of": "2026-10-06",
+    "as_of": "2026-11-10",
+    "version": "V3.1",
+    "for_comparison_only": true,
     "title_estimates": {
-      "Swansea": 1.409,
+      "Swansea": 5.91,
       "North Shropshire": 0,
-      "Lewisham": 1.409,
-      "Bexley": 0,
-      "Havering": 2.819,
-      "Swale": 2.819,
-      "Maidstone": 2.819,
-      "Stockport": 2.819,
-      "Merton": 2.819,
-      "Barnsley": 2.731,
+      "Lewisham": 0,
+      "Bexley": 4.08,
+      "Havering": 0,
+      "Swale": 0,
+      "Maidstone": 4.64,
+      "Stockport": 5.32,
+      "Merton": 5.47,
+      "Barnsley": 6.83,
       "Wirral": 0,
-      "Sefton": 3.959,
-      "Hull": 2.761,
-      "York": 2.819,
-      "Bolton": 2.724,
-      "Warrington": 2.731,
-      "SE Sussex": 3.682,
+      "Sefton": 4.04,
+      "Hull": 4.37,
+      "York": 0,
+      "Bolton": 1.65,
+      "Warrington": 0,
+      "SE Sussex": null,
       "Chelmsford": 0,
-      "Newbury": 2.669,
+      "Newbury": 2.01,
       "Oxford": 0,
-      "Medway": 2.819,
-      "Brighton": 3.788,
-      "Barnet": 2.745,
-      "Rotherham": 2.819,
-      "Gainsborough": 2.703,
+      "Medway": 0,
+      "Brighton": 13.63,
+      "Barnet": 1.53,
+      "Rotherham": 0,
+      "Gainsborough": 0,
       "Stafford": 0,
-      "Wolverhampton": 3.479,
-      "Newcastle": 2.819,
+      "Wolverhampton": 0,
+      "Newcastle": 4.95,
       "Halton": 0,
-      "Liverpool": 8.723,
-      "Rossendale": 3.608,
+      "Liverpool": 9.03,
+      "Rossendale": 2.94,
       "Hyndburn & Ribble": 0,
-      "South London": 2.819,
-      "Leeds": 4.165,
+      "South London": 0,
+      "Leeds": 9.36,
       "Selby": 0,
       "Dover & Deal": 0,
-      "Canterbury": 1.409,
-      "West Kent": 4,
-      "Sunderland": 2.819,
-      "Sutton": 2.819,
-      "Rugby": 1.409,
+      "Canterbury": 5.3,
+      "West Kent": 0,
+      "Sunderland": 0,
+      "Sutton": 0,
+      "Rugby": 3.74,
       "South Birmingham": 0,
       "West Cornwall": 0,
-      "Afan Nedd": 3.36
-    },
-    "for_comparison_only": true
+      "Afan Nedd": 0,
+      "SE Essex": 5.2
+    }
   },
   "round3": [
     [
@@ -702,56 +734,80 @@
       "Maidstone",
       "Canterbury",
       null,
-      null
+      null,
+      {
+        "detail": "Play by 28 Nov 2026"
+      }
     ],
     [
       "3.02",
       "Hull",
       "Leeds",
       null,
-      null
+      null,
+      {
+        "detail": "Play by 28 Nov 2026"
+      }
     ],
     [
       "3.03",
       "Brighton",
       "Bexley",
       null,
-      null
+      null,
+      {
+        "detail": "Play by 28 Nov 2026"
+      }
     ],
     [
       "3.04",
       "Newcastle",
       "Barnsley",
       null,
-      null
+      null,
+      {
+        "detail": "Play by 28 Nov 2026"
+      }
     ],
     [
       "3.05",
-      "2.08",
+      "Liverpool",
       "Rugby",
       null,
-      null
+      null,
+      {
+        "detail": "Play by 28 Nov 2026"
+      }
     ],
     [
       "3.06",
       "Merton",
       "SE Essex",
       null,
-      null
+      null,
+      {
+        "detail": "Play by 28 Nov 2026"
+      }
     ],
     [
       "3.07",
-      "2.14",
+      "Bolton",
       "Stockport",
       null,
-      null
+      null,
+      {
+        "detail": "Play by 28 Nov 2026"
+      }
     ],
     [
       "3.08",
       "Swansea",
       "2.01",
       null,
-      null
+      null,
+      {
+        "detail": "Play by 28 Nov 2026"
+      }
     ]
   ]
 }

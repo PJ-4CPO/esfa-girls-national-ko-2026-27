@@ -25,15 +25,15 @@ Season 2026/27. Recovery baseline checked 10 November 2026.
 | --- | --- |
 | Reigate & Banstead 4–1 Newbury | Use the dedicated girls’ grid and standings. The weekly bulletin prints the boys’ 0–2 score in both sections. Retain the conflict in provenance. |
 | Newbury 9–1 St Albans B | The bulletin places this in the Cotswold League. Exclude it from the U11 girls’ tracker. |
-| Newbury v Oxford, National KO | Progression is supported by the Round Two draw. Leave the first-round score blank until an eligible public source supplies it. |
-| Newbury v Barnet, National KO | Round Two pairing verified. Replay timing and outcome remain unverified. The published Round Three draw gives Swansea the winner of this tie. |
+| Newbury v Oxford, National KO | ESFA records Newbury 4–3 Oxford City on 3 October at Trinity School. |
+| Newbury v Barnet, National KO | ESFA lists 7 November at 10:00 at Trinity School. The result remains unreported. The winner faces Swansea away by the 28 November deadline. |
 | Newbury v Oxford, Girls’ Southern Counties Cup | The girls’ draw lists Oxford. Use that draw when checking the district schedule and confirm kick-off and venue separately. |
-| League Cup April finals | Newbury finished fourth at Central & East. The comparison projects 11th and Intermediate under assumed allocation bands. Wait for the published allocations and preserve the provisional label. The A/B team policy and missing Wales & West entry remain open. |
+| League Cup April finals | GPSFA allocates Newbury to the Girls’ Champions Trophy at Woking on 24 April 2027. The allocation formula remains unverified. |
 
 ## Backlog and release
 
-1. Refresh the National KO results and Round Three pairings, reconcile changed names and progression, then recalculate forecasts. Verify the exact ESFA tie rule before treating it as official. Document any modelling assumption for future rounds with an unpublished draw.
-2. Refresh the girls’ league with Gloucester 2–2 Dacorum on 7 November. Reconcile dates, the official standings, remaining pairings and forecasts. Keep the official championship tie-break open until verified.
+1. Check the official ESFA draw for the Barnet outcome and later-round pairings, then recalculate forecasts when the inputs change. Verify the exact ESFA tie rule before treating it as official. Document any modelling assumption for future rounds with an unpublished draw.
+2. Check the girls’ grid for new results, then reconcile dates, official standings, remaining pairings and forecasts. Keep the official championship tie-break open until verified.
 3. Give fixtures stable identifiers across competition data and the chronological view in a separate change. Preserve all four routes and neutral branding.
 4. Follow the [research verification protocol](research/README.md). Check season, age group, girls’ category, competition and home/away orientation. Record the source, check date, conflicts and date confidence. Keep private reports out of the repository.
 5. Review the diff and check all four pages, results, standings and model totals. Obtain approval before merging to the Pages branch. After release, confirm the deployed commit and compare the live pages and feeds with that commit.
