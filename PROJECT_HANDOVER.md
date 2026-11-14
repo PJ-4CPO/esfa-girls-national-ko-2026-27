@@ -11,9 +11,11 @@ Season 2026/27. Recovery baseline checked 10 November 2026.
 
 ## Competition and data map
 
+Use the [source register and update checklist](research/README.md#source-register) for each results refresh.
+
 | Competition or view | Route and data | Evidence and methodology |
 | --- | --- | --- |
-| ESFA U11 Girls National Knockout | [Home](index.html) · [data](data.json) | [GPSFA girls’ draw](https://www.gpsfa.com/cups/regional-competitons/) · [provenance](research/national-ko-provenance.json) · [V3 methodology](research/national-ko-v3-methodology.md) |
+| ESFA U11 Girls National Knockout | [Home](index.html) · [data](data.json) | [Official ESFA draw](https://www.schoolsfootball.org/competitions/fixtures/year/2026-2027/946) · [GPSFA cross-check](https://www.gpsfa.com/cups/regional-competitons/) · [provenance](research/national-ko-provenance.json) · [V3 methodology](research/national-ko-v3-methodology.md) |
 | Southern Counties Girls’ League | [League](southern-counties-league/index.html) · [data](southern-counties-league/data.json) | [GPSFA girls’ grid and standings](https://www.gpsfa.com/cups/berkshire-league/) · [weekly results](https://www.gpsfa.com/information-board/) · [provenance](research/southern-counties-provenance.json) · [V4 methodology](research/southern-counties-v4-methodology.md) |
 | Southern Counties Girls’ League Cup | [League Cup](southern-counties-league-cup/index.html) · [data](southern-counties-league-cup/data.json) | [GPSFA competition page](https://www.gpsfa.com/southern-counties-league-cup/) · [Central & East tournament results](https://leaguehub365.com/c/c3pdPtMzAGeXKzuHSUaH) |
 | Southern Counties Girls’ Cup | Separate knockout draw represented in [Newbury fixtures](newbury-fixtures/data.json) | [GPSFA girls’ cup draw](https://www.gpsfa.com/southern-counties-cup/) |
