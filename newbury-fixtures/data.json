@@ -1,7 +1,7 @@
 {
   "state": {
     "title": "Newbury District U11 Girls — Fixtures & Results 2026/27",
-    "as_of": "2026-11-10",
+    "as_of": "2026-11-14",
     "scope": "Only Newbury's district representative girls' matches in the tracked competitions. Dates and scores reflect existing source records; future fixtures may move.",
     "quality": "Verified results are separated from scheduled, tentative, postponed and projected items."
   },
@@ -33,11 +33,12 @@
       "date": "2026-10-03",
       "competition": "ESFA Girls’ National Knockout",
       "home": "Newbury",
-      "away": "Oxford",
-      "home_score": null,
-      "away_score": null,
-      "status": "advanced",
-      "note": "Scheduled date; Newbury progressed, public score unpublished"
+      "away": "Oxford City",
+      "home_score": 4,
+      "away_score": 3,
+      "status": "completed",
+      "note": "Official ESFA result · Trinity School",
+      "time": "09:15"
     },
     {
       "id": "NB-04",
@@ -135,14 +136,15 @@
     },
     {
       "id": "NB-12",
-      "date": null,
+      "date": "2026-11-07",
       "competition": "ESFA Girls’ National Knockout",
       "home": "Newbury",
       "away": "Barnet",
       "home_score": null,
       "away_score": null,
-      "status": "tentative",
-      "note": "Published Round Two pairing. Match date and result are unconfirmed. The winner faces Swansea away."
+      "status": "result_pending",
+      "note": "ESFA fixture listing · Trinity School. Result unreported. Winner faces Swansea away.",
+      "time": "10:00"
     },
     {
       "id": "NB-13",
@@ -248,11 +250,11 @@
       "date": "2027-04-24",
       "competition": "Southern Counties Girls’ League Cup",
       "home": "Newbury",
-      "away": "Opponent TBC",
+      "away": "Opponents TBC",
       "home_score": null,
       "away_score": null,
-      "status": "provisional",
-      "note": "Projected Intermediate finals pathway, not officially confirmed"
+      "status": "scheduled",
+      "note": "Girls’ Champions Trophy at Woking · official allocation · match times TBC"
     },
     {
       "id": "NB-23",
@@ -263,7 +265,7 @@
       "home_score": null,
       "away_score": null,
       "status": "conditional",
-      "note": "Published Round Three pairing. Newbury play this tie if they advance past Barnet."
+      "note": "ESFA play-by deadline: 28 November. Match date TBC. Newbury play this tie if they advance past Barnet."
     }
   ]
 }
