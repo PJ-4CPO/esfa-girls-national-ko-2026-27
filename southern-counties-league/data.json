@@ -1,36 +1,46 @@
 {
   "state": {
     "competition": "Southern Counties Girls' League 2026/27",
-    "as_of": "2026-11-10",
+    "as_of": "2026-11-15",
     "teams": 7,
     "total_matches": 42,
-    "played": 7,
-    "remaining": 35,
+    "played": 9,
+    "remaining": 33,
     "model": {
-      "version": "V4.2",
+      "version": "V4.3",
       "status": "Active",
       "simulation_runs": 100000,
-      "seed": 20261110,
-      "previous_version": "V4.1",
+      "seed": 20261115,
+      "previous_version": "V4.2",
       "historical_season": "2025/26",
       "historical_method": "V4 prior divided by 1 + verified current matches / 2 per team.",
-      "current_season_method": "Seven dedicated girls’ grid results with capped margins and opponent adjustment.",
-      "remaining_fixture_method": "35 unplayed home-away pairings, 2.8 expected goals per match, 1.05 home multiplier.",
+      "current_season_method": "Nine girls’ grid results with capped margins and opponent adjustment.",
+      "remaining_fixture_method": "33 unplayed home-away pairings, 2.8 expected goals per match, 1.05 home multiplier.",
       "tie_break_assumption": "Championship points 3/2/1; ties for highest points divided equally across tied teams because official title tie-break is unverified.",
       "random_generator": "NumPy PCG64",
       "sensitivity": "Second seed differs by less than one percentage point per team.",
-      "publication_status": "review_snapshot_2026_11_10"
+      "publication_status": "review_snapshot_2026_11_15"
     }
   },
   "standings": [
     [
       "Newbury",
+      4,
       3,
-      2,
       0,
       1,
-      12,
-      5,
+      17,
+      9,
+      10
+    ],
+    [
+      "Gloucester",
+      4,
+      1,
+      1,
+      2,
+      15,
+      9,
       7
     ],
     [
@@ -64,34 +74,24 @@
       5
     ],
     [
-      "Gloucester",
-      3,
-      0,
-      1,
-      2,
-      6,
-      9,
-      4
-    ],
-    [
       "Wycombe",
-      1,
+      2,
       0,
       0,
-      1,
+      2,
       0,
-      6,
-      1
+      15,
+      2
     ],
     [
       "Woking",
+      1,
       0,
       0,
-      0,
-      0,
-      0,
-      0,
-      0
+      1,
+      4,
+      5,
+      1
     ]
   ],
   "results": [
@@ -143,74 +143,88 @@
       2,
       "Dacorum",
       "2026-11-07"
+    ],
+    [
+      "Gloucester",
+      9,
+      0,
+      "Wycombe",
+      "2026-11-14"
+    ],
+    [
+      "Woking",
+      4,
+      5,
+      "Newbury",
+      "2026-11-14"
     ]
   ],
   "probabilities": [
     [
-      "St Albans",
-      27.26
+      "Newbury",
+      38.97
     ],
     [
-      "Newbury",
-      26.01
+      "St Albans",
+      27.06
     ],
     [
       "Reigate & Banstead",
-      24.65
-    ],
-    [
-      "Woking",
-      13.51
+      22.83
     ],
     [
       "Dacorum",
-      5.99
+      6.07
     ],
     [
-      "Wycombe",
-      2.19
+      "Woking",
+      3.14
     ],
     [
       "Gloucester",
-      0.39
+      1.57
+    ],
+    [
+      "Wycombe",
+      0.36
     ]
   ],
   "strengths": [
     [
       "Woking",
       1.66,
-      1.05545975
+      0.91954323
     ],
     [
       "Newbury",
       1.64,
-      1.19259955
+      1.26036336
     ],
     [
       "St Albans",
       1.2,
-      1.19184647
+      1.20631751
     ],
     [
       "Gloucester",
       1.13,
-      0.74844655
+      0.88687825
     ],
     [
       "Dacorum",
       1,
-      0.9635228
+      0.97594869
     ],
     [
       "Reigate & Banstead",
       1,
-      1.11572426
+      1.12486298
     ],
     [
       "Wycombe",
       1,
-      0.82844505
+      0.7346489
     ]
   ],
-  "model_note": "Seven girls’ grid results, including Gloucester 2–2 Dacorum. The earlier cohort’s league evidence decays as current matches accumulate. Simulated leaders share credit when level on points."
+  "model_note": "Nine girls’ grid results, including Woking 4–5 Newbury and Gloucester 9–0 Wycombe. Simulated leaders share credit when level on points."
 }
