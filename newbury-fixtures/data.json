@@ -1,7 +1,7 @@
 {
   "state": {
     "title": "Newbury District U11 Girls — Fixtures & Results 2026/27",
-    "as_of": "2026-11-14",
+    "as_of": "2026-11-15",
     "scope": "Only Newbury's district representative girls' matches in the tracked competitions. Dates and scores reflect existing source records; future fixtures may move.",
     "quality": "Verified results are separated from scheduled, tentative, postponed and projected items."
   },
@@ -152,10 +152,10 @@
       "competition": "Southern Counties Girls’ League",
       "home": "Woking",
       "away": "Newbury",
-      "home_score": null,
-      "away_score": null,
-      "status": "scheduled",
-      "note": "District fixture workbook date"
+      "home_score": 4,
+      "away_score": 5,
+      "status": "completed",
+      "note": "GPSFA girls’ results grid · district fixture schedule"
     },
     {
       "id": "NB-14",

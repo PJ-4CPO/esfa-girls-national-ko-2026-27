@@ -65,3 +65,8 @@ As independent match-specific results become available, gradually decrease the 2
 - All seven results were reconciled against the [dedicated girls’ results grid and standings](https://www.gpsfa.com/cups/berkshire-league/). The remaining 35 home-away fixtures are simulated. The result dates come from the [GPSFA bulletin](https://www.gpsfa.com/information-board/). The Reigate score conflict is recorded in provenance.
 - Apply the documented V4 historical formula with each team’s prior divided by `1 + verified current matches / 2` before calculating opponent-adjusted residuals. Use the existing capped score signal, regularisation, 2.8 total-goal mean, 3/2/1 scoring and shared credit for teams tied at the top.
 - The match forecasts and simulations use the same 1.05 home multiplier and team ratings. Two 100,000-season NumPy PCG64 runs (seeds 20261110 and 20261111) differed by less than one percentage point per team. Published probabilities sum to 100.00%. The preceding V4.1 snapshot is in commit `ae2ae16`.
+
+## V4.3 refresh — 15 November 2026
+
+- Added Woking 4–5 Newbury and Gloucester 9–0 Wycombe, both played on 14 November. All seven table rows reconcile to the organiser’s girls’ standings.
+- The V4.2 formula is carried forward with nine recorded matches and 33 remaining pairings. Two 100,000-season runs with seeds 20261115 and 20261116 differed by less than one percentage point per team. Rounded title probabilities total 100.00%.

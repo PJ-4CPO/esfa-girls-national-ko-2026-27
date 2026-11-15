@@ -103,6 +103,31 @@
       "date_source_url": "https://www.gpsfa.com/information-board/",
       "independently_rechecked_on": "2026-11-10",
       "verification_status": "verified_organiser_girls_grid"
+    },
+    {
+      "home": "Gloucester",
+      "away": "Wycombe",
+      "home_score": 9,
+      "away_score": 0,
+      "match_date": "2026-11-14",
+      "source_type": "competition_organiser",
+      "source_url": "https://www.gpsfa.com/cups/berkshire-league/",
+      "verification_status": "verified_organiser_girls_grid",
+      "independently_rechecked_on": "2026-11-15",
+      "date_confidence": "participant_fixture_and_result",
+      "date_source_url": "https://www.gpsfa.com/gpsfa-girls-district-squad/"
+    },
+    {
+      "home": "Woking",
+      "away": "Newbury",
+      "home_score": 4,
+      "away_score": 5,
+      "match_date": "2026-11-14",
+      "source_type": "competition_organiser",
+      "source_url": "https://www.gpsfa.com/cups/berkshire-league/",
+      "verification_status": "verified_organiser_girls_grid",
+      "independently_rechecked_on": "2026-11-15",
+      "date_confidence": "district_fixture_schedule"
     }
   ],
   "candidate_sources": [
@@ -219,29 +244,29 @@
   ],
   "unverified_private_results": "Excluded deliberately; never put privately reported scores in this repository.",
   "source_audit": {
-    "checked_on": "2026-11-10",
+    "checked_on": "2026-11-15",
     "organiser_url": "https://www.gpsfa.com/cups/berkshire-league/",
-    "organiser_status": "Seven results verified against the dedicated girls’ grid and all standings fields reconciled.",
-    "verified_independent_scores": 7,
+    "organiser_status": "Nine results verified against the girls’ grid. All seven standings rows reconcile.",
+    "verified_independent_scores": 9,
     "other_results": "Reigate 4–1 is supported by the girls’ grid and standings despite the weekly bulletin conflict.",
-    "new_scores_found": 1,
-    "discrepancy_resolution": "Use the girls’ grid for scores and the bulletin for dates."
+    "new_scores_found": 2,
+    "discrepancy_resolution": "Use the dedicated girls’ grid for scores. Record the separate source of each match date."
   },
   "model_audit": {
-    "as_of": "2026-10-11",
-    "published_version": "V4.1",
+    "as_of": "2026-11-15",
+    "published_version": "V4.3",
     "research_methodology_path": "research/southern-counties-v4-methodology.md",
-    "conclusion": "Legacy V3 Newbury starting advantage was not sufficiently supported by 2025/26 league evidence. Removed legacy base ratings and recalibrated title estimates.",
+    "conclusion": "Recalculated using the two latest results and the existing V4.2 method.",
     "primary_forecasts": {
-      "Newbury": 29.84,
-      "St Albans": 29.14,
-      "Reigate & Banstead": 19.85,
-      "Woking": 12.81,
-      "Dacorum": 6.04,
-      "Wycombe": 2.21,
-      "Gloucester": 0.11
+      "Newbury": 38.97,
+      "St Albans": 27.06,
+      "Reigate & Banstead": 22.83,
+      "Dacorum": 6.07,
+      "Woking": 3.14,
+      "Gloucester": 1.57,
+      "Wycombe": 0.36
     },
-    "sensitivity": "The relative strength of the top teams is sensitive to the weight given to early-season matches, and only one of five existing scores has independent match-specific confirmation.",
-    "validation": "Newbury 5–1 Dacorum added as sixth result, standings reconstructed, 36 matches remaining, 100,000 Monte Carlo seasons, secondary seed sanity check; probabilities sum to 100%."
+    "sensitivity": "Second seed differs by less than one percentage point per team.",
+    "validation": "All official table columns reconciled; 33 remaining games simulated over 100,000 seasons per seed; total 100%."
   }
 }

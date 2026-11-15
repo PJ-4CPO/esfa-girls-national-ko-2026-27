@@ -75,3 +75,8 @@ Only seven confirmed National KO scores, and only one current-season league scor
 - The [official ESFA U11 Girls 7v7 draw](https://www.schoolsfootball.org/competitions/fixtures/year/2026-2027/946) supplies nine Round One scores, thirteen Round Two scores and the Round Three deadline. National KO provenance records differences with the GPSFA listing. The quarter-final and later pairing assumption stays in effect.
 - The model uses South East Essex’s confirmed results from both rounds. Forfeits determine progression without adding goals or scored appearances to the model. Only Newbury v Barnet still needs a simulated Round Two outcome.
 - V3.2 retains the documented V3 rating formula and V4.2 league transfer. Two 100,000-campaign NumPy PCG64 runs (seeds 20261114 and 20261115) differed by less than one percentage point per team. Published probabilities total 100.00% across the 17 remaining contenders.
+
+## V3.3 forecast refresh — 15 November 2026
+
+- The National KO forecast uses Newbury’s refreshed league V4.3 rating at the existing quarter-log weight. The cup results and draw used by V3.2 carry forward.
+- Two 100,000-campaign runs with seeds 20261115 and 20261116 differed by less than one percentage point per team. Rounded title probabilities total 100.00%.
