@@ -19,6 +19,7 @@ If official sources disagree on a fixture, score, team or date, preserve both re
 ## Authoritative tracker data
 - National KO: `/data.json`; provenance: `/research/national-ko-provenance.json`.
 - Southern Counties **Girls' League**: `/southern-counties-league/data.json`; provenance: `/research/southern-counties-provenance.json`.
+- Southern Counties Girls’ Cup: `/southern-counties-cup/data.json`. GPSFA labels the four quarter-finals Round Two. Record a confirmed outcome on the originating tie as `result` with `winner`, the official `source` URL, and `homeScore` and `awayScore` where published. Add a `note` for penalties, a walkover or a disputed score. Later ties resolve from the named winner. Update `/newbury-fixtures/data.json` together with the cup record when Newbury’s schedule or result changes.
 - Relevant girls' results from other competitions: `/research/team-form-register-2026-27.json`.
 - Technical forecast history and validation: `/research/national-ko-v3-methodology.md`, `/research/southern-counties-v4-methodology.md`.
 

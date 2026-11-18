@@ -18,7 +18,7 @@ Use the [source register and update checklist](research/README.md#source-registe
 | ESFA U11 Girls National Knockout | [Home](index.html) · [data](data.json) | [Official ESFA draw](https://www.schoolsfootball.org/competitions/fixtures/year/2026-2027/946) · [GPSFA cross-check](https://www.gpsfa.com/cups/regional-competitons/) · [provenance](research/national-ko-provenance.json) · [V3 methodology](research/national-ko-v3-methodology.md) |
 | Southern Counties Girls’ League | [League](southern-counties-league/index.html) · [data](southern-counties-league/data.json) | [GPSFA girls’ grid and standings](https://www.gpsfa.com/cups/berkshire-league/) · [weekly results](https://www.gpsfa.com/information-board/) · [provenance](research/southern-counties-provenance.json) · [V4 methodology](research/southern-counties-v4-methodology.md) |
 | Southern Counties Girls’ League Cup | [League Cup](southern-counties-league-cup/index.html) · [data](southern-counties-league-cup/data.json) | [GPSFA competition page](https://www.gpsfa.com/southern-counties-league-cup/) · [Central & East tournament results](https://leaguehub365.com/c/c3pdPtMzAGeXKzuHSUaH) |
-| Southern Counties Girls’ Cup | Separate knockout draw represented in [Newbury fixtures](newbury-fixtures/data.json) | [GPSFA girls’ cup draw](https://www.gpsfa.com/southern-counties-cup/) |
+| Southern Counties Girls’ Cup | [Counties Cup](southern-counties-cup/index.html) · [draw data](southern-counties-cup/data.json) · [Newbury fixtures](newbury-fixtures/data.json) | [GPSFA girls’ cup draw](https://www.gpsfa.com/southern-counties-cup/) |
 | Newbury Fixtures | [Chronological tab](newbury-fixtures/index.html) · [data](newbury-fixtures/data.json) | Reconcile Newbury entries with the relevant competition source and district schedule. Keep event status and date confidence explicit. |
 
 ## Evidence and decisions
@@ -36,6 +36,6 @@ Use the [source register and update checklist](research/README.md#source-registe
 
 1. Check the official ESFA draw for the Barnet outcome and later-round pairings, then recalculate forecasts when the inputs change. Verify the exact ESFA tie rule before treating it as official. Document any modelling assumption for future rounds with an unpublished draw.
 2. Check the girls’ grid for new results, then reconcile dates, official standings, remaining pairings and forecasts. Keep the official championship tie-break open until verified.
-3. Give fixtures stable identifiers across competition data and the chronological view in a separate change. Preserve all four routes and neutral branding.
+3. Give fixtures stable identifiers across competition data and the chronological view in a separate change. Preserve the existing routes and neutral branding.
 4. Follow the [research verification protocol](research/README.md). Check season, age group, girls’ category, competition and home/away orientation. Record the source, check date, conflicts and date confidence. Keep private reports out of the repository.
 5. Review the diff and check all four pages, results, standings and model totals. Obtain approval before merging to the Pages branch. After release, confirm the deployed commit and compare the live pages and feeds with that commit.
