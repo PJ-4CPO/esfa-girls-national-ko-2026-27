@@ -1,0 +1,44 @@
+{
+  "competition": "Southern Counties Girls’ Cup",
+  "season": "2026/27",
+  "checkedOn": "2026-11-18",
+  "source": "https://www.gpsfa.com/southern-counties-cup/",
+  "rounds": [
+    {
+      "name": "Round One",
+      "date": "2026-11-21",
+      "ties": [
+        {"id": "R1-1", "home": "Newbury", "away": "Oxford"},
+        {"id": "R1-2", "home": "East Cornwall", "away": "Gloucester"},
+        {"id": "R1-3", "home": "St Albans", "away": "Merton"}
+      ]
+    },
+    {
+      "name": "Quarter-finals",
+      "date": "2027-03-06",
+      "ties": [
+        {"id": "QF-1", "home": "Reigate & Banstead", "away": {"winnerOf": "R1-3"}},
+        {"id": "QF-2", "home": "Sutton", "away": "Woking"},
+        {"id": "QF-3", "home": {"winnerOf": "R1-2"}, "away": {"winnerOf": "R1-1"}},
+        {"id": "QF-4", "home": "Wycombe", "away": "Hackney"}
+      ]
+    },
+    {
+      "name": "Semi-finals",
+      "date": "2027-05-15",
+      "venue": "Oxford City FC",
+      "ties": [
+        {"id": "SF-1", "home": {"winnerOf": "QF-1"}, "away": {"winnerOf": "QF-2"}},
+        {"id": "SF-2", "home": {"winnerOf": "QF-3"}, "away": {"winnerOf": "QF-4"}}
+      ]
+    },
+    {
+      "name": "Final",
+      "date": "2027-05-15",
+      "venue": "Oxford City FC",
+      "ties": [
+        {"id": "F", "home": {"winnerOf": "SF-1"}, "away": {"winnerOf": "SF-2"}}
+      ]
+    }
+  ]
+}

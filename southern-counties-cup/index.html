@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Southern Counties Girls’ Cup 2026/27 — Competition Tracker</title>
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    .competition-nav { max-width:1080px; margin:16px auto 0; padding:0 20px; display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:10px }
+    .competition-nav a { display:block; text-align:center; padding:13px 8px; border-radius:11px; text-decoration:none; font-weight:750; font-size:.85rem; color:#c5d3e3; background:#151e2b; border:1px solid #34445b }
+    .competition-nav a[aria-current] { color:#fff; background:#2878ff; border-color:#2878ff }
+    .cup-rounds { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px }
+    .cup-round { padding:16px; border:1px solid var(--line); border-radius:13px; background:var(--panel2); min-width:0 }
+    .cup-round h3 { margin:0 }
+    .cup-round p { margin:4px 0 12px }
+    .cup-tie { display:grid; grid-template-columns:minmax(0,1fr) auto minmax(0,1fr); gap:8px; align-items:center; padding:10px 0; border-top:1px solid var(--line); font-size:.92rem }
+    .cup-tie span { overflow-wrap:anywhere }
+    .cup-tie span:last-child { text-align:right }
+    .cup-tie small { grid-column:1/-1; color:var(--muted) }
+    .cup-tie--newbury strong { color:var(--cyan) }
+    .sources a { color:var(--cyan) }
+    @media(max-width:780px) {
+      .competition-nav { grid-template-columns:repeat(2,minmax(0,1fr)); padding:0 15px }
+      .cup-rounds { grid-template-columns:1fr }
+    }
+  </style>
+  <script defer src="tracker.js?v=20261118"></script>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <p class="eyebrow">U11 GIRLS • SOUTHERN COUNTIES CUP</p>
+      <h1>Southern Counties Girls’ Cup 2026/27</h1>
+      <p>Follow the draw, results and Newbury’s route through the knockout rounds.</p>
+    </div>
+  </header>
+  <nav class="competition-nav" aria-label="Competition trackers">
+    <a href="../">National KO</a>
+    <a href="../southern-counties-league/">Counties League</a>
+    <a href="../southern-counties-league-cup/">League Cup</a>
+    <a href="./" aria-current="page">Counties Cup</a>
+    <a href="../newbury-fixtures/">Newbury Fixtures</a>
+  </nav>
+  <main class="wrap">
+    <section class="insight">
+      <div class="insight-head">
+        <span class="kicker">NEWBURY DISTRICT</span>
+        <h2 id="newbury-heading">Newbury’s cup route</h2>
+        <p id="newbury-path"></p>
+      </div>
+    </section>
+    <section class="model">
+      <div class="section-title stacked-heading"><h2>Draw and results</h2></div>
+      <p id="load-status" role="status">Loading the draw…</p>
+      <div class="cup-rounds" id="cup-rounds"></div>
+    </section>
+    <section class="sources">
+      <h2>Source</h2>
+      <p><a href="https://www.gpsfa.com/southern-counties-cup/">GPSFA’s Girls’ Southern Counties Cup draw</a><span id="checked-on"></span>. Round dates follow the published draw. Individual kick-off times and venues are shown when confirmed.</p>
+    </section>
+  </main>
+  <footer><div class="wrap">Southern Counties Girls’ Cup 2026/27 • Competition tracker</div></footer>
+</body>
+</html>
