@@ -2,6 +2,11 @@
   const formatDate = value => new Intl.DateTimeFormat('en-GB', {
     day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC'
   }).format(new Date(value + 'T12:00:00Z'));
+  function roundDate(stage) {
+    if (stage.matchDate) return formatDate(stage.matchDate);
+    if (stage.playBy) return 'Play by ' + formatDate(stage.playBy);
+    return 'Date TBC';
+  }
   function calendar(now) {
     const year = now.getUTCFullYear(), month = now.getUTCMonth();
     const seasonYear = 2026;
@@ -18,13 +23,15 @@
     if (kind === 'league' || kind === 'fixtures') return calendar(now);
     if (kind === 'national') {
       const rounds = [data.fixtures, data.round2, data.round3];
+      const dates = data.round_dates ?? {};
+      const stageDate = key => roundDate(dates[key] ?? {});
       const active = rounds.reduce((index, ties, i) => ties?.length ? i : index, 0);
       return { title: 'Tournament journey', summary: ['Round One', 'Round Two', 'Round Three'][active] + ' draw published',
         mode: 'Latest published draw', active, earlier: 'Earlier round',
         stages: [
-          { label: 'Round One', detail: 'Opening ties', complete: data.fixtures.length > 0 && data.fixtures.every(tie => ['Complete', 'Forfeit'].includes(tie[4])) }, { label: 'Round Two', detail: 'Last 32', complete: data.round2.length > 0 && data.round2.every(tie => Number.isInteger(tie[3]) || tie[5]?.winner || tie[2] === 'Bye') },
-          { label: 'Round Three', detail: 'Last 16', complete: data.round3.length > 0 && data.round3.every(tie => Number.isInteger(tie[3]) || tie[5]?.winner || tie[2] === 'Bye') }, { label: 'Quarter-finals', detail: 'Last 8' },
-          { label: 'Semi-finals', detail: 'Last 4' }, { label: 'Final', detail: 'Last 2' },
+          { label: 'Round One', detail: 'Opening ties · ' + stageDate('round1'), complete: data.fixtures.length > 0 && data.fixtures.every(tie => ['Complete', 'Forfeit'].includes(tie[4])) }, { label: 'Round Two', detail: 'Last 32 · ' + stageDate('round2'), complete: data.round2.length > 0 && data.round2.every(tie => Number.isInteger(tie[3]) || tie[5]?.winner || tie[2] === 'Bye') },
+          { label: 'Round Three', detail: 'Last 16 · ' + stageDate('round3'), complete: data.round3.length > 0 && data.round3.every(tie => Number.isInteger(tie[3]) || tie[5]?.winner || tie[2] === 'Bye') }, { label: 'Quarter-finals', detail: 'Last 8 · ' + stageDate('quarterFinals') },
+          { label: 'Semi-finals', detail: 'Last 4 · ' + stageDate('semiFinals') }, { label: 'Final', detail: 'Last 2 · ' + stageDate('final') },
           { label: 'Champion', detail: 'Cup winner', symbol: '★' }
         ] };
     }
@@ -34,7 +41,7 @@
       if (complete) active = data.rounds.length;
       return { title: 'Tournament journey', summary: complete ? 'Cup complete' : data.rounds[active].name + ' · ' + formatDate(data.rounds[active].date),
         mode: complete ? 'Completed' : 'Current round in the draw', active, earlier: 'Complete',
-        stages: [...data.rounds.map(round => ({ label: round.name, detail: formatDate(round.date), complete: round.ties.every(tie => Boolean(tie.result?.winner)) })),
+        stages: [...data.rounds.map(round => ({ label: round.name, detail: [roundDate(round.playBy ? { playBy: round.playBy } : { matchDate: round.date }), round.venue].filter(Boolean).join(' · '), complete: round.ties.every(tie => Boolean(tie.result?.winner)) })),
           { label: 'Champion', detail: 'Cup winner', symbol: '★', complete }] };
     }
     if (kind === 'league-cup') {
@@ -44,8 +51,8 @@
         mode: completed ? 'Next stage' : 'Current stage', active: completed ? 1 : 0, earlier: 'Complete',
         stages: [
           { label: 'Regional tournament', detail: formatDate(data.state.tournament_date), complete: completed },
-          { label: 'Girls’ finals', detail: formatDate(data.finals.date) },
-          { label: 'Trophies decided', detail: 'Champions · Intermediate · Plate', symbol: '★' }
+          { label: 'Girls’ finals', detail: formatDate(data.finals.date) + ' · Woking / Bath / Oxford' },
+          { label: 'Trophies decided', detail: formatDate(data.finals.date), symbol: '★' }
         ] };
     }
     throw new Error('Unknown competition');

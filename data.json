@@ -838,5 +838,19 @@
         "detail": "Play by 28 Nov 2026"
       }
     ]
-  ]
+  ],
+  "round_dates": {
+    "round1": {
+      "playBy": "2026-10-03"
+    },
+    "round2": {
+      "playBy": "2026-11-07"
+    },
+    "round3": {
+      "playBy": "2026-11-28"
+    },
+    "quarterFinals": {},
+    "semiFinals": {},
+    "final": {}
+  }
 }
