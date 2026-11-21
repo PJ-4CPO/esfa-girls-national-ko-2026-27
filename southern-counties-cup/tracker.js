@@ -31,9 +31,10 @@ async function showDraw() {
   }
 
   const draw = document.getElementById('cup-rounds');
-  for (const round of rounds) {
+  for (const [roundIndex, round] of rounds.entries()) {
     const section = document.createElement('section');
     section.className = 'model cup-round';
+    section.id = 'cup-round-' + roundIndex;
     draw.before(section);
     const heading = add(section, 'div', '', 'section-title stacked-heading');
     add(heading, 'span', round.ties.length + (round.ties.length === 1 ? ' TIE' : ' TIES'), 'section-kicker');
@@ -60,7 +61,7 @@ async function showDraw() {
         badge.setAttribute('aria-label', result.winner + ' advanced');
         for (const name of [home, away]) add(badge, 'span', name === result.winner ? 'A' : '—', name === result.winner ? 'advanced-team' : 'no-score');
       } else add(middle, 'strong', scored ? result.homeScore + '–' + result.awayScore : 'VS', scored ? 'score' : 'vs');
-      add(middle, 'small', [tie.id, scored ? 'FINAL' : advanced ? '' : 'SCHEDULED'].filter(Boolean).join(' · '));
+      add(middle, 'small', scored ? 'FINAL' : advanced ? '' : 'SCHEDULED');
       if (!advanced) {
         const detail = [tie.date ? dateLabel(tie.date) : '', tie.kickoff, tie.venue].filter(Boolean).join(' · ');
         if (detail) add(middle, 'small', detail, 'match-date');
@@ -90,3 +91,4 @@ async function showDraw() {
 showDraw().catch(() => {
   loadStatus.textContent = 'The draw could not be loaded. Please refresh the page.';
 });
+

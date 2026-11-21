@@ -75,7 +75,10 @@
       if (i === view.active) item.setAttribute('aria-current', 'step');
       add(item, 'span', stage.complete ? '✓' : stage.symbol ?? String(i + 1), 'progress-marker');
       const words = add(item, 'span', '', 'progress-label');
-      add(words, 'strong', stage.label);
+      const destinations = {national:['#round-1','#round-2','#round-3'], 'league-cup':['#standings-section','#finals-section'], 'counties-cup':['#cup-round-0','#cup-round-1','#cup-round-2','#cup-round-3']};
+      const destination = destinations[panel.dataset.competitionProgress]?.[i];
+      const label = add(words, destination ? 'a' : 'strong', stage.label);
+      if (destination) { label.href = destination; label.className = 'stage-link'; }
       add(words, 'small', stage.detail);
       add(words, 'small', stage.complete ? 'Completed' : i === view.active ? view.mode : i < view.active ? view.earlier : 'Ahead', 'progress-stage-status');
     }
@@ -89,3 +92,4 @@
       .catch(() => { panel.hidden = true; });
   }
 })();
+

@@ -95,3 +95,14 @@ Fixed an accidental second Counties League document/body and second rendering sc
 ### Counties Cup shared fixture layout — 21 November 2026
 
 Replace the separate compact two-column cup draw panels and cup-tie rows with the existing shared .model round sections, .fixtures grids and .fixture cards used on other competition pages. Teams sit either side of centred scores/VS/A; tie ID and FINAL/SCHEDULED beneath, with individual timing details only where available. Keep white team names/scores, shared outcome edges, top key and tournament journey. Round dates/venues remain above their fixture groups. Newbury Fixtures retains its different chronological layout. Results, dates, progression and draw unchanged.
+
+
+
+## 21 November 2026 — Visitor usability pass
+- Main URL now redirects to Newbury fixtures; National Cup lives at `/national-ko/`. All navigation updated with Newbury first; existing other competition URLs preserved.
+- Newbury: Upcoming default, Results newest first, All chronological; undated awarded ties belong to resolved results. Repeated source notes omitted from cards, underlying data retained. Postponed fixtures remain unresolved; elapsed scheduled dates display result pending, never assumed scores.
+- National: current draw first; completed rounds expandable; journey links open their rounds. Dynamic Newbury route summary.
+- League: single table first, then upcoming and newest dated results; calendar retained below.
+- League Cup: confirmed Newbury finals summary first, allocations expandable, one result list with Newbury filter, regional tables expandable. Illustrative combined ranking omitted from public page, retained in data.
+- Shared compact headers/navigation, readable metadata, keyboard focus/skip link/back-to-top, table scrolling cues with sticky team/points columns. White team/score text and result edge colours retained.
+- No fixture scores, dates or progression records changed. No scheduled tasks created.
