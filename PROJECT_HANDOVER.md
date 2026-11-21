@@ -126,3 +126,9 @@ Replace the separate compact two-column cup draw panels and cup-tie rows with th
 ## 21 November 2026 — Dates-only public presentation
 - Removed kickoff times and all references to match times being unconfirmed from National Cup, League Cup, Counties Cup and Newbury fixture views.
 - Match dates, expected dates, play-by deadlines and date-unconfirmed labels remain. Source time fields retained privately in repository data for record preservation and ordering, never rendered on public pages.
+
+
+## 21 November 2026 — Newbury identity
+- Applied orange/charcoal Newbury District visual theme across all five pages, retaining result edge colours and white team/score text.
+- Original club crest downloaded from published Pitchero club logo; hosted in assets, shown at 40–44px in headers and used as favicon. Source recorded in research/newbury-branding.md.
+- Web colours are design adaptations, not official colour standards. Orange selected controls use dark text for contrast. Existing navigation and fixtures preserved.

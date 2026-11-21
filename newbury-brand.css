@@ -1,0 +1,19 @@
+:root{--bg:#0c0c0d;--panel:#171719;--panel2:#202023;--line:#36363b;--blue:#f47c20;--cyan:#ff963f;--text:#f4f8fc;--muted:#a8a6a3}
+body{background:radial-gradient(ellipse at 65% -15%,#3a2417 0,#151313 32%,#0c0c0d 70%)}
+.hero{background:linear-gradient(120deg,#0c0c0d,#211912);border-bottom-color:#493326}
+.hero:after{border-color:rgba(255,150,63,.14);box-shadow:0 0 0 55px rgba(244,124,32,.035),0 0 0 110px rgba(255,150,63,.018)}
+.club-identity{display:inline-flex;align-items:center;gap:11px;text-decoration:none;color:#f4f8fc;margin:0 0 16px;font-size:1rem;font-weight:800;position:relative;z-index:1}
+.club-identity img{width:44px;height:44px;object-fit:contain;flex:none;border-radius:50%;background:#fff}
+.club-identity small{display:block;margin-top:2px;color:#bdb5ae;font-size:.75rem;font-weight:600;letter-spacing:.05em}
+.competition-nav a,.filter-controls button,.page-jumps a{background:#1b1b1e;border-color:#414045;color:#f4f8fc}
+.competition-nav a[aria-current],.filter-controls button[aria-pressed=true]{background:#f47c20;border-color:#f47c20;color:#17110b}
+.competition-nav a:hover,.page-jumps a:hover,.filter-controls button:hover{border-color:#ff963f}
+.competition-progress,.model,.insight,main.wrap>section.model{background:linear-gradient(135deg,#1b1918,#141416);border-color:#373439}
+.fixture,.match-row{background:linear-gradient(145deg,#1d1c1c,#151517)}
+.archive-round{background:#171719;border-color:#3a3738}.archive-round>section{background:transparent!important}
+.table-wrap,.table-wrap th:nth-child(2),.table-wrap td:nth-child(2),.table-wrap th:last-child,.table-wrap td:last-child{background:#18181b}
+.table-wrap th{background:#222124}.table-wrap tbody tr:hover{background:#242124}
+.finals-highlight{background:#2a211a;border-left-color:#ff963f}
+.back-top a{color:#e5be9c}.table-help,.table-key{color:#bcb5af}
+.progress-stages li.is-current{background:rgba(255,150,63,.06)}.is-current .progress-marker{background:#ff963f;color:#17110b;border-color:#ff963f;box-shadow:0 0 0 3px rgba(255,150,63,.1)}
+@media(max-width:650px){.club-identity{margin-bottom:12px;font-size:.94rem;gap:9px}.club-identity img{width:40px;height:40px}.club-identity small{font-size:.72rem}}
