@@ -44,7 +44,13 @@ async function showDraw() {
       const hasScore = Number.isInteger(result?.homeScore) && Number.isInteger(result?.awayScore);
       const score = hasScore ? result.homeScore + '–' + result.awayScore : result?.winner ? '→' : 'v';
       add(row, 'span', home);
-      add(row, 'strong', score);
+      if (result?.winner && !hasScore) {
+        const outcome = add(row, 'div', '', 'advancement-result');
+        const badge = add(outcome, 'strong', '', 'score advancement-score');
+        badge.setAttribute('aria-label', result.winner + ' advanced');
+        for (const name of [home, away]) add(badge, 'span', name === result.winner ? 'A' : '—', name === result.winner ? 'advanced-team' : 'no-score');
+        add(outcome, 'small', 'Advanced', 'advancement-label');
+      } else add(row, 'strong', score);
       add(row, 'span', away);
       const progression = result?.winner ? result.winner + (tie.id === 'F' ? ' won the cup' : ' advance') : '';
       const detail = [

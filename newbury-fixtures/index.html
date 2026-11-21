@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#070b12">
-<title>Newbury U11 Girls — All Fixtures &amp; Results 2026/27</title><link rel="stylesheet" href="../styles.css">
+<title>Newbury U11 Girls — All Fixtures &amp; Results 2026/27</title><link rel="stylesheet" href="../styles.css?v=20261121-advanced">
 <style>
 .competition-nav{max-width:1080px;margin:16px auto 0;padding:0 20px;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
 .competition-nav a{display:block;text-align:center;padding:13px 8px;border-radius:11px;text-decoration:none;font-weight:750;font-size:.85rem;color:#c5d3e3;background:#151e2b;border:1px solid #34445b}
@@ -39,11 +39,13 @@ const m=x.date?new Intl.DateTimeFormat('en-GB',{month:'long',year:'numeric',time
 if(m!==month){month=m;const h=document.createElement('div');h.className='group-label';h.textContent=m;root.appendChild(h)}
 const score=x.status==='completed'?x.home_score+'–'+x.away_score:'';
 const label=x.status==='completed'?score:x.result_type==='assumed_awarded'?'Assumed awarded':x.result_type==='awarded'?'Awarded':statusName[x.status]||'TBC';
+const advanced=x.status==='advanced'&&x.winner;
+const advanceMarkup=advanced?'<strong class="score advancement-score" aria-label="'+safe(x.winner)+' advanced"><span class="'+(x.winner===x.home?'advanced-team':'no-score')+'">'+(x.winner===x.home?'A':'—')+'</span><span class="'+(x.winner===x.away?'advanced-team':'no-score')+'">'+(x.winner===x.away?'A':'—')+'</span></strong><small class="advancement-label">Advanced</small><small>'+safe(label)+'</small>':'';
 const cls=['completed','advanced'].includes(x.status)?'result':['tentative','postponed','provisional','conditional'].includes(x.status)?'caution':'pending';
 const row=document.createElement('article');row.className='match-row '+cls;
 row.innerHTML='<div class="match-date">'+safe(x.date?dateLabel(x.date):'Date TBC')+(x.time?'<div class="match-time">'+safe(x.time)+' kickoff</div>':'')+'</div>'+
 '<div><div class="match-meta">'+safe(x.competition)+'</div><div class="match-teams">'+safe(x.home)+' <span style="color:#718299">v</span> '+safe(x.away)+'</div><div class="match-note">'+safe(x.note)+'</div></div>'+
-'<div class="match-status">'+safe(label)+'<small>'+ (x.status==='completed'?'Full time':'')+'</small></div>';
+'<div class="match-status">'+(advanced?advanceMarkup:safe(label)+'<small>'+ (x.status==='completed'?'Full time':'')+'</small>')+'</div>';
 root.appendChild(row)}
 }).catch(e=>{document.getElementById('timeline').textContent='The fixture list is unavailable: '+e.message});
 </script></body></html>

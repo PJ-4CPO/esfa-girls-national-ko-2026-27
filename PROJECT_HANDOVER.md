@@ -63,3 +63,7 @@ Completed stages retain cyan text/lines and show a tick plus 'Completed'. Curren
 ### Unscored progression policy — 21 November 2026
 
 Paul authorises assumed awarded ties where published next-round progression establishes a winner but no score is published. Display 'Assumed awarded' for an inference, and 'Awarded'/'Forfeit' where explicitly established. Never invent scores or reasons for non-participation. Exclude byes, group/finals qualification and unresolved placeholders. See research/progression-policy.json. National KO now displays advancing teams for six existing forfeits and Newbury’s conceded Barnet tie; Swansea v Newbury and the chronological fixtures are synchronised. All Round Two outcomes are resolved, so progress shows completion. The Swansea match date remains TBC; 28 November is the deadline/expected date. Counties Cup adds Gloucester’s published 2–0 result; other opening ties remain pending. No further eligible awards found. Historical forecasts remain archived.
+
+### Advancement score presentation — 21 November 2026
+
+No-score progression uses a green A in the advancing team's home/away score position and a grey dash in the other slot, with 'Advanced' below. Awarded/forfeit/assumed classification remains as a small secondary label; no numerical score is invented. Applied to National KO, Newbury Fixtures and Counties Cup rendering. Played scores remain numerical. No results or progression changed in this visual release.
