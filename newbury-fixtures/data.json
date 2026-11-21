@@ -267,7 +267,9 @@
       "home_score": null,
       "away_score": null,
       "status": "tentative",
-      "note": "Round Three · Play-by deadline: 28 November. Expected on 28 November; match date and kickoff awaiting confirmation."
+      "note": "Round Three · Play-by deadline: 28 November. Expected on 28 November; match date and kickoff awaiting confirmation.",
+      "expected_date": "2026-11-28",
+      "play_by": "2026-11-28"
     }
   ]
 }

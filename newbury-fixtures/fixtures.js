@@ -36,16 +36,32 @@
     }
     if (!selected.length) root.textContent='No matches in this view.';
   }
+  function renderNext() {
+    const nextRoot = document.getElementById('next-matches-list');
+    nextRoot.textContent = '';
+    const nextDate = x => x.date ?? x.expected_date ?? x.play_by ?? '9999';
+    const matches = entries.filter(x => !resolved(x) && x.status !== 'postponed' && x.status !== 'provisional' && nextDate(x) >= today)
+      .sort((a,b) => nextDate(a).localeCompare(nextDate(b)) || (a.time ?? '').localeCompare(b.time ?? '')).slice(0,3);
+    for (const x of matches) {
+      const date = x.date ? format(x.date,{day:'numeric',month:'short'}) + (x.time ? ' · '+x.time : '') : x.expected_date ? 'Expected '+format(x.expected_date,{day:'numeric',month:'short'})+' · Date unconfirmed' : x.play_by ? 'Play by '+format(x.play_by,{day:'numeric',month:'short'})+' · Date unconfirmed' : 'Date to be confirmed';
+      const item=document.createElement('article');
+      item.className='next-match';
+      item.innerHTML='<p class="next-date">'+safe(date)+'</p><h3>'+safe(x.home)+' v '+safe(x.away)+'</h3><p class="next-competition">'+safe(x.competition)+'</p>';
+      nextRoot.append(item);
+    }
+    if (!matches.length) nextRoot.textContent='No upcoming matches are currently listed.';
+  }
   document.querySelectorAll('[data-view]').forEach(button=>button.addEventListener('click',()=>{
     view=button.dataset.view;
     document.querySelectorAll('[data-view]').forEach(item=>item.setAttribute('aria-pressed',String(item===button)));
     render();
   }));
-  fetch('data.json?v=20261121-awards').then(r=>{if(!r.ok)throw Error('Fixtures unavailable');return r.json()}).then(data=>{
+  fetch('data.json?v=20261121-mobile').then(r=>{if(!r.ok)throw Error('Fixtures unavailable');return r.json()}).then(data=>{
     entries=data.entries;
+    renderNext();
     document.getElementById('completed').textContent=entries.filter(x=>x.status==='completed').length;
     document.getElementById('future').textContent=entries.filter(x=>['scheduled','tentative','provisional','conditional'].includes(x.status)).length;
     document.getElementById('competitions').textContent=new Set(entries.map(x=>x.competition)).size;
     render();
-  }).catch(()=>{root.textContent='The fixture list could not be loaded. Please refresh the page.';});
+  }).catch(()=>{root.textContent='The fixture list could not be loaded. Please refresh the page.';document.getElementById('next-matches-list').textContent='Next matches could not be loaded. Please refresh the page.';});
 })();
