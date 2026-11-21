@@ -32,38 +32,40 @@ async function showDraw() {
 
   const draw = document.getElementById('cup-rounds');
   for (const round of rounds) {
-    const section = add(draw, 'section', '', 'cup-round');
-    add(section, 'h3', round.name);
+    const section = document.createElement('section');
+    section.className = 'model cup-round';
+    draw.before(section);
+    const heading = add(section, 'div', '', 'section-title stacked-heading');
+    add(heading, 'span', round.ties.length + (round.ties.length === 1 ? ' TIE' : ' TIES'), 'section-kicker');
+    add(heading, 'h2', round.name + ' fixtures & results');
     add(section, 'p', [dateLabel(round.date), round.venue].filter(Boolean).join(' · '), 'muted');
+    const fixtures = add(section, 'div', '', 'fixtures');
     for (const tie of round.ties) {
-      const home = sideLabel(tie.home);
-      const away = sideLabel(tie.away);
-      const newbury = [home, away].includes('Newbury');
-      const row = add(section, 'div', '', newbury ? 'cup-tie cup-tie--newbury' : 'cup-tie');
-      const { result } = tie;
-      const hasScore = Number.isInteger(result?.homeScore) && Number.isInteger(result?.awayScore);
-      const score = hasScore ? result.homeScore + '–' + result.awayScore : result?.winner ? '→' : 'v';
-      const outcome = MatchOutcome.classify(home,away,hasScore?result.homeScore:null,hasScore?result.awayScore:null,result?.winner);
-      MatchOutcome.decorate(row,outcome);
+      const home = sideLabel(tie.home), away = sideLabel(tie.away), result = tie.result;
+      const scored = Number.isInteger(result?.homeScore) && Number.isInteger(result?.awayScore);
+      const advanced = !scored && Boolean(result?.winner);
+      const card = add(fixtures, 'div', '', 'fixture' + (scored || advanced ? ' complete' : ''));
+      const outcome = MatchOutcome.classify(home, away, scored ? result.homeScore : null, scored ? result.awayScore : null, result?.winner);
+      MatchOutcome.decorate(card, outcome);
+      if (advanced) card.title = result.type === 'forfeit' ? 'Forfeit' : result.type === 'awarded' ? 'Awarded' : 'Assumed awarded';
       function addTeam(name, state, position) {
         const holder = document.createElement('div');
-        holder.innerHTML = MatchOutcome.team(name,state,position);
-        row.append(holder.firstElementChild);
+        holder.innerHTML = MatchOutcome.team(name, state, position);
+        card.append(holder.firstElementChild);
       }
-      addTeam(home,outcome.home,'home');
-      if (result?.winner && !hasScore) {
-        const outcome = add(row, 'div', '', 'advancement-result');
-        const badge = add(outcome, 'strong', '', 'score advancement-score');
+      addTeam(home, outcome.home, 'home');
+      const middle = add(card, 'span', '', 'mid');
+      if (advanced) {
+        const badge = add(middle, 'strong', '', 'score advancement-score');
         badge.setAttribute('aria-label', result.winner + ' advanced');
         for (const name of [home, away]) add(badge, 'span', name === result.winner ? 'A' : '—', name === result.winner ? 'advanced-team' : 'no-score');
-
-      } else add(row, 'strong', score);
-      addTeam(away,outcome.away,'away');
-      const progression = result?.winner ? result.winner + (tie.id === 'F' ? ' won the cup' : ' advance') : '';
-      const detail = result?.winner && !hasScore ? [tie.id] : [
-        tie.id, tie.date ? dateLabel(tie.date) : '', tie.kickoff, tie.venue, result?.note
-      ].filter(Boolean);
-      add(row, 'small', detail.join(' · '));
+      } else add(middle, 'strong', scored ? result.homeScore + '–' + result.awayScore : 'VS', scored ? 'score' : 'vs');
+      add(middle, 'small', [tie.id, scored ? 'FINAL' : advanced ? '' : 'SCHEDULED'].filter(Boolean).join(' · '));
+      if (!advanced) {
+        const detail = [tie.date ? dateLabel(tie.date) : '', tie.kickoff, tie.venue].filter(Boolean).join(' · ');
+        if (detail) add(middle, 'small', detail, 'match-date');
+      }
+      addTeam(away, outcome.away, 'away');
     }
   }
 

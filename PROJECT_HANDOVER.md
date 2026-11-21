@@ -91,3 +91,7 @@ Paul prefers all team names and scores (including A/dash) in white, with outcome
 ### Remove duplicate league document and move keys — 21 November 2026
 
 Fixed an accidental second Counties League document/body and second rendering script appended after the first script. The page now has one header/nav/progress/table/results/upcoming section and one rendering script. Validate the whole HTML document and all IDs when editing scripts; find closing script relative to its opening tag, never the earlier external script tags. One result key appears near the top of each competition tab, with Newbury Fixtures keeping its key above the timeline. A/dash explanation consolidated into that key, with no duplicate key at the bottom. League Cup’s distinct group/combined/regional tables retained.
+
+### Counties Cup shared fixture layout — 21 November 2026
+
+Replace the separate compact two-column cup draw panels and cup-tie rows with the existing shared .model round sections, .fixtures grids and .fixture cards used on other competition pages. Teams sit either side of centred scores/VS/A; tie ID and FINAL/SCHEDULED beneath, with individual timing details only where available. Keep white team names/scores, shared outcome edges, top key and tournament journey. Round dates/venues remain above their fixture groups. Newbury Fixtures retains its different chronological layout. Results, dates, progression and draw unchanged.
