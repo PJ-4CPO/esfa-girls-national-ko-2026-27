@@ -1,26 +1,20 @@
 :root{--outcome-win:#37c98b;--outcome-loss:#ff8899;--outcome-draw:#7bb4ff;--outcome-postponed:#e9b85a}
-.outcome-team{display:flex!important;align-items:center;gap:.35em;min-width:0;overflow-wrap:anywhere}
-.outcome-team.away{justify-content:flex-end;text-align:right}.outcome-team.home{justify-content:flex-start}
-.outcome-team>span:first-child{min-width:0}.outcome-icon{flex:0 0 auto;font-size:.72em;font-weight:850}
-.team-win{color:var(--outcome-win)!important}.team-loss{color:var(--outcome-loss)!important}.team-draw{color:var(--outcome-draw)!important}
-.outcome-card{border-color:#34445b!important}.outcome-card .score:not(.advancement-score){color:#f4f8fc!important}
-.outcome-card.outcome-win{border-left:4px solid var(--outcome-win)!important}
-.outcome-card.outcome-loss{border-left:4px solid var(--outcome-loss)!important}
-.outcome-card.outcome-draw,.outcome-card.match-draw{border-left:4px solid var(--outcome-draw)!important}
-.outcome-card.outcome-win .score:not(.advancement-score){color:var(--outcome-win)!important}
-.outcome-card.outcome-loss .score:not(.advancement-score){color:var(--outcome-loss)!important}
-.outcome-card.match-draw .score:not(.advancement-score){color:var(--outcome-draw)!important}
-.match-row.outcome-win{border-left:4px solid var(--outcome-win)}.match-row.outcome-loss{border-left:4px solid var(--outcome-loss)}
-.match-row.outcome-draw{border-left:4px solid var(--outcome-draw)}.match-row.outcome-postponed,.fixture.outcome-postponed{border-left:4px solid var(--outcome-postponed)!important}
+.outcome-team{display:block!important;min-width:0;overflow-wrap:normal;word-break:normal}
+.outcome-team.away{text-align:right}.outcome-team.home{text-align:left}
+.outcome-card{border-color:#34445b!important}
+.outcome-card .team,.outcome-card .score,.outcome-card .advancement-score span,.match-row .match-teams,.match-row .match-status,.match-row .score,.match-row .advancement-score span{color:#f4f8fc!important}
+.outcome-card.home-win{border-left:4px solid var(--outcome-win)!important}
+.outcome-card.home-loss{border-left:4px solid var(--outcome-loss)!important}
+.outcome-card.away-win{border-right:4px solid var(--outcome-win)!important}
+.outcome-card.away-loss{border-right:4px solid var(--outcome-loss)!important}
+.outcome-card.match-draw{border-left:4px solid var(--outcome-draw)!important;border-right:4px solid var(--outcome-draw)!important}
+.match-row.outcome-win{border-left:4px solid var(--outcome-win)}
+.match-row.outcome-loss{border-left:4px solid var(--outcome-loss)}
+.match-row.outcome-draw{border-left:4px solid var(--outcome-draw)}
+.match-row.outcome-postponed,.fixture.outcome-postponed{border-left:4px solid var(--outcome-postponed)!important}
 .match-row.outcome-scheduled{border-left:3px solid #718299}
-.match-row.outcome-win .match-status{color:var(--outcome-win)}.match-row.outcome-loss .match-status{color:var(--outcome-loss)}
-.match-row.outcome-draw .match-status{color:var(--outcome-draw)}.match-row.outcome-postponed .match-status,.fixture.outcome-postponed .mid small{color:var(--outcome-postponed)}
-.match-row .outcome-label{color:inherit!important;font-weight:750}
+.match-row .outcome-label{color:#f4f8fc!important;font-weight:750}
 .outcome-key{display:flex;flex-wrap:wrap;gap:8px 16px;margin:14px 0 20px;font-size:.76rem;color:#aab7c6}
 .outcome-key span{border-left:3px solid currentColor;padding-left:7px}
 .outcome-key .key-win{color:var(--outcome-win)}.outcome-key .key-loss{color:var(--outcome-loss)}.outcome-key .key-draw{color:var(--outcome-draw)}.outcome-key .key-postponed{color:var(--outcome-postponed)}
-.cup-tie.outcome-card{border-left:0!important}.cup-tie.outcome-card.outcome-win,.cup-tie.outcome-card.outcome-loss,.cup-tie.outcome-card.outcome-draw{padding-left:8px;border-left-width:3px!important}
-
-.cup-tie.outcome-card.outcome-win{border-left:3px solid var(--outcome-win)!important}
-.cup-tie.outcome-card.outcome-loss{border-left:3px solid var(--outcome-loss)!important}
-.cup-tie.outcome-card.outcome-draw{border-left:3px solid var(--outcome-draw)!important}
+.cup-tie.outcome-card{padding-left:8px;padding-right:8px}

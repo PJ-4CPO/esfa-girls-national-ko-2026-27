@@ -83,3 +83,7 @@ At Paul's request, keep only the green score-style A/dash on no-score advancemen
 ### Result colours — 21 November 2026
 
 Newbury Fixtures uses green Win, red Loss, blue Draw and amber Postponed, with text as well as colour. Awarded advancement stays a green A and is not counted as a played win. Scheduled/tentative fixtures use neutral borders. Shared match-outcomes.js/CSS carry the same team colours through National KO, Counties League, League Cup and Counties Cup results: winner green with a tick, losing team red, drawn teams blue with '='. Match cards involving Newbury have an outcome-coloured left edge from Newbury's perspective; other cards identify each team rather than assuming a home-team viewpoint. Numeric scores, award evidence, progression and dates unchanged. Keys appear on the relevant pages.
+
+### White text and outcome edges — 21 November 2026
+
+Paul prefers all team names and scores (including A/dash) in white, with outcome colour restricted to card edges. Competition result cards use the left edge for the home team and right edge for the away team: green winner, red loser, blue both for draw. Remove winner ticks and coloured team/score typography. Preserve accessible winner/loser labels. Newbury Fixtures retains a single left edge reflecting Newbury’s result (green/red/blue), amber postponed and neutral scheduled; score/status text white. Scores, dates, advancement and results unchanged.

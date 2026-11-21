@@ -9,12 +9,13 @@
       newbury: home === 'Newbury' ? side(home) : away === 'Newbury' ? side(away) : null };
   }
   function team(name, outcome, position = '') {
-    const icon = outcome === 'win' ? '<span class="outcome-icon" aria-label="Winner">✓</span>' :
-      outcome === 'draw' ? '<span class="outcome-icon" aria-label="Draw">=</span>' : '';
-    return '<span class="team ' + position + (outcome ? ' outcome-team team-' + outcome : '') + '"><span>' + safe(name) + '</span>' + icon + '</span>';
+    const label = outcome === 'win' ? ' · Winner' : outcome === 'loss' ? ' · Losing team' : outcome === 'draw' ? ' · Draw' : '';
+    return '<span class="team ' + position + (outcome ? ' outcome-team team-' + outcome : '') + '" aria-label="' + safe(name + label) + '">' + safe(name) + '</span>';
   }
   function decorate(card, outcome) {
     card.classList.add('outcome-card');
+    if (outcome.home) card.classList.add('home-' + outcome.home);
+    if (outcome.away) card.classList.add('away-' + outcome.away);
     if (outcome.draw) card.classList.add('match-draw');
     if (outcome.newbury) card.classList.add('outcome-' + outcome.newbury);
   }
