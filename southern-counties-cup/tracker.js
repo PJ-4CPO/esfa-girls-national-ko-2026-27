@@ -18,7 +18,7 @@ async function loadJson(path) {
 }
 
 async function showDraw() {
-  const { rounds, checkedOn } = await loadJson('data.json');
+  const { rounds } = await loadJson('data.json');
   const ties = new Map(rounds.flatMap(round => round.ties.map(tie => [tie.id, tie])));
   const dateLabel = date => dateFormat.format(new Date(date));
 
@@ -67,12 +67,11 @@ async function showDraw() {
     pathway += ' The winner plays away against ' + sideLabel(ties.get('QF-3').home) + ' in the quarter-finals.';
   }
   document.getElementById('newbury-path').textContent = pathway;
-  document.getElementById('checked-on').textContent = ' · checked ' + dateLabel(checkedOn);
   loadStatus.hidden = true;
 
 
 }
 
 showDraw().catch(() => {
-  loadStatus.textContent = 'The draw could not be loaded. See the GPSFA source below.';
+  loadStatus.textContent = 'The draw could not be loaded. Please refresh the page.';
 });

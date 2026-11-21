@@ -43,3 +43,7 @@ Use the [source register and update checklist](research/README.md#source-registe
 ## Presentation decision — 21 November 2026
 
 At Paul's request, remove probabilities and predictions from every website tab. Published pages now show fixtures, results, standings, finals allocations and cup progression without title charts, match odds, archived forecasts or model explanations. Historical model inputs and research remain in the repository for reference; do not restore predictions to the website without a new request. The Newbury Fixtures page already contained no predictions. This presentation-only release does not refresh result data. Review further simplification separately after this change.
+
+### Presentation follow-up — 21 November 2026
+
+Remove sources, accuracy, verification and data-status panels from every website tab, including the League Cup verification banner. Preserve source registers and provenance in the repository for future checking. Keep the league points key with the league table. Avoid adding administrative validation panels back to the published pages.
