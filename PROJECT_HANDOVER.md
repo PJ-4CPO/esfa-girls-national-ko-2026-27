@@ -79,3 +79,7 @@ Removed the A badge’s separate 1.55rem/850-weight typography override. It now 
 ### Compact advancement cards — 21 November 2026
 
 At Paul's request, keep only the green score-style A/dash on no-score advancement cards. Remove the repeated Advanced, award status and concession explanation from the card body. Keep tie identifiers, accessible winner labels and National KO award classification in the title metadata. A short key explains A/dash at the bottom of relevant tabs. Preserve all underlying award evidence and match dates/results. Keep explanations off the cards to avoid excessive height.
+
+### Result colours — 21 November 2026
+
+Newbury Fixtures uses green Win, red Loss, blue Draw and amber Postponed, with text as well as colour. Awarded advancement stays a green A and is not counted as a played win. Scheduled/tentative fixtures use neutral borders. Shared match-outcomes.js/CSS carry the same team colours through National KO, Counties League, League Cup and Counties Cup results: winner green with a tick, losing team red, drawn teams blue with '='. Match cards involving Newbury have an outcome-coloured left edge from Newbury's perspective; other cards identify each team rather than assuming a home-team viewpoint. Numeric scores, award evidence, progression and dates unchanged. Keys appear on the relevant pages.

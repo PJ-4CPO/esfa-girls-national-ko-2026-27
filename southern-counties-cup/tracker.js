@@ -43,7 +43,14 @@ async function showDraw() {
       const { result } = tie;
       const hasScore = Number.isInteger(result?.homeScore) && Number.isInteger(result?.awayScore);
       const score = hasScore ? result.homeScore + '–' + result.awayScore : result?.winner ? '→' : 'v';
-      add(row, 'span', home);
+      const outcome = MatchOutcome.classify(home,away,hasScore?result.homeScore:null,hasScore?result.awayScore:null,result?.winner);
+      MatchOutcome.decorate(row,outcome);
+      function addTeam(name, state, position) {
+        const holder = document.createElement('div');
+        holder.innerHTML = MatchOutcome.team(name,state,position);
+        row.append(holder.firstElementChild);
+      }
+      addTeam(home,outcome.home,'home');
       if (result?.winner && !hasScore) {
         const outcome = add(row, 'div', '', 'advancement-result');
         const badge = add(outcome, 'strong', '', 'score advancement-score');
@@ -51,7 +58,7 @@ async function showDraw() {
         for (const name of [home, away]) add(badge, 'span', name === result.winner ? 'A' : '—', name === result.winner ? 'advanced-team' : 'no-score');
 
       } else add(row, 'strong', score);
-      add(row, 'span', away);
+      addTeam(away,outcome.away,'away');
       const progression = result?.winner ? result.winner + (tie.id === 'F' ? ' won the cup' : ' advance') : '';
       const detail = result?.winner && !hasScore ? [tie.id] : [
         tie.id, tie.date ? dateLabel(tie.date) : '', tie.kickoff, tie.venue, result?.note

@@ -7,7 +7,7 @@
 .round-fixture .match-date{margin-top:5px;color:#93a1b3}
 @media(max-width:700px){.round-fixture .match-teams{grid-template-columns:1fr 70px 1fr}}
 </style>
-<style>@media(max-width:650px){.competition-nav{grid-template-columns:repeat(2,minmax(0,1fr))!important}.competition-nav a{font-size:.78rem!important;padding:11px 5px!important}}</style><link rel="stylesheet" href="competition-progress.css?v=20261121-highlight"><script defer src="competition-progress.js?v=20261121-round-dates"></script></head>
+<style>@media(max-width:650px){.competition-nav{grid-template-columns:repeat(2,minmax(0,1fr))!important}.competition-nav a{font-size:.78rem!important;padding:11px 5px!important}}</style><link rel="stylesheet" href="competition-progress.css?v=20261121-highlight"><script defer src="competition-progress.js?v=20261121-round-dates"></script><link rel="stylesheet" href="match-outcomes.css?v=20261121"><script src="match-outcomes.js?v=20261121"></script></head>
 <body><header class="hero"><div class="wrap"><p class="eyebrow">ESFA U11 GIRLS • NATIONAL KNOCKOUT</p><h1>ESFA Girls’ National KO 2026/27</h1><p>Follow the national cup draw, results and upcoming matches.</p></div></header>
 <nav class="competition-nav" aria-label="Competition trackers" style="max-width:1080px;margin:16px auto 0;padding:0 20px;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px"><a href="./" aria-current="page" style="display:block;text-align:center;padding:13px 8px;border-radius:11px;text-decoration:none;font-weight:750;font-size:.85rem;color:#fff;background:#2878ff;border:1px solid #2878ff">National KO</a><a href="southern-counties-league/" style="display:block;text-align:center;padding:13px 8px;border-radius:11px;text-decoration:none;font-weight:750;font-size:.85rem;color:#c5d3e3;background:#151e2b;border:1px solid #34445b">Counties League</a><a href="southern-counties-league-cup/" style="display:block;text-align:center;padding:13px 8px;border-radius:11px;text-decoration:none;font-weight:750;font-size:.85rem;color:#c5d3e3;background:#151e2b;border:1px solid #34445b">League Cup</a><a href="southern-counties-cup/" style="display:block;text-align:center;padding:13px 8px;border-radius:11px;text-decoration:none;font-weight:750;font-size:.85rem;color:#c5d3e3;background:#151e2b;border:1px solid #34445b">Counties Cup</a><a href="newbury-fixtures/" style="display:block;text-align:center;padding:13px 8px;border-radius:11px;text-decoration:none;font-weight:750;font-size:.85rem;color:#c5d3e3;background:#151e2b;border:1px solid #34445b">Newbury Fixtures</a></nav>
 <main class="wrap">
@@ -25,7 +25,7 @@
 <section class="fixtures round-three model"><div class="section-title"><div><span class="section-kicker">ROUND THREE · 8 TIES</span><h2>Round Three draw</h2></div></div><div id="round3" class="fixture-list"></div></section>
 
 
-<p class="muted" style="font-size:.78rem;margin:20px 0"><strong style="color:#37c98b">A</strong> = advanced without a recorded score; <strong>—</strong> = no score.</p></main><footer><div class="wrap">ESFA Girls’ National KO 2026/27 • Competition tracker</div></footer>
+<p class="muted" style="font-size:.78rem;margin:20px 0"><strong style="color:#37c98b">A</strong> = advanced without a recorded score; <strong>—</strong> = no score.</p><div class="outcome-key" aria-label="Result colours"><span class="key-win">✓ Win</span><span class="key-loss">Loss</span><span class="key-draw">= Draw</span><span class="key-postponed">Postponed</span></div></main><footer><div class="wrap">ESFA Girls’ National KO 2026/27 • Competition tracker</div></footer>
 <script>
 fetch('data.json?v=20261121-awards').then(r=>{if(!r.ok)throw Error('Unable to load National KO data');return r.json()}).then(d=>{
  const f=document.getElementById('fixtures');
@@ -35,8 +35,10 @@ fetch('data.json?v=20261121-awards').then(r=>{if(!r.ok)throw Error('Unable to lo
  const card=document.createElement('div'),meta=m[6]??{},scored=m[4]==='Complete';
  card.className='fixture'+(scored||meta.winner?' complete':'');
  card.title=meta.winner?awardLabel(meta.resultType,meta.awardBasis):'';
+ const outcome=MatchOutcome.classify(m[0],m[1],scored?m[2]:null,scored?m[3]:null,meta.winner);
+ MatchOutcome.decorate(card,outcome);
  const status=scored?'FINAL':meta.winner?'':'RESULT PENDING';
- card.innerHTML='<span class="team home">'+m[0]+'</span><span class="mid">'+(meta.winner&&!scored?advanceScore(m[0],m[1],meta.winner):'<strong class="'+(scored?'score':'vs')+'">'+(scored?m[2]+'–'+m[3]:'VS')+'</strong>')+'<small>'+[m[5],status].filter(Boolean).join(' · ')+'</small></span><span class="team away">'+m[1]+'</span>';
+ card.innerHTML=MatchOutcome.team(m[0],outcome.home,'home')+'<span class="mid">'+(meta.winner&&!scored?advanceScore(m[0],m[1],meta.winner):'<strong class="'+(scored?'score':'vs')+'">'+(scored?m[2]+'–'+m[3]:'VS')+'</strong>')+'<small>'+[m[5],status].filter(Boolean).join(' · ')+'</small></span>'+MatchOutcome.team(m[1],outcome.away,'away');
  f.appendChild(card);
  });
 
@@ -50,9 +52,11 @@ fetch('data.json?v=20261121-awards').then(r=>{if(!r.ok)throw Error('Unable to lo
    const status=complete?'FINAL':winner?'':bye?'BYE':detail&&id==='round2'?'RESULT PENDING':'DATE TBC';
    card.className='fixture round-fixture'+(complete||winner||bye?' complete':'');
    card.title=winner?awardLabel(resultType??'assumed_awarded',awardBasis):'';
-   card.innerHTML='<div class="match-teams"><span class="team home">'+(roundTwoLabels[home]??home)+'</span>'+
+   const outcome=MatchOutcome.classify(home,away,complete?homeScore:null,complete?awayScore:null,winner??(bye?home:null));
+   MatchOutcome.decorate(card,outcome);
+   card.innerHTML='<div class="match-teams">'+MatchOutcome.team(roundTwoLabels[home]??home,outcome.home,'home')+
     '<span class="mid">'+(!complete&&(winner||bye)?advanceScore(home,away,winner??home):'<strong class="'+(complete?'score':'vs')+'">'+(complete?homeScore+'–'+awayScore:'VS')+'</strong>')+'<small>'+[tie,status].filter(Boolean).join(' · ')+'</small>'+(detail&&!winner&&!bye?'<small class="match-date">'+detail+'</small>':'')+'</span>'+
-    '<span class="team away">'+(roundTwoLabels[away]??away)+'</span></div>'+
+    MatchOutcome.team(roundTwoLabels[away]??away,outcome.away,'away')+'</div>'+
     '';
    list.appendChild(card);
   }
