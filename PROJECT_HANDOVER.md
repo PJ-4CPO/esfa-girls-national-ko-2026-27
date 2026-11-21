@@ -132,3 +132,8 @@ Replace the separate compact two-column cup draw panels and cup-tie rows with th
 - Applied orange/charcoal Newbury District visual theme across all five pages, retaining result edge colours and white team/score text.
 - Original club crest downloaded from published Pitchero club logo; hosted in assets, shown at 40–44px in headers and used as favicon. Source recorded in research/newbury-branding.md.
 - Web colours are design adaptations, not official colour standards. Orange selected controls use dark text for contrast. Existing navigation and fixtures preserved.
+
+
+## 21 November 2026 — League Cup finals tables
+- Replaced the three finals allocation lists with shared standings-style tables: #, Team, P, W, D, L, GF, GA, Pts. Eight entrants per trophy, zero match stats before play; positions shown as em dash, explicitly unranked.
+- Champions Trophy/Woking table visible with Newbury highlighted; Intermediate/Bath and Plate/Oxford tables expandable. No invented finals subgroups, results or rankings. Uses published allocation data unchanged.
