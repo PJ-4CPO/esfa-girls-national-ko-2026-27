@@ -116,3 +116,8 @@ Replace the separate compact two-column cup draw panels and cup-tie rows with th
 - Verified Newbury Results shows 12 resolved entries (11 scores + Barnet advancement), latest dated first. League Cup Newbury filter shows six of 21 results. Existing competition cards and result edge colours retained.
 - Navigation/filter controls have at least 44px height; compact headers and robust score/name columns checked.
 - Temporary mobile-review.html test harness removed after verification. These are responsive browser layout checks, not physical-device or Safari tests.
+
+
+## 21 November 2026 — Remove repeated next-match summary
+- Removed the Coming up / Next matches panel and its renderer at the user's request; one Newbury fixture list remains.
+- Upcoming view sorts expected dates alongside confirmed dates, while clearly labelling expected dates as unconfirmed. Swansea now appears in November before December fixtures. All view retains actual-date chronology; scores and confirmed dates unchanged.
