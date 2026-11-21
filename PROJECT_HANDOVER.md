@@ -75,3 +75,7 @@ Show published dates beneath cup rounds. Counties Cup: quarter-finals 6 March 20
 ### Advancement typography — 21 November 2026
 
 Removed the A badge’s separate 1.55rem/850-weight typography override. It now uses the same .score 1.25rem size, strong weight and inherited line height as numeric scores; green colour and home/away placement retained.
+
+### Compact advancement cards — 21 November 2026
+
+At Paul's request, keep only the green score-style A/dash on no-score advancement cards. Remove the repeated Advanced, award status and concession explanation from the card body. Keep tie identifiers, accessible winner labels and National KO award classification in the title metadata. A short key explains A/dash at the bottom of relevant tabs. Preserve all underlying award evidence and match dates/results. Keep explanations off the cards to avoid excessive height.

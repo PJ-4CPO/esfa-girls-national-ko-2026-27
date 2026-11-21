@@ -49,12 +49,12 @@ async function showDraw() {
         const badge = add(outcome, 'strong', '', 'score advancement-score');
         badge.setAttribute('aria-label', result.winner + ' advanced');
         for (const name of [home, away]) add(badge, 'span', name === result.winner ? 'A' : '—', name === result.winner ? 'advanced-team' : 'no-score');
-        add(outcome, 'small', 'Advanced', 'advancement-label');
+
       } else add(row, 'strong', score);
       add(row, 'span', away);
       const progression = result?.winner ? result.winner + (tie.id === 'F' ? ' won the cup' : ' advance') : '';
-      const detail = [
-        tie.id, tie.date ? dateLabel(tie.date) : '', tie.kickoff, tie.venue, result?.note, result?.winner && !hasScore ? (result.type === 'forfeit' ? 'Forfeit' : result.type === 'awarded' ? 'Awarded' : 'Assumed awarded') : '', progression
+      const detail = result?.winner && !hasScore ? [tie.id] : [
+        tie.id, tie.date ? dateLabel(tie.date) : '', tie.kickoff, tie.venue, result?.note
       ].filter(Boolean);
       add(row, 'small', detail.join(' · '));
     }

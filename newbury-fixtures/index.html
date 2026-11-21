@@ -23,7 +23,7 @@
 <section class="stat-strip" aria-label="Newbury schedule overview"><div class="stat"><strong id="completed">—</strong><span>Recorded results</span></div><div class="stat"><strong id="future">—</strong><span>Scheduled / tentative</span></div><div class="stat"><strong id="competitions">—</strong><span>Competitions</span></div><div class="stat"><strong>2026/27</strong><span>Season</span></div></section>
 <section class="model"><div class="section-title"><div><span class="section-kicker">DATE ORDER</span><h2>All Newbury fixtures</h2></div></div><p class="muted">Matches are listed by date, then kickoff time. Confirmed scores are distinguished from unplayed fixtures, postponed games and projected finals. Fixtures without a confirmed date appear below the dated matches.</p><div class="legend"><span>✓ Recorded result</span><span>○ Scheduled fixture</span><span>! Tentative / postponed / projected</span></div><div id="timeline" class="timeline" aria-live="polite"><p class="muted">Loading fixtures…</p></div></section>
 
-</main><footer><div class="wrap">Newbury District U11 Girls • Fixtures &amp; results</div></footer>
+<p class="muted" style="font-size:.78rem;margin:20px 0"><strong style="color:#37c98b">A</strong> = advanced without a recorded score; <strong>—</strong> = no score.</p></main><footer><div class="wrap">Newbury District U11 Girls • Fixtures &amp; results</div></footer>
 <script>
 const safe=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const dateLabel=s=>new Intl.DateTimeFormat('en-GB',{day:'numeric',month:'short',year:'numeric',timeZone:'UTC'}).format(new Date(s+'T12:00:00Z'));
@@ -40,11 +40,11 @@ if(m!==month){month=m;const h=document.createElement('div');h.className='group-l
 const score=x.status==='completed'?x.home_score+'–'+x.away_score:'';
 const label=x.status==='completed'?score:x.result_type==='assumed_awarded'?'Assumed awarded':x.result_type==='awarded'?'Awarded':statusName[x.status]||'TBC';
 const advanced=x.status==='advanced'&&x.winner;
-const advanceMarkup=advanced?'<strong class="score advancement-score" aria-label="'+safe(x.winner)+' advanced"><span class="'+(x.winner===x.home?'advanced-team':'no-score')+'">'+(x.winner===x.home?'A':'—')+'</span><span class="'+(x.winner===x.away?'advanced-team':'no-score')+'">'+(x.winner===x.away?'A':'—')+'</span></strong><small class="advancement-label">Advanced</small><small>'+safe(label)+'</small>':'';
+const advanceMarkup=advanced?'<strong class="score advancement-score" aria-label="'+safe(x.winner)+' advanced"><span class="'+(x.winner===x.home?'advanced-team':'no-score')+'">'+(x.winner===x.home?'A':'—')+'</span><span class="'+(x.winner===x.away?'advanced-team':'no-score')+'">'+(x.winner===x.away?'A':'—')+'</span></strong>':'';
 const cls=['completed','advanced'].includes(x.status)?'result':['tentative','postponed','provisional','conditional'].includes(x.status)?'caution':'pending';
 const row=document.createElement('article');row.className='match-row '+cls;
 row.innerHTML='<div class="match-date">'+safe(x.date?dateLabel(x.date):'Date TBC')+(x.time?'<div class="match-time">'+safe(x.time)+' kickoff</div>':'')+'</div>'+
-'<div><div class="match-meta">'+safe(x.competition)+'</div><div class="match-teams">'+safe(x.home)+' <span style="color:#718299">v</span> '+safe(x.away)+'</div><div class="match-note">'+safe(x.note)+'</div></div>'+
+'<div><div class="match-meta">'+safe(x.competition)+'</div><div class="match-teams">'+safe(x.home)+' <span style="color:#718299">v</span> '+safe(x.away)+'</div>'+(advanced?'':'<div class="match-note">'+safe(x.note)+'</div>')+'</div>'+
 '<div class="match-status">'+(advanced?advanceMarkup:safe(label)+'<small>'+ (x.status==='completed'?'Full time':'')+'</small>')+'</div>';
 root.appendChild(row)}
 }).catch(e=>{document.getElementById('timeline').textContent='The fixture list is unavailable: '+e.message});
