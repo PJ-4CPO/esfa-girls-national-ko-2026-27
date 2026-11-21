@@ -106,3 +106,13 @@ Replace the separate compact two-column cup draw panels and cup-tie rows with th
 - League Cup: confirmed Newbury finals summary first, allocations expandable, one result list with Newbury filter, regional tables expandable. Illustrative combined ranking omitted from public page, retained in data.
 - Shared compact headers/navigation, readable metadata, keyboard focus/skip link/back-to-top, table scrolling cues with sticky team/points columns. White team/score text and result edge colours retained.
 - No fixture scores, dates or progression records changed. No scheduled tasks created.
+
+
+## 21 November 2026 — Mobile usability verification
+- Checked all five pages in browser frames at 360, 390 and 430 CSS-pixel widths. No horizontal page overflow or clipped match/team content observed.
+- Added a compact Newbury Next matches summary with the first three unresolved upcoming entries. Swansea appears as expected 28 November, date unconfirmed. Existing date remains null; expected_date and play_by metadata express information already present in the note.
+- Newbury cup route summaries and confirmed League Cup finals allocation now precede taller journey panels.
+- Narrow tables use fixed column widths: team, played and points visible initially at 360px; team and points stay visible during horizontal scrolling. Browser verified scrollLeft 40 with team/points pinned.
+- Verified Newbury Results shows 12 resolved entries (11 scores + Barnet advancement), latest dated first. League Cup Newbury filter shows six of 21 results. Existing competition cards and result edge colours retained.
+- Navigation/filter controls have at least 44px height; compact headers and robust score/name columns checked.
+- Temporary mobile-review.html test harness removed after verification. These are responsive browser layout checks, not physical-device or Safari tests.
