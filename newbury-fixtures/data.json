@@ -1,7 +1,7 @@
 {
   "state": {
     "title": "Newbury District U11 Girls — Fixtures & Results 2026/27",
-    "as_of": "2026-11-15",
+    "as_of": "2026-11-21",
     "scope": "Only Newbury's district representative girls' matches in the tracked competitions. Dates and scores reflect existing source records; future fixtures may move.",
     "quality": "Verified results are separated from scheduled, tentative, postponed and projected items."
   },
@@ -136,15 +136,17 @@
     },
     {
       "id": "NB-12",
-      "date": "2026-11-07",
+      "date": null,
       "competition": "ESFA Girls’ National Knockout",
       "home": "Newbury",
       "away": "Barnet",
       "home_score": null,
       "away_score": null,
-      "status": "result_pending",
-      "note": "ESFA fixture listing · Trinity School. Result unreported. Winner faces Swansea away.",
-      "time": "10:00"
+      "status": "advanced",
+      "note": "Newbury advance after Barnet conceded. Match not played; no score recorded. Originally scheduled 7 November at Trinity School.",
+      "time": null,
+      "result_type": "awarded",
+      "winner": "Newbury"
     },
     {
       "id": "NB-13",
@@ -261,11 +263,11 @@
       "date": null,
       "competition": "ESFA Girls’ National Knockout",
       "home": "Swansea",
-      "away": "Newbury or Barnet",
+      "away": "Newbury",
       "home_score": null,
       "away_score": null,
-      "status": "conditional",
-      "note": "ESFA play-by deadline: 28 November. Match date TBC. Newbury play this tie if they advance past Barnet."
+      "status": "tentative",
+      "note": "Round Three · Play-by deadline: 28 November. Expected on 28 November; match date and kickoff awaiting confirmation."
     }
   ]
 }

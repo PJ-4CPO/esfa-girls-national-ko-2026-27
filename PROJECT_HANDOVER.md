@@ -59,3 +59,7 @@ Paul wants a consistent progress panel across all five tabs. Shared competition-
 ### Progress highlighting — 21 November 2026
 
 Completed stages retain cyan text/lines and show a tick plus 'Completed'. Current stage has a filled cyan marker. Earlier rounds with unresolved results retain cyan with a dashed line and 'Earlier round', avoiding a false completed claim. Future stages stay grey. Removed the literal newline text accidentally displayed above the progress panels.
+
+### Unscored progression policy — 21 November 2026
+
+Paul authorises assumed awarded ties where published next-round progression establishes a winner but no score is published. Display 'Assumed awarded' for an inference, and 'Awarded'/'Forfeit' where explicitly established. Never invent scores or reasons for non-participation. Exclude byes, group/finals qualification and unresolved placeholders. See research/progression-policy.json. National KO now displays advancing teams for six existing forfeits and Newbury’s conceded Barnet tie; Swansea v Newbury and the chronological fixtures are synchronised. All Round Two outcomes are resolved, so progress shows completion. The Swansea match date remains TBC; 28 November is the deadline/expected date. Counties Cup adds Gloucester’s published 2–0 result; other opening ties remain pending. No further eligible awards found. Historical forecasts remain archived.

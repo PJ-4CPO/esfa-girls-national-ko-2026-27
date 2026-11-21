@@ -42,13 +42,13 @@ async function showDraw() {
       const row = add(section, 'div', '', newbury ? 'cup-tie cup-tie--newbury' : 'cup-tie');
       const { result } = tie;
       const hasScore = Number.isInteger(result?.homeScore) && Number.isInteger(result?.awayScore);
-      const score = hasScore ? result.homeScore + '–' + result.awayScore : 'v';
+      const score = hasScore ? result.homeScore + '–' + result.awayScore : result?.winner ? '→' : 'v';
       add(row, 'span', home);
       add(row, 'strong', score);
       add(row, 'span', away);
       const progression = result?.winner ? result.winner + (tie.id === 'F' ? ' won the cup' : ' advance') : '';
       const detail = [
-        tie.id, tie.date ? dateLabel(tie.date) : '', tie.kickoff, tie.venue, result?.note, progression
+        tie.id, tie.date ? dateLabel(tie.date) : '', tie.kickoff, tie.venue, result?.note, result?.winner && !hasScore ? (result.type === 'forfeit' ? 'Forfeit' : result.type === 'awarded' ? 'Awarded' : 'Assumed awarded') : '', progression
       ].filter(Boolean);
       add(row, 'small', detail.join(' · '));
     }

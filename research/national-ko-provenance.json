@@ -371,5 +371,64 @@
       "ESFA records Sefton 0–2 Liverpool and Bolton 1–0 Rossendale. The tracker resolves their Round Three placeholders from those results."
     ]
   },
-  "previous_results_snapshot": "95c0f48a658dac73f52c2fdd05e99256cb124ac0"
+  "previous_results_snapshot": "95c0f48a658dac73f52c2fdd05e99256cb124ac0",
+  "awarded_ties": [
+    {
+      "tie": "1.01",
+      "home": "Swansea",
+      "away": "North Shropshire",
+      "winner": "Swansea",
+      "type": "forfeit",
+      "basis": "Existing ESFA-confirmed record"
+    },
+    {
+      "tie": "1.02",
+      "home": "Lewisham",
+      "away": "Bexley",
+      "winner": "Bexley",
+      "type": "forfeit",
+      "basis": "Existing ESFA-confirmed record"
+    },
+    {
+      "tie": "1.27",
+      "home": "Dover & Deal",
+      "away": "Canterbury",
+      "winner": "Canterbury",
+      "type": "forfeit",
+      "basis": "Existing ESFA-confirmed record"
+    },
+    {
+      "tie": "1.31",
+      "home": "Rugby",
+      "away": "South Birmingham",
+      "winner": "Rugby",
+      "type": "forfeit",
+      "basis": "Existing ESFA-confirmed record"
+    },
+    {
+      "tie": "2.06",
+      "home": "Gainsborough",
+      "away": "Hull",
+      "winner": "Hull",
+      "type": "forfeit",
+      "basis": "Existing ESFA-confirmed record"
+    },
+    {
+      "tie": "2.15",
+      "home": "Leeds",
+      "away": "York",
+      "winner": "Leeds",
+      "type": "forfeit",
+      "basis": "Existing ESFA-confirmed record"
+    },
+    {
+      "tie": "2.01",
+      "home": "Newbury",
+      "away": "Barnet",
+      "winner": "Newbury",
+      "type": "awarded",
+      "basis": "Earlier ESFA confirmation in this conversation and Paul's confirmation Barnet conceded"
+    }
+  ],
+  "progression_policy": "progression-policy.json"
 }

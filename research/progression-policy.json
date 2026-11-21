@@ -1,0 +1,75 @@
+{
+  "updated_on": "2026-11-21",
+  "rule": "Where published progression establishes a tie winner without a published score, assume the tie was awarded unless an explicit result or bye/qualification format explains progression.",
+  "display": "Assumed awarded",
+  "scores": "Leave blank; never invent a score.",
+  "limits": [
+    "Require an identified advancing team; unresolved winner placeholders are insufficient.",
+    "Byes, group qualification and finals allocations do not imply awarded matches.",
+    "No reason for non-participation is established by progression alone.",
+    "Replace an assumption when official detail becomes available."
+  ],
+  "audit": {
+    "national": [
+      {
+        "tie": "1.01",
+        "home": "Swansea",
+        "away": "North Shropshire",
+        "winner": "Swansea",
+        "type": "forfeit",
+        "basis": "Existing ESFA-confirmed record"
+      },
+      {
+        "tie": "1.02",
+        "home": "Lewisham",
+        "away": "Bexley",
+        "winner": "Bexley",
+        "type": "forfeit",
+        "basis": "Existing ESFA-confirmed record"
+      },
+      {
+        "tie": "1.27",
+        "home": "Dover & Deal",
+        "away": "Canterbury",
+        "winner": "Canterbury",
+        "type": "forfeit",
+        "basis": "Existing ESFA-confirmed record"
+      },
+      {
+        "tie": "1.31",
+        "home": "Rugby",
+        "away": "South Birmingham",
+        "winner": "Rugby",
+        "type": "forfeit",
+        "basis": "Existing ESFA-confirmed record"
+      },
+      {
+        "tie": "2.06",
+        "home": "Gainsborough",
+        "away": "Hull",
+        "winner": "Hull",
+        "type": "forfeit",
+        "basis": "Existing ESFA-confirmed record"
+      },
+      {
+        "tie": "2.15",
+        "home": "Leeds",
+        "away": "York",
+        "winner": "Leeds",
+        "type": "forfeit",
+        "basis": "Existing ESFA-confirmed record"
+      },
+      {
+        "tie": "2.01",
+        "home": "Newbury",
+        "away": "Barnet",
+        "winner": "Newbury",
+        "type": "awarded",
+        "basis": "Earlier ESFA confirmation in this conversation and Paul's confirmation Barnet conceded"
+      }
+    ],
+    "counties_cup": "No eligible inferred awards; unresolved winner references remain. Gloucester has a published 2–0 win.",
+    "league_cup": "All 21 Central & East scores present; finals allocation is qualification.",
+    "league": "No knockout progression evidence."
+  }
+}

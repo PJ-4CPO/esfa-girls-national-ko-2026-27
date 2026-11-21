@@ -1,7 +1,7 @@
 {
   "state": {
     "competition": "ESFA U11 Girls Inter-Association / National KO 2026/27",
-    "as_of": "2026-11-15",
+    "as_of": "2026-11-21",
     "teams_in_draw": 45,
     "round1_matches": 13,
     "round1_byes": 19,
@@ -12,7 +12,7 @@
     },
     "current_model": {
       "version": "V3.3",
-      "status": "Active",
+      "status": "Archived",
       "simulation_runs": 100000,
       "seed": 20261115,
       "previous_version": "V3.2",
@@ -397,7 +397,12 @@
       null,
       null,
       "Forfeit",
-      "1.01"
+      "1.01",
+      {
+        "winner": "Swansea",
+        "resultType": "forfeit",
+        "awardBasis": "confirmed"
+      }
     ],
     [
       "Lewisham",
@@ -405,7 +410,12 @@
       null,
       null,
       "Forfeit",
-      "1.02"
+      "1.02",
+      {
+        "winner": "Bexley",
+        "resultType": "forfeit",
+        "awardBasis": "confirmed"
+      }
     ],
     [
       "Wirral",
@@ -477,7 +487,12 @@
       null,
       null,
       "Forfeit",
-      "1.27"
+      "1.27",
+      {
+        "winner": "Canterbury",
+        "resultType": "forfeit",
+        "awardBasis": "confirmed"
+      }
     ],
     [
       "Rugby",
@@ -485,7 +500,12 @@
       null,
       null,
       "Forfeit",
-      "1.31"
+      "1.31",
+      {
+        "winner": "Rugby",
+        "resultType": "forfeit",
+        "awardBasis": "confirmed"
+      }
     ],
     [
       "West Cornwall",
@@ -497,7 +517,7 @@
     ]
   ],
   "public_progression": {
-    "Newbury": "Beat Oxford City 4–3; Round Two v Barnet; winner away to Swansea in Round Three"
+    "Newbury": "Beat Oxford City 4–3; awarded the Barnet tie after Barnet conceded; away to Swansea in Round Three. Match date TBC; play-by deadline 28 November."
   },
   "source": {
     "name": "English Schools’ Football Association (ESFA)",
@@ -513,7 +533,10 @@
       null,
       null,
       {
-        "detail": "7 Nov 2026 · 10:00 · Trinity School"
+        "winner": "Newbury",
+        "resultType": "awarded",
+        "awardBasis": "confirmed",
+        "detail": "Barnet conceded · Match not played"
       }
     ],
     [
@@ -555,7 +578,9 @@
       null,
       null,
       {
-        "winner": "Hull"
+        "winner": "Hull",
+        "resultType": "forfeit",
+        "awardBasis": "confirmed"
       }
     ],
     [
@@ -629,7 +654,9 @@
       null,
       null,
       {
-        "winner": "Leeds"
+        "winner": "Leeds",
+        "resultType": "forfeit",
+        "awardBasis": "confirmed"
       }
     ],
     [
@@ -647,7 +674,8 @@
     "Canterbury",
     "Rugby",
     "Hull",
-    "Leeds"
+    "Leeds",
+    "Newbury"
   ],
   "eliminated_without_score": [
     "North Shropshire",
@@ -655,16 +683,17 @@
     "Dover & Deal",
     "South Birmingham",
     "Gainsborough",
-    "York"
+    "York",
+    "Barnet"
   ],
   "current_strengths": {
-    "Barnet": 1.0,
+    "Barnet": 1,
     "Barnsley": 1.24400167,
     "Bexley": 1.13598487,
     "Bolton": 1.25441166,
     "Brighton": 1.55270722,
     "Canterbury": 1.14644594,
-    "Hull": 1.0,
+    "Hull": 1,
     "Leeds": 1.38172585,
     "Liverpool": 1.62147031,
     "Maidstone": 1.09417428,
@@ -802,7 +831,7 @@
     [
       "3.08",
       "Swansea",
-      "2.01",
+      "Newbury",
       null,
       null,
       {

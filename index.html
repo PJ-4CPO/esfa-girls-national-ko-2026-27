@@ -22,24 +22,31 @@
 
 <section class="fixtures round-one model"><div class="section-title stacked-heading" style="display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;gap:0;margin-bottom:18px"><span class="section-kicker" style="display:block;align-self:flex-start;padding:0;color:#35d6ff;font-size:.7rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;line-height:1.4">ROUND ONE · 13 TIES</span><h2 style="display:block;align-self:flex-start;text-align:left;width:100%;margin:8px 0 0;line-height:1.2">Round One fixtures & results</h2></div><div id="fixtures" class="fixtures"></div><div class="round-byes"><span class="kicker">ROUND ONE BYES</span><p><strong>19 teams</strong> received a Round One bye and progressed directly to Round Two.</p></div></section><section class="fixtures round-two model"><div class="section-title stacked-heading" style="display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;gap:0;margin-bottom:18px"><span class="section-kicker" style="display:block;align-self:flex-start;padding:0;color:#35d6ff;font-size:.7rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;line-height:1.4">ROUND TWO · 16 TIES</span><h2 style="display:block;align-self:flex-start;text-align:left;width:100%;margin:8px 0 0;line-height:1.2">Round Two fixtures &amp; results</h2></div><div class="fixture-list" id="round2"></div><p class="note">The official ESFA draw identifies South East Essex in both rounds. GPSFA’s Round One listing uses SE Sussex.</p></section>
 
-<section class="fixtures round-three model"><div class="section-title"><div><span class="section-kicker">ROUND THREE · 8 TIES</span><h2>Round Three draw</h2></div></div><div id="round3" class="fixture-list"></div><p class="note">Swansea’s opponent depends on the outstanding Newbury v Barnet result.</p></section>
+<section class="fixtures round-three model"><div class="section-title"><div><span class="section-kicker">ROUND THREE · 8 TIES</span><h2>Round Three draw</h2></div></div><div id="round3" class="fixture-list"></div><p class="note">Newbury advance to face Swansea after Barnet conceded the Round Two tie.</p></section>
 
 
 </main><footer><div class="wrap">ESFA Girls’ National KO 2026/27 • Competition tracker</div></footer>
 <script>
-fetch('data.json?v=20261115-cup-v3-3').then(r=>{if(!r.ok)throw Error('Unable to load National KO data');return r.json()}).then(d=>{
+fetch('data.json?v=20261121-awards').then(r=>{if(!r.ok)throw Error('Unable to load National KO data');return r.json()}).then(d=>{
  const f=document.getElementById('fixtures');
- d.fixtures.forEach((m,i)=>{const x=document.createElement('div');x.className='fixture '+(m[4]==='Complete'?'complete':'');const tie=m[5];let s;if(m[4]==='Complete')s='<strong class="score">'+m[2]+'–'+m[3]+'</strong><small>'+tie+' · FINAL</small>';else if(m[4]==='Forfeit')s='<strong class="vs">→</strong><small>'+tie+' · FORFEIT</small>';else s='<strong class="vs">VS</strong><small>'+tie+' · RESULT PENDING</small>';x.innerHTML='<span class="team home">'+m[0]+'</span><span class="mid">'+s+'</span><span class="team away">'+m[1]+'</span>';f.appendChild(x)});
+ const awardLabel=(type,basis)=>basis==='assumed'||type==='assumed_awarded'?'ASSUMED AWARDED':type==='forfeit'?'FORFEIT':'AWARDED';
+ d.fixtures.forEach(m=>{
+ const card=document.createElement('div'),meta=m[6]??{},scored=m[4]==='Complete';
+ card.className='fixture'+(scored||meta.winner?' complete':'');
+ const status=scored?'FINAL':meta.winner?meta.winner+' ADVANCE · '+awardLabel(meta.resultType,meta.awardBasis):'RESULT PENDING';
+ card.innerHTML='<span class="team home">'+m[0]+'</span><span class="mid"><strong class="'+(scored?'score':'vs')+'">'+(scored?m[2]+'–'+m[3]:meta.winner?'→':'VS')+'</strong><small>'+m[5]+' · '+status+'</small></span><span class="team away">'+m[1]+'</span>';
+ f.appendChild(card);
+ });
 
  const roundTwoLabels=Object.fromEntries(d.round2.map(([tie,home,away])=>[tie,'Winner of '+home+' v '+away]));
  function renderRound(id, ties) {
   const list=document.getElementById(id);
-  for(const [tie,home,away,homeScore,awayScore, {winner,detail}={}] of ties){
+  for(const [tie,home,away,homeScore,awayScore, {winner,detail,resultType,awardBasis}={}] of ties){
    const card=document.createElement('div');
    const complete=homeScore!==null;
    const bye=away==='Bye';
-   const status=complete?'FINAL':winner?winner+' ADVANCE · FORFEIT':bye?'BYE · PROGRESSED':detail&&id==='round2'?'RESULT PENDING':'DATE TBC';
-   card.className='fixture round-fixture'+(complete?' complete':'');
+   const status=complete?'FINAL':winner?winner+' ADVANCE · '+awardLabel(resultType??'assumed_awarded',awardBasis):bye?'BYE · PROGRESSED':detail&&id==='round2'?'RESULT PENDING':'DATE TBC';
+   card.className='fixture round-fixture'+(complete||winner||bye?' complete':'');
    card.innerHTML='<div class="match-teams"><span class="team home">'+(roundTwoLabels[home]??home)+'</span>'+
     '<span class="mid"><strong class="'+(complete?'score':'vs')+'">'+(complete?homeScore+'–'+awayScore:bye||winner?'→':'VS')+'</strong><small>'+tie+' · '+status+'</small>'+(detail?'<small class="match-date">'+detail+'</small>':'')+'</span>'+
     '<span class="team away">'+(roundTwoLabels[away]??away)+'</span></div>'+
