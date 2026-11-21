@@ -63,7 +63,7 @@ async function showDraw() {
       } else add(middle, 'strong', scored ? result.homeScore + '–' + result.awayScore : 'VS', scored ? 'score' : 'vs');
       add(middle, 'small', scored ? 'FINAL' : advanced ? '' : 'SCHEDULED');
       if (!advanced) {
-        const detail = [tie.date ? dateLabel(tie.date) : '', tie.kickoff, tie.venue].filter(Boolean).join(' · ');
+        const detail = [tie.date ? dateLabel(tie.date) : '', tie.venue].filter(Boolean).join(' · ');
         if (detail) add(middle, 'small', detail, 'match-date');
       }
       addTeam(away, outcome.away, 'away');

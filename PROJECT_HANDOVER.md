@@ -121,3 +121,8 @@ Replace the separate compact two-column cup draw panels and cup-tie rows with th
 ## 21 November 2026 — Remove repeated next-match summary
 - Removed the Coming up / Next matches panel and its renderer at the user's request; one Newbury fixture list remains.
 - Upcoming view sorts expected dates alongside confirmed dates, while clearly labelling expected dates as unconfirmed. Swansea now appears in November before December fixtures. All view retains actual-date chronology; scores and confirmed dates unchanged.
+
+
+## 21 November 2026 — Dates-only public presentation
+- Removed kickoff times and all references to match times being unconfirmed from National Cup, League Cup, Counties Cup and Newbury fixture views.
+- Match dates, expected dates, play-by deadlines and date-unconfirmed labels remain. Source time fields retained privately in repository data for record preservation and ordering, never rendered on public pages.

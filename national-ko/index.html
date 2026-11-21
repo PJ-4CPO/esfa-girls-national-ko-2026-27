@@ -20,7 +20,7 @@ fetch('../data.json?v=20261121-awards').then(r=>{if(!r.ok)throw Error('Unable to
   document.getElementById('newbury-national-match').textContent=route.tie[1]+' v '+route.tie[2];
   const deadline=d.round_dates?.[route.key]?.playBy;
   const date=deadline?new Intl.DateTimeFormat('en-GB',{day:'numeric',month:'short',year:'numeric',timeZone:'UTC'}).format(new Date(deadline+'T12:00:00Z')):null;
-  document.getElementById('newbury-national-detail').textContent=route.name+(date?' · Play by '+date:'')+'. '+(route.tie[3]!==null||route.tie[5]?.winner?'Result shown below.':'Match date and kickoff awaiting confirmation.');
+  document.getElementById('newbury-national-detail').textContent=route.name+(date?' · Play by '+date:'')+'. '+(route.tie[3]!==null||route.tie[5]?.winner?'Result shown below.':'Match date awaiting confirmation.');
  }
 
  const advanceScore=(home,away,winner)=>'<strong class="score advancement-score" aria-label="'+winner+' advanced"><span class="'+(winner===home?'advanced-team':'no-score')+'">'+(winner===home?'A':'—')+'</span><span class="'+(winner===away?'advanced-team':'no-score')+'">'+(winner===away?'A':'—')+'</span></strong>';
