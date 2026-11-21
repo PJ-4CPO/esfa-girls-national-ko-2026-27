@@ -1,14 +1,12 @@
 {
   "state": {
     "competition": "Southern Counties Girls' League 2026/27",
-    "as_of": "2026-11-15",
+    "as_of": "2026-11-21",
     "teams": 7,
-    "total_matches": 42,
-    "played": 9,
-    "remaining": 33,
+    "total_matches": null,
     "model": {
       "version": "V4.3",
-      "status": "Active",
+      "status": "Archived",
       "simulation_runs": 100000,
       "seed": 20261115,
       "previous_version": "V4.2",
@@ -19,8 +17,9 @@
       "tie_break_assumption": "Championship points 3/2/1; ties for highest points divided equally across tied teams because official title tie-break is unverified.",
       "random_generator": "NumPy PCG64",
       "sensitivity": "Second seed differs by less than one percentage point per team.",
-      "publication_status": "review_snapshot_2026_11_15"
-    }
+      "publication_status": "Historical 15 November forecast; not recalculated or displayed."
+    },
+    "recorded_results": 10
   },
   "standings": [
     [
@@ -34,6 +33,16 @@
       10
     ],
     [
+      "Reigate & Banstead",
+      3,
+      2,
+      1,
+      0,
+      8,
+      3,
+      8
+    ],
+    [
       "Gloucester",
       4,
       1,
@@ -45,23 +54,13 @@
     ],
     [
       "Dacorum",
-      3,
+      4,
       1,
       1,
-      1,
-      6,
-      8,
-      6
-    ],
-    [
-      "Reigate & Banstead",
       2,
-      1,
-      1,
-      0,
       6,
-      3,
-      5
+      10,
+      7
     ],
     [
       "St Albans",
@@ -157,6 +156,13 @@
       5,
       "Newbury",
       "2026-11-14"
+    ],
+    [
+      "Reigate & Banstead",
+      2,
+      0,
+      "Dacorum",
+      null
     ]
   ],
   "probabilities": [
@@ -226,5 +232,86 @@
       0.7346489
     ]
   ],
-  "model_note": "Nine girls’ grid results, including Woking 4–5 Newbury and Gloucester 9–0 Wycombe. Simulated leaders share credit when level on points."
+  "model_note": "Nine girls’ grid results, including Woking 4–5 Newbury and Gloucester 9–0 Wycombe. Simulated leaders share credit when level on points.",
+  "upcoming": [
+    [
+      "Newbury",
+      "Woking",
+      null,
+      "Postponed",
+      "Original date: 3 Oct 2026"
+    ],
+    [
+      "Gloucester",
+      "Newbury",
+      "2026-12-05",
+      "Scheduled"
+    ],
+    [
+      "Woking",
+      "Gloucester",
+      "2026-12-19",
+      "Scheduled"
+    ],
+    [
+      "Wycombe",
+      "Gloucester",
+      "2027-01-09",
+      "Scheduled"
+    ],
+    [
+      "St Albans",
+      "Newbury",
+      "2027-01-16",
+      "Scheduled"
+    ],
+    [
+      "Gloucester",
+      "Woking",
+      "2027-01-16",
+      "Scheduled"
+    ],
+    [
+      "Newbury",
+      "Reigate & Banstead",
+      "2027-01-23",
+      "Scheduled"
+    ],
+    [
+      "Newbury",
+      "Dacorum",
+      "2027-02-13",
+      "Scheduled"
+    ],
+    [
+      "St Albans",
+      "Gloucester",
+      "2027-02-19",
+      "Scheduled"
+    ],
+    [
+      "Reigate & Banstead",
+      "Gloucester",
+      "2027-02-20",
+      "Scheduled"
+    ],
+    [
+      "Newbury",
+      "Gloucester",
+      "2027-02-27",
+      "Scheduled"
+    ],
+    [
+      "Newbury",
+      "St Albans",
+      "2027-03-13",
+      "Scheduled"
+    ],
+    [
+      "Wycombe",
+      "Newbury",
+      "2027-03-20",
+      "Scheduled"
+    ]
+  ]
 }

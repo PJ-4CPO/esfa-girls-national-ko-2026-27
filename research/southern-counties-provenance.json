@@ -128,6 +128,17 @@
       "verification_status": "verified_organiser_girls_grid",
       "independently_rechecked_on": "2026-11-15",
       "date_confidence": "district_fixture_schedule"
+    },
+    {
+      "home": "Reigate & Banstead",
+      "away": "Dacorum",
+      "home_score": 2,
+      "away_score": 0,
+      "match_date": null,
+      "date_confidence": "not_published",
+      "source_url": "https://www.gpsfa.com/cups/berkshire-league/",
+      "independently_rechecked_on": "2026-11-21",
+      "verification_status": "girls_grid_and_standings_reconcile"
     }
   ],
   "candidate_sources": [
@@ -244,13 +255,17 @@
   ],
   "unverified_private_results": "Excluded deliberately; never put privately reported scores in this repository.",
   "source_audit": {
-    "checked_on": "2026-11-15",
+    "checked_on": "2026-11-21",
     "organiser_url": "https://www.gpsfa.com/cups/berkshire-league/",
-    "organiser_status": "Nine results verified against the girls’ grid. All seven standings rows reconcile.",
-    "verified_independent_scores": 9,
-    "other_results": "Reigate 4–1 is supported by the girls’ grid and standings despite the weekly bulletin conflict.",
-    "new_scores_found": 2,
-    "discrepancy_resolution": "Use the dedicated girls’ grid for scores. Record the separate source of each match date."
+    "organiser_status": "Ten published girls’ grid scores reconcile with all seven standings rows. This is a recorded-results count, not an assertion of all games played.",
+    "verified_independent_scores": 10,
+    "new_scores_found": 1,
+    "total_season_matches": "Unverified; previous 42-match assumption removed from presentation.",
+    "fixture_sources": [
+      "Existing Newbury district schedule",
+      "https://www.gpsfa.com/gpsfa-girls-district-squad/"
+    ],
+    "fixture_scope": "Dated league fixtures only, plus the explicitly postponed Newbury v Woking. No all-pairings generation."
   },
   "model_audit": {
     "as_of": "2026-11-15",

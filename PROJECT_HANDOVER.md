@@ -47,3 +47,7 @@ At Paul's request, remove probabilities and predictions from every website tab. 
 ### Presentation follow-up — 21 November 2026
 
 Remove sources, accuracy, verification and data-status panels from every website tab, including the League Cup verification banner. Preserve source registers and provenance in the repository for future checking. Keep the league points key with the league table. Avoid adding administrative validation panels back to the published pages.
+
+### League counts and fixtures — 21 November 2026
+
+Remove the assumed 42-match season total and progress graphic. Derive 'Recorded league results' directly from the results array. Ten published scores currently reconcile with GPSFA standings, including Reigate & Banstead 2–0 Dacorum (date unpublished). This does not establish completeness of results across the league or other competitions. Display only dated schedule entries and an explicitly postponed fixture; do not generate all possible pairings as upcoming matches. Historical model data remains archived and is not updated by this release. Further district schedule reconciliation remains open.
