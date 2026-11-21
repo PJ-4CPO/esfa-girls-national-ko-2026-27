@@ -51,3 +51,7 @@ Remove sources, accuracy, verification and data-status panels from every website
 ### League counts and fixtures — 21 November 2026
 
 Remove the assumed 42-match season total and progress graphic. Derive 'Recorded league results' directly from the results array. Ten published scores currently reconcile with GPSFA standings, including Reigate & Banstead 2–0 Dacorum (date unpublished). This does not establish completeness of results across the league or other competitions. Display only dated schedule entries and an explicitly postponed fixture; do not generate all possible pairings as upcoming matches. Historical model data remains archived and is not updated by this release. Further district schedule reconciliation remains open.
+
+### Shared progress view — 21 November 2026
+
+Paul wants a consistent progress panel across all five tabs. Shared competition-progress.js/CSS render the latest published National KO draw, the first unresolved Counties Cup round, completed League Cup regional results and next finals stage, and calendar phases for league/Newbury fixtures. Calendar phases are not completion percentages. Earlier National KO rounds are labelled 'Earlier round', never assumed complete merely because a later draw exists. Keep recorded-results counts separate from total games played. No forecasts, fixed league season totals or source/status footers are restored. The National KO introduction no longer references trophy-winning chances. Data is unchanged in this presentation release.
