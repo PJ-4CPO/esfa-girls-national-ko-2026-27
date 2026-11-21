@@ -39,3 +39,7 @@ Use the [source register and update checklist](research/README.md#source-registe
 3. Give fixtures stable identifiers across competition data and the chronological view in a separate change. Preserve the existing routes and neutral branding.
 4. Follow the [research verification protocol](research/README.md). Check season, age group, girls’ category, competition and home/away orientation. Record the source, check date, conflicts and date confidence. Keep private reports out of the repository.
 5. Review the diff and check all four pages, results, standings and model totals. Obtain approval before merging to the Pages branch. After release, confirm the deployed commit and compare the live pages and feeds with that commit.
+
+## Presentation decision — 21 November 2026
+
+At Paul's request, remove probabilities and predictions from every website tab. Published pages now show fixtures, results, standings, finals allocations and cup progression without title charts, match odds, archived forecasts or model explanations. Historical model inputs and research remain in the repository for reference; do not restore predictions to the website without a new request. The Newbury Fixtures page already contained no predictions. This presentation-only release does not refresh result data. Review further simplification separately after this change.

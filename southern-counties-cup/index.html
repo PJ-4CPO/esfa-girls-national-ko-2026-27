@@ -16,20 +16,15 @@
     .cup-tie { display:grid; grid-template-columns:minmax(0,1fr) auto minmax(0,1fr); gap:8px; align-items:center; padding:10px 0; border-top:1px solid var(--line); font-size:.92rem }
     .cup-tie span { overflow-wrap:anywhere }
     .cup-tie span:last-child { text-align:right }
-    .cup-tie small, .cup-tie .cup-forecast { grid-column:1/-1; color:var(--muted) }
+    .cup-tie small { grid-column:1/-1; color:var(--muted) }
     .cup-tie--newbury strong { color:var(--cyan) }
-    .cup-forecast { display:flex; flex-wrap:wrap; gap:4px 12px; font-size:.76rem }
-    .cup-forecast span:last-child { text-align:left }
-    .cup-milestones { display:flex; flex-wrap:wrap; gap:8px 20px; margin-top:14px; color:var(--muted) }
-    .cup-milestones strong { color:var(--text) }
-    .cup-probabilities .bar-team { white-space:normal; overflow-wrap:anywhere }
     .sources a { color:var(--cyan) }
     @media(max-width:780px) {
       .competition-nav { grid-template-columns:repeat(2,minmax(0,1fr)); padding:0 15px }
       .cup-rounds { grid-template-columns:1fr }
     }
   </style>
-  <script defer src="tracker.js?v=20261118-forecast"></script>
+  <script defer src="tracker.js?v=20261121-results"></script>
 </head>
 <body>
   <header class="hero">
@@ -52,7 +47,6 @@
         <span class="kicker">NEWBURY DISTRICT</span>
         <h2 id="newbury-heading">Newbury’s cup route</h2>
         <p id="newbury-path"></p>
-        <div id="newbury-probabilities" class="cup-milestones" aria-label="Newbury progression probabilities"></div>
       </div>
     </section>
     <section class="model">
@@ -60,16 +54,10 @@
       <p id="load-status" role="status">Loading the draw…</p>
       <div class="cup-rounds" id="cup-rounds"></div>
     </section>
-    <section class="model cup-probabilities" id="title-forecast" hidden>
-      <div class="section-title stacked-heading"><h2>Cup-winning probabilities</h2></div>
-      <p class="muted">Estimated chances for each team, based on the published draw and the results recorded so far.</p>
-      <div class="bars" id="cup-probabilities"></div>
-    </section>
+    
     <section class="sources">
       <h2>Source</h2>
       <p><a href="https://www.gpsfa.com/southern-counties-cup/">GPSFA’s Girls’ Southern Counties Cup draw</a><span id="checked-on"></span>. Round dates follow the published draw. Individual kick-off times and venues are shown when confirmed.</p>
-      <p>Forecasts use the current <a href="../southern-counties-league/">Counties League</a> ratings where available, and the archived <a href="../southern-counties-league-cup/">League Cup</a> ratings for Hackney, Merton and Sutton. Oxford and East Cornwall use a neutral starting rating because neither has a comparable rating in those trackers.</p>
-      <p>Match estimates show home win, draw and away win in normal time, followed by each team’s chance of advancing. The model uses a modest home advantage before finals day at Oxford City FC, which is treated as a shared venue. On a simulated draw, each team’s chance of going through is weighted by its rating. These are estimates based on limited results.</p>
     </section>
   </main>
   <footer><div class="wrap">Southern Counties Girls’ Cup 2026/27 • Competition tracker</div></footer>
