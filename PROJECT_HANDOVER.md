@@ -87,3 +87,7 @@ Newbury Fixtures uses green Win, red Loss, blue Draw and amber Postponed, with t
 ### White text and outcome edges — 21 November 2026
 
 Paul prefers all team names and scores (including A/dash) in white, with outcome colour restricted to card edges. Competition result cards use the left edge for the home team and right edge for the away team: green winner, red loser, blue both for draw. Remove winner ticks and coloured team/score typography. Preserve accessible winner/loser labels. Newbury Fixtures retains a single left edge reflecting Newbury’s result (green/red/blue), amber postponed and neutral scheduled; score/status text white. Scores, dates, advancement and results unchanged.
+
+### Remove duplicate league document and move keys — 21 November 2026
+
+Fixed an accidental second Counties League document/body and second rendering script appended after the first script. The page now has one header/nav/progress/table/results/upcoming section and one rendering script. Validate the whole HTML document and all IDs when editing scripts; find closing script relative to its opening tag, never the earlier external script tags. One result key appears near the top of each competition tab, with Newbury Fixtures keeping its key above the timeline. A/dash explanation consolidated into that key, with no duplicate key at the bottom. League Cup’s distinct group/combined/regional tables retained.

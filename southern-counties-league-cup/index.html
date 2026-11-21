@@ -5,6 +5,7 @@
 <nav class="competition-nav" aria-label="Competition trackers" style="max-width:1080px;margin:16px auto 0;padding:0 20px;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px"><a href="../" style="display:block;text-align:center;padding:13px 8px;border-radius:11px;text-decoration:none;font-weight:750;font-size:.85rem;color:#c5d3e3;background:#151e2b;border:1px solid #34445b">National KO</a><a href="../southern-counties-league/" style="display:block;text-align:center;padding:13px 8px;border-radius:11px;text-decoration:none;font-weight:750;font-size:.85rem;color:#c5d3e3;background:#151e2b;border:1px solid #34445b">Counties League</a><a href="../southern-counties-league-cup/" aria-current="page" style="display:block;text-align:center;padding:13px 8px;border-radius:11px;text-decoration:none;font-weight:750;font-size:.85rem;color:#fff;background:#2878ff;border:1px solid #2878ff">League Cup</a><a href="../southern-counties-cup/" style="display:block;text-align:center;padding:13px 8px;border-radius:11px;text-decoration:none;font-weight:750;font-size:.85rem;color:#c5d3e3;background:#151e2b;border:1px solid #34445b">Counties Cup</a><a href="../newbury-fixtures/" style="display:block;text-align:center;padding:13px 8px;border-radius:11px;text-decoration:none;font-weight:750;font-size:.85rem;color:#c5d3e3;background:#151e2b;border:1px solid #34445b">Newbury Fixtures</a></nav>
 <main class="wrap">
 <section class="competition-progress" data-competition-progress="league-cup" data-progress-feed="data.json" aria-label="Competition progress"><h2>Tournament journey</h2><p class="progress-summary">Loading…</p></section>
+<div class="outcome-key" aria-label="Result colours"><span class="key-win">Win</span><span class="key-loss">Loss</span><span class="key-draw">Draw</span><span class="key-postponed">Postponed</span></div>
 
 <section class="model"><div class="section-title stacked-heading"><span class="section-kicker">24 APRIL 2027</span><h2>Girls’ finals allocations</h2></div><p class="muted">Match times are to be confirmed. <a href="https://www.gpsfa.com/southern-counties-league-cup/" style="color:#35d6ff">GPSFA competition tables</a></p><div id="finals-allocations"></div></section>
 
@@ -18,7 +19,7 @@
 <section class="model"><div class="section-title stacked-heading"><span class="section-kicker">WALES &amp; WEST · BATH · 17 OCTOBER</span><h2>Four regional group tables</h2></div><p class="muted">These are the standings transcribed from the official LeagueHub365 screenshots. All 17 listed teams are preserved by their original group; individual Bath match scorelines have not yet been recovered.</p><div id="bath-groups"></div></section>
 
 
-<div class="outcome-key" aria-label="Result colours"><span class="key-win">Win</span><span class="key-loss">Loss</span><span class="key-draw">Draw</span><span class="key-postponed">Postponed</span></div></main><footer><div class="wrap">Southern Counties Girls’ League Cup 2026/27 • Tournament One results</div></footer>
+</main><footer><div class="wrap">Southern Counties Girls’ League Cup 2026/27 • Tournament One results</div></footer>
 <script>
 fetch('data.json?v=20261114-official-finals').then(r=>{if(!r.ok)throw Error('Data unavailable');return r.json()}).then(d=>{
 const allocations=document.getElementById('finals-allocations');
