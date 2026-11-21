@@ -38,7 +38,7 @@ main.wrap>section.fixtures .match-forecast{flex-wrap:wrap}
 }
 
 /* Awarded advancement occupies the same home/away positions as a score. */
-.score.advancement-score{display:inline-grid;grid-template-columns:repeat(2,1.15em);gap:.25em;align-items:center;justify-content:center;font-size:1.55rem!important;line-height:1.2;font-weight:850;letter-spacing:0}
+.score.advancement-score{display:inline-grid;grid-template-columns:repeat(2,1.15em);gap:.25em;align-items:center;justify-content:center;letter-spacing:0}
 .advancement-score .advanced-team{color:#37c98b!important;text-align:center!important}
 .advancement-score .no-score{color:#718299!important;text-align:center!important}
 .advancement-label{display:block;color:#37c98b!important;font-weight:750;font-size:.72rem!important;margin:4px 0}

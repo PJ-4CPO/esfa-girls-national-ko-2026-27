@@ -71,3 +71,7 @@ No-score progression uses a green A in the advancing team's home/away score posi
 ### Dates in tournament journeys — 21 November 2026
 
 Show published dates beneath cup rounds. Counties Cup: quarter-finals 6 March 2027, semi-finals/final 15 May 2027 at Oxford City FC (GPSFA girls’ draw rechecked). League Cup: finals and trophies decided 24 April 2027. National KO stores round_dates with early-round play-by deadlines 3 October, 7 November and 28 November; later quarter/semi/final dates are unverified and display Date TBC. ESFA page was inaccessible during this check and GPSFA had no later National KO dates. Never present a play-by deadline as an arranged match date. No change to actual fixtures or results.
+
+### Advancement typography — 21 November 2026
+
+Removed the A badge’s separate 1.55rem/850-weight typography override. It now uses the same .score 1.25rem size, strong weight and inherited line height as numeric scores; green colour and home/away placement retained.
