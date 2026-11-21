@@ -55,3 +55,7 @@ Remove the assumed 42-match season total and progress graphic. Derive 'Recorded 
 ### Shared progress view — 21 November 2026
 
 Paul wants a consistent progress panel across all five tabs. Shared competition-progress.js/CSS render the latest published National KO draw, the first unresolved Counties Cup round, completed League Cup regional results and next finals stage, and calendar phases for league/Newbury fixtures. Calendar phases are not completion percentages. Earlier National KO rounds are labelled 'Earlier round', never assumed complete merely because a later draw exists. Keep recorded-results counts separate from total games played. No forecasts, fixed league season totals or source/status footers are restored. The National KO introduction no longer references trophy-winning chances. Data is unchanged in this presentation release.
+
+### Progress highlighting — 21 November 2026
+
+Completed stages retain cyan text/lines and show a tick plus 'Completed'. Current stage has a filled cyan marker. Earlier rounds with unresolved results retain cyan with a dashed line and 'Earlier round', avoiding a false completed claim. Future stages stay grey. Removed the literal newline text accidentally displayed above the progress panels.
