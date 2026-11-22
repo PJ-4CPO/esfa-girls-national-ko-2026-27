@@ -1,7 +1,7 @@
 {
   "state": {
     "title": "Newbury District U11 Girls — Fixtures & Results 2026/27",
-    "as_of": "2026-11-21",
+    "as_of": "2026-11-22",
     "scope": "Only Newbury's district representative girls' matches in the tracked competitions. Dates and scores reflect existing source records; future fixtures may move.",
     "quality": "Verified results are separated from scheduled, tentative, postponed and projected items."
   },
@@ -270,6 +270,30 @@
       "note": "Round Three · Play-by deadline: 28 November. Expected on 28 November; match date and kickoff awaiting confirmation.",
       "expected_date": "2026-11-28",
       "play_by": "2026-11-28"
+    },
+    {
+      "id": "NB-24",
+      "date": "2026-12-12",
+      "competition": "Southern Counties 7-a-side Cup",
+      "home": "Newbury",
+      "away": "Opponents TBC",
+      "home_score": null,
+      "away_score": null,
+      "status": "scheduled",
+      "event_name": "Tournament One",
+      "note": "Venue and opponents to be confirmed"
+    },
+    {
+      "id": "NB-25",
+      "date": "2027-04-17",
+      "competition": "Southern Counties 7-a-side Cup",
+      "home": "Newbury",
+      "away": "Opponents TBC",
+      "home_score": null,
+      "away_score": null,
+      "status": "scheduled",
+      "event_name": "Tournament Two · Finals / Plate",
+      "note": "Finals/Plate allocation, venue and opponents to be confirmed"
     }
   ]
 }

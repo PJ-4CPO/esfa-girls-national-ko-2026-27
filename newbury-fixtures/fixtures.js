@@ -31,9 +31,9 @@
       const resultLabel = {win:'Win',loss:'Loss',draw:'Draw'}[outcome.newbury] ?? '';
       const advance = advanced ? '<strong class="score advancement-score" aria-label="'+safe(x.winner)+' advanced">'+[x.home,x.away].map(name=>'<span>'+(name===x.winner?'A':'—')+'</span>').join('')+'</strong>' : '';
       // Keep operational details, omit repeated provenance descriptions.
-      const note = x.status==='postponed' ? 'Rearranged date to be confirmed' : x.status==='tentative' ? x.note.replace(/match date and kickoff awaiting confirmation/gi,'match date awaiting confirmation') : x.id==='NB-22' ? 'Champions Trophy · Woking' : '';
+      const note = x.event_name ? x.note : x.status==='postponed' ? 'Rearranged date to be confirmed' : x.status==='tentative' ? x.note.replace(/match date and kickoff awaiting confirmation/gi,'match date awaiting confirmation') : x.id==='NB-22' ? 'Champions Trophy · Woking' : '';
       const row = document.createElement('article'); row.className='match-row '+colour; row.dataset.matchId=x.id;
-      row.innerHTML='<div class="match-date">'+safe(x.date ? format(x.date,{day:'numeric',month:'short',year:'numeric'}) : x.expected_date ? 'Expected '+format(x.expected_date,{day:'numeric',month:'short',year:'numeric'}) : 'Date TBC')+'</div><div><div class="match-meta">'+safe(x.competition)+'</div><div class="match-teams">'+safe(x.home)+' v '+safe(x.away)+'</div>'+(note?'<div class="match-note">'+safe(note)+'</div>':'')+'</div><div class="match-status">'+(advanced?advance:'<strong class="'+(x.status==='completed'?'score':'')+'">'+safe(status(x))+'</strong>'+(resultLabel?'<small class="outcome-label">'+resultLabel+'</small>':''))+'</div>';
+      row.innerHTML='<div class="match-date">'+safe(x.date ? format(x.date,{day:'numeric',month:'short',year:'numeric'}) : x.expected_date ? 'Expected '+format(x.expected_date,{day:'numeric',month:'short',year:'numeric'}) : 'Date TBC')+'</div><div><div class="match-meta">'+safe(x.competition)+'</div><div class="match-teams">'+(x.event_name ? safe(x.home)+' · '+safe(x.event_name) : safe(x.home)+' v '+safe(x.away))+'</div>'+(note?'<div class="match-note">'+safe(note)+'</div>':'')+'</div><div class="match-status">'+(advanced?advance:'<strong class="'+(x.status==='completed'?'score':'')+'">'+safe(status(x))+'</strong>'+(resultLabel?'<small class="outcome-label">'+resultLabel+'</small>':''))+'</div>';
       root.append(row);
     }
     if (!selected.length) root.textContent='No matches in this view.';
@@ -43,7 +43,7 @@
     document.querySelectorAll('[data-view]').forEach(item=>item.setAttribute('aria-pressed',String(item===button)));
     render();
   }));
-  fetch('data.json?v=20261121-mobile').then(r=>{if(!r.ok)throw Error('Fixtures unavailable');return r.json()}).then(data=>{
+  fetch('data.json?v=20261122-sevens').then(r=>{if(!r.ok)throw Error('Fixtures unavailable');return r.json()}).then(data=>{
     entries=data.entries;
     document.getElementById('completed').textContent=entries.filter(x=>x.status==='completed').length;
     document.getElementById('future').textContent=entries.filter(x=>['scheduled','tentative','provisional','conditional'].includes(x.status)).length;

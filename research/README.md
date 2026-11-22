@@ -60,3 +60,7 @@ Add newly identified organiser, district or external tracker links here when the
 - The user's direct GPSFA Girls' League screenshots show **seven** teams, including Wycombe, and explicitly show **Dacorum 1–5 Newbury**; do not confuse this with an earlier incomplete six-team text extraction.
 - Previously missing or privately known scores must not be treated as official unless an eligible source publishes them.
 - Continue pursuing specific official or participant reports for unresolved National KO Round One ties, and verify remaining historical league scores against their original girls' competition records.
+
+
+### Southern Counties 7-a-side Cup
+Schedule-only coverage in Newbury Fixtures: 12 December 2026 and 17 April 2027. See [schedule evidence and limitations](sevens-cup-schedule.md). Cross-check [GPSFA Girls District Squad](https://www.gpsfa.com/gpsfa-girls-district-squad/) and Newbury's latest team notice before adding draw, venue or opponents. Keep separate from the League Cup; no dedicated tab until substantive details are available.

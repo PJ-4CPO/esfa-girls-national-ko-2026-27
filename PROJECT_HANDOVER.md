@@ -137,3 +137,9 @@ Replace the separate compact two-column cup draw panels and cup-tie rows with th
 ## 21 November 2026 — League Cup finals tables
 - Replaced the three finals allocation lists with shared standings-style tables: #, Team, P, W, D, L, GF, GA, Pts. Eight entrants per trophy, zero match stats before play; positions shown as em dash, explicitly unranked.
 - Champions Trophy/Woking table visible with Newbury highlighted; Intermediate/Bath and Plate/Oxford tables expandable. No invented finals subgroups, results or rankings. Uses published allocation data unchanged.
+
+
+## 22 November 2026 — Sevens Cup dates
+- Added 12 December 2026 Tournament One and 17 April 2027 Tournament Two (Finals/Plate) as Newbury event entries, using the existing workbook and public GPSFA girls schedule cross-check.
+- Venue/opponents and April allocation remain unconfirmed. Events render as Newbury · tournament name rather than invented head-to-head fixtures. Competition counter now five; removed hard-coded four from the intro.
+- No extra tab: published draw, current girls entrants, format and venue not found. See research/sevens-cup-schedule.md. Existing scores and dates unchanged; no times or forecasts added.
