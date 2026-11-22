@@ -143,3 +143,13 @@ Replace the separate compact two-column cup draw panels and cup-tie rows with th
 - Added 12 December 2026 Tournament One and 17 April 2027 Tournament Two (Finals/Plate) as Newbury event entries, using the existing workbook and public GPSFA girls schedule cross-check.
 - Venue/opponents and April allocation remain unconfirmed. Events render as Newbury · tournament name rather than invented head-to-head fixtures. Competition counter now five; removed hard-coded four from the intro.
 - No extra tab: published draw, current girls entrants, format and venue not found. See research/sevens-cup-schedule.md. Existing scores and dates unchanged; no times or forecasts added.
+
+
+## 22 November 2026 — Ask the tracker
+- Added a shared orange “Ask the tracker” launcher and accessible native dialog to all five pages.
+- This is a built-in question assistant, not a generative AI service: no keys, backend, external API charges or question storage/transmission.
+- `ask-tracker-engine.js` normalises the five public JSON feeds at runtime. Newbury totals use its chronological feed exclusively, preventing duplicate matches across pages; other teams have explicitly limited recorded-scoreline coverage.
+- Supports team season records, competition filters and short follow-ups, result lists, goals/clean sheets, biggest win/defeat, highest combined score, next/upcoming/postponed matches, league tables, National Cup Round Three and League Cup finals allocations. Unsupported questions receive a scope/help response.
+- Awards/forfeits are progression only, excluded from played wins/goals. Past scheduled fixtures without scores are flagged, not treated as upcoming. Expected dates remain labelled unconfirmed. Draw stages/deadlines are not labelled as completed matches or confirmed dates.
+- Answers use DOM text nodes, never interpolate user/data strings into HTML. Load failures offer retry. No predictions, kickoff times, player information or old model values are surfaced.
+- Regression tests: `node --test tests/ask-tracker.test.cjs` (8 tests). Fixtures/results were not changed.
