@@ -153,3 +153,11 @@ Replace the separate compact two-column cup draw panels and cup-tie rows with th
 - Awards/forfeits are progression only, excluded from played wins/goals. Past scheduled fixtures without scores are flagged, not treated as upcoming. Expected dates remain labelled unconfirmed. Draw stages/deadlines are not labelled as completed matches or confirmed dates.
 - Answers use DOM text nodes, never interpolate user/data strings into HTML. Load failures offer retry. No predictions, kickoff times, player information or old model values are surfaced.
 - Regression tests: `node --test tests/ask-tracker.test.cjs` (8 tests). Fixtures/results were not changed.
+
+
+## 26 November 2026 — Counties Cup results and quarter-finals
+- GPSFA Girls’ Southern Counties Cup now publishes Newbury 1–0 Oxford and St Albans 1–0 Merton (Round One, 21 November). East Cornwall 0–2 Gloucester was already recorded.
+- Published quarter-finals: Reigate & Banstead v St Albans; Sutton v Woking; Gloucester v Newbury; Wycombe v Hackney, listed for 6 March 2027.
+- Recorded played results in Counties Cup and Newbury Fixtures, resolved the two quarter-final pairings and added Gloucester v Newbury (NB-26) to Newbury’s chronological schedule. Existing winner links determine the completed Round One and current quarter-final stage automatically.
+- Ask the tracker reads the updated feeds: Newbury now have 7 wins, 1 draw and 4 losses in 12 recorded played matches, plus the Barnet advancement. Regression checks updated for the new results.
+- Source checked 26 November: https://www.gpsfa.com/southern-counties-cup/ (girls’ section). No new National Cup score, league result, Sevens draw or girls’ venue verified. Sevens entries remain schedule-only with venue/opponents TBC.

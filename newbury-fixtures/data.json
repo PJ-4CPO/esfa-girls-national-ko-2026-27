@@ -1,7 +1,7 @@
 {
   "state": {
     "title": "Newbury District U11 Girls — Fixtures & Results 2026/27",
-    "as_of": "2026-11-22",
+    "as_of": "2026-11-26",
     "scope": "Only Newbury's district representative girls' matches in the tracked competitions. Dates and scores reflect existing source records; future fixtures may move.",
     "quality": "Verified results are separated from scheduled, tentative, postponed and projected items."
   },
@@ -165,10 +165,10 @@
       "competition": "Southern Counties Girls’ Cup",
       "home": "Newbury",
       "away": "Oxford",
-      "home_score": null,
-      "away_score": null,
-      "status": "scheduled",
-      "note": "Separate Southern Counties Girls’ Cup; scheduled date from district programme"
+      "home_score": 1,
+      "away_score": 0,
+      "status": "completed",
+      "note": "Published GPSFA Girls’ Southern Counties Cup result"
     },
     {
       "id": "NB-15",
@@ -294,6 +294,17 @@
       "status": "scheduled",
       "event_name": "Tournament Two · Finals / Plate",
       "note": "Finals/Plate allocation, venue and opponents to be confirmed"
+    },
+    {
+      "id": "NB-26",
+      "date": "2027-03-06",
+      "competition": "Southern Counties Girls’ Cup",
+      "home": "Gloucester",
+      "away": "Newbury",
+      "home_score": null,
+      "away_score": null,
+      "status": "scheduled",
+      "note": "Quarter-final · published GPSFA Girls’ Southern Counties Cup draw"
     }
   ]
 }

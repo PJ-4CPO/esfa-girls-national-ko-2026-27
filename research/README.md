@@ -64,3 +64,11 @@ Add newly identified organiser, district or external tracker links here when the
 
 ### Southern Counties 7-a-side Cup
 Schedule-only coverage in Newbury Fixtures: 12 December 2026 and 17 April 2027. See [schedule evidence and limitations](sevens-cup-schedule.md). Cross-check [GPSFA Girls District Squad](https://www.gpsfa.com/gpsfa-girls-district-squad/) and Newbury's latest team notice before adding draw, venue or opponents. Keep separate from the League Cup; no dedicated tab until substantive details are available.
+
+
+## 26 November 2026 — Counties Cup results and quarter-finals
+- GPSFA Girls’ Southern Counties Cup now publishes Newbury 1–0 Oxford and St Albans 1–0 Merton (Round One, 21 November). East Cornwall 0–2 Gloucester was already recorded.
+- Published quarter-finals: Reigate & Banstead v St Albans; Sutton v Woking; Gloucester v Newbury; Wycombe v Hackney, listed for 6 March 2027.
+- Recorded played results in Counties Cup and Newbury Fixtures, resolved the two quarter-final pairings and added Gloucester v Newbury (NB-26) to Newbury’s chronological schedule. Existing winner links determine the completed Round One and current quarter-final stage automatically.
+- Ask the tracker reads the updated feeds: Newbury now have 7 wins, 1 draw and 4 losses in 12 recorded played matches, plus the Barnet advancement. Regression checks updated for the new results.
+- Source checked 26 November: https://www.gpsfa.com/southern-counties-cup/ (girls’ section). No new National Cup score, league result, Sevens draw or girls’ venue verified. Sevens entries remain schedule-only with venue/opponents TBC.

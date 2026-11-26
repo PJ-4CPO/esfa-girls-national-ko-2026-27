@@ -1,7 +1,7 @@
 {
   "competition": "Southern Counties Girls’ Cup",
   "season": "2026/27",
-  "checkedOn": "2026-11-21",
+  "checkedOn": "2026-11-26",
   "source": "https://www.gpsfa.com/southern-counties-cup/",
   "rounds": [
     {
@@ -11,7 +11,14 @@
         {
           "id": "R1-1",
           "home": "Newbury",
-          "away": "Oxford"
+          "away": "Oxford",
+          "result": {
+            "homeScore": 1,
+            "awayScore": 0,
+            "winner": "Newbury",
+            "type": "played",
+            "note": "Final"
+          }
         },
         {
           "id": "R1-2",
@@ -28,7 +35,14 @@
         {
           "id": "R1-3",
           "home": "St Albans",
-          "away": "Merton"
+          "away": "Merton",
+          "result": {
+            "homeScore": 1,
+            "awayScore": 0,
+            "winner": "St Albans",
+            "type": "played",
+            "note": "Final"
+          }
         }
       ]
     },
@@ -39,9 +53,7 @@
         {
           "id": "QF-1",
           "home": "Reigate & Banstead",
-          "away": {
-            "winnerOf": "R1-3"
-          }
+          "away": "St Albans"
         },
         {
           "id": "QF-2",
@@ -50,12 +62,8 @@
         },
         {
           "id": "QF-3",
-          "home": {
-            "winnerOf": "R1-2"
-          },
-          "away": {
-            "winnerOf": "R1-1"
-          }
+          "home": "Gloucester",
+          "away": "Newbury"
         },
         {
           "id": "QF-4",
